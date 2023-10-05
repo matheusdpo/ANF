@@ -56,7 +56,7 @@ public class SocioTorcedorService {
 
         while (true) {
             try {
-                driver = seleniumUtility.getDriver(false, false, "C:\\Workspace\\Downloads\\");
+                driver = seleniumUtility.getDriver(true, false, "C:\\Workspace\\Downloads\\");
                 wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
                 driver.get("https://sociotorcedor.com.br/");
