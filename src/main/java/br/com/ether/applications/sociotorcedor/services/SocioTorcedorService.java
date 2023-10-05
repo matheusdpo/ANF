@@ -35,7 +35,7 @@ public class SocioTorcedorService {
 
         if (!acessoModelList.isEmpty()) {
             acessoModelList.forEach(e -> {
-                if (e.getPlataforma().equalsIgnoreCase("Socio Torcedor"))
+                if (e.getPlataforma().replace(" "," ").equalsIgnoreCase("Socio Torcedor"))
                     run(e);
             });
         } else {
@@ -56,7 +56,7 @@ public class SocioTorcedorService {
 
         while (true) {
             try {
-                driver = seleniumUtility.getDriver(true, false, "C:\\Workspace\\Downloads\\");
+                driver = seleniumUtility.getDriver(false, false, "C:\\Workspace\\Downloads\\");
                 wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
                 driver.get("https://sociotorcedor.com.br/");
