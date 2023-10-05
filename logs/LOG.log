@@ -807,3 +807,1013 @@ Session ID: 064e9277aff3347be197f27c3f238d13
 [WARN ] 2023-10-04 22:35:19.803 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
 [INFO ] 2023-10-04 22:35:28.653 [main] ETHER - Inserindo o e-mail: matheusoliveira1991@hotmail.com
 [INFO ] 2023-10-04 22:35:29.187 [main] ETHER - Inserindo a senha: **********
+[INFO ] 2023-10-04 22:51:26.619 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 12480 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-04 22:51:26.625 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-04 22:52:16.573 [main] ETHER - =============================================
+[INFO ] 2023-10-04 22:52:16.575 [main] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-04 22:52:16.575 [main] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-04 22:52:16.576 [main] ETHER - SELECT: SELECT * FROM 'dados_anf' WHERE 'status' = 1;
+[INFO ] 2023-10-04 22:52:16.576 [main] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-04 22:52:16.576 [main] ETHER - SELECT: SELECT * FROM 'dados_anf' WHERE 'status' = 1;
+[ERROR] 2023-10-04 22:52:16.576 [main] ETHER - Erro ao consultar o banco de dados
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+	at br.com.ether.repository.DataBase.select(DataBase.java:160) ~[classes/:?]
+	at br.com.ether.repository.DataBase.getCasos(DataBase.java:72) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:32) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-04 22:52:16.598 [main] ETHER - Tentando novamente em 1 minuto
+[INFO ] 2023-10-04 22:52:23.430 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 10468 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-04 22:52:23.435 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-04 22:52:29.643 [main] ETHER - =============================================
+[INFO ] 2023-10-04 22:52:29.646 [main] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-04 22:52:29.646 [main] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-04 22:52:29.647 [main] ETHER - SELECT: SELECT * FROM 'dados_anf' WHERE 'status' = 1;
+[INFO ] 2023-10-04 22:52:29.647 [main] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-04 22:52:29.647 [main] ETHER - SELECT: SELECT * FROM 'dados_anf' WHERE 'status' = 1;
+[ERROR] 2023-10-04 22:52:29.648 [main] ETHER - Erro ao consultar o banco de dados
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+	at br.com.ether.repository.DataBase.select(DataBase.java:160) ~[classes/:?]
+	at br.com.ether.repository.DataBase.getCasos(DataBase.java:72) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:32) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-04 22:52:29.660 [main] ETHER - Tentando novamente em 1 minuto
+[INFO ] 2023-10-04 22:52:44.317 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 18388 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-04 22:52:44.321 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-04 22:52:50.018 [main] ETHER - =============================================
+[INFO ] 2023-10-04 22:52:50.416 [main] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-04 22:52:53.086 [main] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-04 22:52:53.866 [main] ETHER - SELECT: SELECT * FROM 'dados_anf' WHERE 'status' = 1;
+[INFO ] 2023-10-04 22:52:56.967 [main] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-04 22:52:57.598 [main] ETHER - SELECT: SELECT * FROM 'dados_anf' WHERE 'status' = 1;
+[ERROR] 2023-10-04 22:53:00.470 [main] ETHER - Erro ao consultar o banco de dados
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+	at br.com.ether.repository.DataBase.select(DataBase.java:160) ~[classes/:?]
+	at br.com.ether.repository.DataBase.getCasos(DataBase.java:72) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:38) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-04 22:53:01.758 [main] ETHER - Tentando novamente em 1 minuto
+[ERROR] 2023-10-04 22:54:07.564 [main] ETHER - =============================================
+[INFO ] 2023-10-04 22:54:11.711 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-04 22:54:11.712 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-04 22:54:11.713 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-04 22:54:11.714 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-04 22:54:13.338 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[ERROR] 2023-10-04 22:54:16.069 [main] ETHER - Erro ao consultar o banco de dados
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''dados_anf' WHERE 'status' = 1' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at br.com.ether.repository.DataBase.select(DataBase.java:161) ~[classes/:?]
+	at br.com.ether.repository.DataBase.getCasos(DataBase.java:72) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:38) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-04 22:54:16.073 [main] ETHER - Tentando novamente em 1 minuto
+[INFO ] 2023-10-04 23:02:54.579 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 2832 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-04 23:02:54.584 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-04 23:02:57.670 [main] ETHER - =============================================
+[INFO ] 2023-10-04 23:02:58.559 [main] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-04 23:03:01.307 [main] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-04 23:03:05.671 [main] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-04 23:03:05.673 [main] ETHER - SELECT: SELECT * FROM dados_anf WHERE 'status' = 1;
+[ERROR] 2023-10-04 23:03:05.674 [main] ETHER - Erro ao consultar o banco de dados
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+	at br.com.ether.repository.DataBase.select(DataBase.java:159) ~[classes/:?]
+	at br.com.ether.repository.DataBase.getCasos(DataBase.java:71) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:38) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-04 23:03:05.718 [main] ETHER - Tentando novamente em 1 minuto
+[ERROR] 2023-10-04 23:03:06.727 [main] ETHER - =============================================
+[INFO ] 2023-10-04 23:03:06.729 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-04 23:03:06.731 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-04 23:03:06.733 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-04 23:03:06.735 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-04 23:03:08.221 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-04 23:04:41.504 [main] ETHER - Não há notas fiscais para serem enviadas
+[INFO ] 2023-10-04 23:04:41.507 [main] ETHER - Finalizando ANF | Mês: 10/2023
+[INFO ] 2023-10-04 23:04:41.508 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-04 23:04:41.508 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-04 23:04:41.509 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-04 23:04:41.509 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-04 23:04:41.567 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-04 23:04:49.456 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 11284 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-04 23:04:49.460 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-04 23:04:53.102 [main] ETHER - =============================================
+[INFO ] 2023-10-04 23:04:53.107 [main] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-04 23:04:53.108 [main] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-04 23:04:53.109 [main] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-04 23:04:53.111 [main] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[ERROR] 2023-10-04 23:04:53.111 [main] ETHER - Erro ao consultar o banco de dados
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+	at br.com.ether.repository.DataBase.select(DataBase.java:159) ~[classes/:?]
+	at br.com.ether.repository.DataBase.getCasos(DataBase.java:71) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:38) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-04 23:04:53.164 [main] ETHER - Tentando novamente em 1 minuto
+[ERROR] 2023-10-04 23:04:54.170 [main] ETHER - =============================================
+[INFO ] 2023-10-04 23:04:54.170 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-04 23:04:54.171 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-04 23:04:54.171 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-04 23:04:54.172 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-04 23:04:55.693 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[ERROR] 2023-10-04 23:04:55.866 [main] ETHER - Erro ao consultar o banco de dados
+java.sql.SQLException: Column 'id' not found.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:98) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:90) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:64) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:584) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getLong(ResultSetImpl.java:862) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at br.com.ether.repository.DataBase.getCasos(DataBase.java:79) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:38) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-04 23:04:55.871 [main] ETHER - Tentando novamente em 1 minuto
+[INFO ] 2023-10-04 23:05:13.279 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 624 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-04 23:05:13.284 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-04 23:05:16.907 [main] ETHER - =============================================
+[INFO ] 2023-10-04 23:05:16.910 [main] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-04 23:05:16.910 [main] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-04 23:05:16.911 [main] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-04 23:05:16.911 [main] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[ERROR] 2023-10-04 23:05:16.912 [main] ETHER - Erro ao consultar o banco de dados
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+	at br.com.ether.repository.DataBase.select(DataBase.java:159) ~[classes/:?]
+	at br.com.ether.repository.DataBase.getCasos(DataBase.java:71) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:38) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-04 23:05:16.961 [main] ETHER - Tentando novamente em 1 minuto
+[ERROR] 2023-10-04 23:05:17.970 [main] ETHER - =============================================
+[INFO ] 2023-10-04 23:05:17.970 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-04 23:05:17.971 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-04 23:05:17.972 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-04 23:05:17.974 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-04 23:05:19.508 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[ERROR] 2023-10-04 23:05:19.678 [main] ETHER - Erro ao consultar o banco de dados
+java.sql.SQLException: Column 'id' not found.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:98) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:90) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:64) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:584) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getLong(ResultSetImpl.java:862) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at br.com.ether.repository.DataBase.getCasos(DataBase.java:79) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:38) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-04 23:05:19.682 [main] ETHER - Tentando novamente em 1 minuto
+[INFO ] 2023-10-04 23:05:33.793 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 9088 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-04 23:05:33.798 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-04 23:05:34.439 [main] ETHER - =============================================
+[INFO ] 2023-10-04 23:05:34.440 [main] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-04 23:05:34.440 [main] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-04 23:05:34.440 [main] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-04 23:05:34.440 [main] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[ERROR] 2023-10-04 23:05:34.441 [main] ETHER - Erro ao consultar o banco de dados
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+	at br.com.ether.repository.DataBase.select(DataBase.java:159) ~[classes/:?]
+	at br.com.ether.repository.DataBase.getCasos(DataBase.java:71) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:38) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-04 23:05:34.449 [main] ETHER - Tentando novamente em 1 minuto
+[ERROR] 2023-10-04 23:05:35.451 [main] ETHER - =============================================
+[INFO ] 2023-10-04 23:05:35.451 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-04 23:05:35.452 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-04 23:05:35.453 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-04 23:05:35.454 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-04 23:05:35.877 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[ERROR] 2023-10-04 23:17:40.718 [main] ETHER - Erro ao consultar o banco de dados
+java.sql.SQLException: Column 'id' not found.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:98) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:90) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:64) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:584) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getLong(ResultSetImpl.java:862) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at br.com.ether.repository.DataBase.getCasos(DataBase.java:79) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:38) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-04 23:17:40.719 [main] ETHER - Tentando novamente em 1 minuto
+[INFO ] 2023-10-04 23:17:54.744 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 9656 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-04 23:17:54.754 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-04 23:17:55.729 [main] ETHER - =============================================
+[INFO ] 2023-10-04 23:17:55.730 [main] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-04 23:17:55.731 [main] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-04 23:17:55.731 [main] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-04 23:17:55.731 [main] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[ERROR] 2023-10-04 23:17:55.731 [main] ETHER - Erro ao consultar o banco de dados
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+	at br.com.ether.repository.DataBase.select(DataBase.java:158) ~[classes/:?]
+	at br.com.ether.repository.DataBase.getCasos(DataBase.java:71) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:38) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-04 23:17:55.739 [main] ETHER - Tentando novamente em 1 minuto
+[ERROR] 2023-10-04 23:17:56.754 [main] ETHER - =============================================
+[INFO ] 2023-10-04 23:17:56.755 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-04 23:17:56.756 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-04 23:17:56.757 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-04 23:17:56.757 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-04 23:17:57.295 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[ERROR] 2023-10-04 23:18:10.283 [main] ETHER - Erro ao consultar o banco de dados
+java.sql.SQLException: Column 'valor' not found.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:98) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:90) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:64) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:584) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getString(ResultSetImpl.java:896) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at br.com.ether.repository.DataBase.getCasos(DataBase.java:80) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:38) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-04 23:18:10.285 [main] ETHER - Tentando novamente em 1 minuto
+[INFO ] 2023-10-04 23:19:04.241 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 4260 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-04 23:19:04.248 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-04 23:19:05.000 [main] ETHER - =============================================
+[INFO ] 2023-10-04 23:19:05.002 [main] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-04 23:19:05.002 [main] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-04 23:19:05.002 [main] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-04 23:19:05.002 [main] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[ERROR] 2023-10-04 23:19:05.003 [main] ETHER - Erro ao consultar o banco de dados
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+	at br.com.ether.repository.DataBase.select(DataBase.java:156) ~[classes/:?]
+	at br.com.ether.repository.DataBase.getCasos(DataBase.java:71) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:38) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-04 23:19:05.011 [main] ETHER - Tentando novamente em 1 minuto
+[ERROR] 2023-10-04 23:19:06.014 [main] ETHER - =============================================
+[INFO ] 2023-10-04 23:19:06.014 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-04 23:19:06.014 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-04 23:19:06.015 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-04 23:19:06.015 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-04 23:19:06.515 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[ERROR] 2023-10-04 23:19:19.913 [main] ETHER - Erro ao consultar o banco de dados
+java.sql.SQLException: Column 'valor' not found.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:98) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:90) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:64) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:584) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getString(ResultSetImpl.java:896) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at br.com.ether.repository.DataBase.getCasos(DataBase.java:80) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:38) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-04 23:19:19.918 [main] ETHER - Tentando novamente em 1 minuto
+[INFO ] 2023-10-04 23:19:28.745 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 16504 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-04 23:19:28.751 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-04 23:19:29.710 [main] ETHER - =============================================
+[INFO ] 2023-10-04 23:19:29.712 [main] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-04 23:19:29.712 [main] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-04 23:19:29.712 [main] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-04 23:19:29.712 [main] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[ERROR] 2023-10-04 23:19:29.713 [main] ETHER - Erro ao consultar o banco de dados
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+	at br.com.ether.repository.DataBase.select(DataBase.java:156) ~[classes/:?]
+	at br.com.ether.repository.DataBase.getCasos(DataBase.java:71) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:38) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-04 23:19:29.725 [main] ETHER - Tentando novamente em 1 minuto
+[ERROR] 2023-10-04 23:19:30.730 [main] ETHER - =============================================
+[INFO ] 2023-10-04 23:19:30.730 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-04 23:19:30.730 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-04 23:19:30.730 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-04 23:19:30.731 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-04 23:19:31.226 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[ERROR] 2023-10-04 23:20:02.111 [main] ETHER - Erro ao consultar o banco de dados
+java.sql.SQLException: Column 'data_competencia' not found.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:98) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:90) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:64) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:584) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getString(ResultSetImpl.java:896) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at br.com.ether.repository.DataBase.getCasos(DataBase.java:83) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:38) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-04 23:20:02.124 [main] ETHER - Tentando novamente em 1 minuto
+[INFO ] 2023-10-04 23:20:08.970 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 13372 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-04 23:20:08.976 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-04 23:20:09.759 [main] ETHER - =============================================
+[INFO ] 2023-10-04 23:20:09.761 [main] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-04 23:20:09.761 [main] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-04 23:20:09.761 [main] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-04 23:20:09.761 [main] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[ERROR] 2023-10-04 23:20:09.761 [main] ETHER - Erro ao consultar o banco de dados
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+	at br.com.ether.repository.DataBase.select(DataBase.java:154) ~[classes/:?]
+	at br.com.ether.repository.DataBase.getCasos(DataBase.java:71) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:38) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-04 23:20:09.769 [main] ETHER - Tentando novamente em 1 minuto
+[ERROR] 2023-10-04 23:20:10.776 [main] ETHER - =============================================
+[INFO ] 2023-10-04 23:20:10.776 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-04 23:20:10.777 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-04 23:20:10.777 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-04 23:20:10.777 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-04 23:20:11.203 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-04 23:29:19.039 [main] ETHER - Finalizando ANF | Mês: 10/2023
+[INFO ] 2023-10-04 23:29:19.040 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-04 23:29:19.041 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-04 23:29:19.041 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-04 23:29:19.041 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-04 23:29:19.079 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-04 23:30:21.368 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 6536 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-04 23:30:21.374 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-04 23:30:22.232 [main] ETHER - =============================================
+[INFO ] 2023-10-04 23:30:22.233 [main] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-04 23:30:25.087 [main] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-04 23:30:25.088 [main] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-04 23:30:25.088 [main] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[ERROR] 2023-10-04 23:30:25.089 [main] ETHER - Erro ao consultar o banco de dados
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+	at br.com.ether.repository.DataBase.select(DataBase.java:156) ~[classes/:?]
+	at br.com.ether.repository.DataBase.getCasos(DataBase.java:73) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:39) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-04 23:30:25.129 [main] ETHER - Tentando novamente em 1 minuto
+[ERROR] 2023-10-04 23:30:26.142 [main] ETHER - =============================================
+[INFO ] 2023-10-04 23:30:26.143 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-04 23:30:26.144 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-04 23:30:26.145 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-04 23:30:26.146 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-04 23:30:28.948 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-04 23:30:38.193 [main] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-04 23:30:38.194 [main] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-04 23:30:38.195 [main] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-04 23:30:38.195 [main] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-04 23:31:08.329 [main] ETHER - Finalizando ANF | Mês: 10/2023
+[INFO ] 2023-10-04 23:31:08.330 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-04 23:31:08.330 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-04 23:31:08.331 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-04 23:31:08.331 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-04 23:31:08.376 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-04 23:31:21.711 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 12264 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-04 23:31:21.720 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-04 23:31:22.524 [main] ETHER - =============================================
+[INFO ] 2023-10-04 23:31:22.526 [main] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-04 23:31:22.526 [main] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-04 23:31:22.526 [main] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-04 23:31:22.526 [main] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[ERROR] 2023-10-04 23:31:22.526 [main] ETHER - Erro ao consultar o banco de dados
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+	at br.com.ether.repository.DataBase.select(DataBase.java:156) ~[classes/:?]
+	at br.com.ether.repository.DataBase.getCasos(DataBase.java:73) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:39) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-04 23:31:22.534 [main] ETHER - Tentando novamente em 1 minuto
+[ERROR] 2023-10-04 23:31:23.543 [main] ETHER - =============================================
+[INFO ] 2023-10-04 23:31:23.543 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-04 23:31:23.544 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-04 23:31:23.544 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-04 23:31:23.545 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-04 23:31:23.956 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-04 23:31:23.980 [main] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-04 23:31:23.980 [main] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-04 23:31:23.980 [main] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-04 23:31:23.980 [main] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-04 23:31:37.822 [main] ETHER - Iniciando a inserção de dados no banco de dados
+[INFO ] 2023-10-04 23:31:38.204 [main] ETHER - INSERT: br.com.ether.model.DadosHistoricoModel@663bb8ef
+[ERROR] 2023-10-04 23:32:07.052 [main] ETHER - Erro ao inserir dados no banco de dados
+java.sql.SQLSyntaxErrorException: Table 'anf.historico_anf' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at br.com.ether.repository.DataBase.insertHistorico(DataBase.java:182) ~[classes/:?]
+	at br.com.ether.applications.anf.services.ANFService.run(ANFService.java:27) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$0(ControllerANF.java:45) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$1(ControllerANF.java:45) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:43) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-04 23:32:07.064 [main] ETHER - Tentando novamente em 1 minuto
+[INFO ] 2023-10-04 23:32:14.043 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 17824 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-04 23:32:14.047 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-04 23:32:14.775 [main] ETHER - =============================================
+[INFO ] 2023-10-04 23:32:14.777 [main] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-04 23:32:14.777 [main] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-04 23:32:14.777 [main] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-04 23:32:14.778 [main] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[ERROR] 2023-10-04 23:32:14.778 [main] ETHER - Erro ao consultar o banco de dados
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+	at br.com.ether.repository.DataBase.select(DataBase.java:156) ~[classes/:?]
+	at br.com.ether.repository.DataBase.getCasos(DataBase.java:73) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:39) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-04 23:32:14.787 [main] ETHER - Tentando novamente em 1 minuto
+[ERROR] 2023-10-04 23:32:15.792 [main] ETHER - =============================================
+[INFO ] 2023-10-04 23:32:15.792 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-04 23:32:15.792 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-04 23:32:15.792 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-04 23:32:15.792 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-04 23:32:16.247 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-04 23:32:16.273 [main] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-04 23:32:16.273 [main] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-04 23:32:16.273 [main] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-04 23:32:16.273 [main] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-04 23:32:16.277 [main] ETHER - Iniciando a inserção de dados no banco de dados
+[INFO ] 2023-10-04 23:32:16.277 [main] ETHER - INSERT: br.com.ether.model.DadosHistoricoModel@60e9c3a5
+[ERROR] 2023-10-04 23:32:34.143 [main] ETHER - Erro ao inserir dados no banco de dados
+java.sql.SQLIntegrityConstraintViolationException: Column 'valor' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at br.com.ether.repository.DataBase.insertHistorico(DataBase.java:182) ~[classes/:?]
+	at br.com.ether.applications.anf.services.ANFService.run(ANFService.java:27) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$0(ControllerANF.java:45) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$1(ControllerANF.java:45) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:43) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-04 23:32:34.150 [main] ETHER - Tentando novamente em 1 minuto
+[INFO ] 2023-10-04 23:32:40.709 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 11028 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-04 23:32:40.713 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-04 23:32:41.397 [main] ETHER - =============================================
+[INFO ] 2023-10-04 23:32:41.398 [main] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-04 23:32:41.399 [main] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-04 23:32:41.399 [main] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-04 23:32:41.399 [main] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[ERROR] 2023-10-04 23:32:41.399 [main] ETHER - Erro ao consultar o banco de dados
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+	at br.com.ether.repository.DataBase.select(DataBase.java:156) ~[classes/:?]
+	at br.com.ether.repository.DataBase.getCasos(DataBase.java:73) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:39) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-04 23:32:41.407 [main] ETHER - Tentando novamente em 1 minuto
+[ERROR] 2023-10-04 23:32:42.413 [main] ETHER - =============================================
+[INFO ] 2023-10-04 23:32:42.413 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-04 23:32:42.414 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-04 23:32:42.415 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-04 23:32:42.416 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-04 23:32:42.899 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-04 23:32:42.932 [main] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-04 23:32:42.932 [main] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-04 23:32:42.932 [main] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-04 23:32:42.932 [main] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-04 23:32:42.941 [main] ETHER - Iniciando a inserção de dados no banco de dados
+[INFO ] 2023-10-04 23:32:42.941 [main] ETHER - INSERT: br.com.ether.model.DadosHistoricoModel@7e5843db
+[INFO ] 2023-10-04 23:33:39.895 [main] ETHER - Finalizando ANF | Mês: 10/2023
+[INFO ] 2023-10-04 23:33:41.906 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-04 23:33:41.906 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-04 23:33:41.906 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-04 23:33:41.906 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-04 23:33:41.934 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-04 23:33:42.164 [main] EtherApplication - Started EtherApplication in 61.873 seconds (process running for 63.335)
+[INFO ] 2023-10-04 23:34:23.747 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 18048 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-04 23:34:23.753 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-04 23:34:24.550 [main] ETHER - =============================================
+[INFO ] 2023-10-04 23:34:24.551 [main] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-04 23:34:24.551 [main] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-04 23:34:24.551 [main] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-04 23:34:24.551 [main] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[ERROR] 2023-10-04 23:34:24.552 [main] ETHER - Erro ao consultar o banco de dados
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+	at br.com.ether.repository.DataBase.select(DataBase.java:156) ~[classes/:?]
+	at br.com.ether.repository.DataBase.getCasos(DataBase.java:73) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:39) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-04 23:34:24.560 [main] ETHER - Tentando novamente em 1 minuto
+[ERROR] 2023-10-04 23:34:25.574 [main] ETHER - =============================================
+[INFO ] 2023-10-04 23:34:25.574 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-04 23:34:25.574 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-04 23:34:25.574 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-04 23:34:25.575 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-04 23:34:26.002 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-04 23:34:26.026 [main] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-04 23:34:26.027 [main] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-04 23:34:26.027 [main] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-04 23:34:26.027 [main] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-04 23:34:26.030 [main] ETHER - Iniciando a inserção de dados no banco de dados
+[INFO ] 2023-10-04 23:34:26.031 [main] ETHER - INSERT: br.com.ether.model.DadosHistoricoModel@7e446d92
+[INFO ] 2023-10-04 23:34:29.927 [main] ETHER - Finalizando ANF | Mês: 10/2023
+[INFO ] 2023-10-04 23:34:29.927 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-04 23:34:29.928 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-04 23:34:29.928 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-04 23:34:29.928 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-04 23:34:29.954 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-04 23:34:30.166 [main] EtherApplication - Started EtherApplication in 6.8 seconds (process running for 8.168)
