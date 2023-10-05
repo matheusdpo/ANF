@@ -32,8 +32,8 @@ public class DataBase {
 
     @Value("${br.com.ether.db.driver}")
     private String DRIVER;
-    private static final String SELECT_CASOS = "SELECT * FROM 'dados_anf' WHERE 'status' = 1";
-    private static final String SELECT_ACESSOS = "SELECT * FROM 'acessos'";
+    private static final String SELECT_CASOS = "SELECT * FROM 'dados_anf' WHERE 'status' = 1;";
+    private static final String SELECT_ACESSOS = "SELECT * FROM acessos;";
 
     private final LogUtility logger;
     private final Aguardar aguardar;
