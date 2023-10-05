@@ -1827,3 +1827,13 @@ java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatem
 [INFO ] 2023-10-04 23:40:06.757 [main] ETHER - PASSWORD: ****
 [INFO ] 2023-10-04 23:40:07.198 [main] ETHER - Conexão com o banco de dados realizada com sucesso
 [INFO ] 2023-10-04 23:40:07.365 [main] EtherApplicationTests - Started EtherApplicationTests in 1.5 seconds (process running for 3.121)
+[INFO ] 2023-10-04 23:51:09.239 [main] AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [br.com.ether.anf.EtherApplicationTests]: EtherApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO ] 2023-10-04 23:51:09.343 [main] SpringBootTestContextBootstrapper - Found @SpringBootConfiguration br.com.ether.EtherApplication for test class br.com.ether.anf.EtherApplicationTests
+[INFO ] 2023-10-04 23:51:09.722 [main] EtherApplicationTests - Starting EtherApplicationTests using Java 19.0.2 with PID 3812 (started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-04 23:51:09.723 [main] EtherApplicationTests - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-04 23:51:10.356 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-04 23:51:10.356 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-04 23:51:10.358 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-04 23:51:10.358 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-04 23:51:10.793 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-04 23:51:10.949 [main] EtherApplicationTests - Started EtherApplicationTests in 1.474 seconds (process running for 3.061)
