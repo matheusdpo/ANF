@@ -24,7 +24,6 @@ public class ControllerANF {
     private final DateUtility dateUtility;
     private final ANFService anfService;
 
-    @Scheduled(cron = "0 0 4 * * *")
     @PostConstruct
     public void init() {
         dataBase.connectDB();
