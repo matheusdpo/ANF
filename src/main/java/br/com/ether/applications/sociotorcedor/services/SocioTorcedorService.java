@@ -1,6 +1,6 @@
 package br.com.ether.applications.sociotorcedor.services;
 
-import br.com.ether.model.AcessoModel;
+import br.com.ether.model.CredenciaisModel;
 import br.com.ether.repository.DataBase;
 import br.com.ether.utilities.Aguardar;
 import br.com.ether.utilities.DateUtility;
@@ -31,11 +31,11 @@ public class SocioTorcedorService {
 
 
     public void init() {
-        List<AcessoModel> acessoModelList = dataBase.getAcessos();
+        List<CredenciaisModel> acessosModelList = dataBase.getAcessos();
 
-        if (!acessoModelList.isEmpty()) {
-            acessoModelList.forEach(e -> {
-                if (e.getPlataforma().replace(" "," ").equalsIgnoreCase("Socio Torcedor"))
+        if (!acessosModelList.isEmpty()) {
+            acessosModelList.forEach(e -> {
+                if (e.getPlataforma().equalsIgnoreCase("ST"))
                     run(e);
             });
         } else {
@@ -44,14 +44,14 @@ public class SocioTorcedorService {
 
     }
 
-    public void run(AcessoModel acessoModel) {
-        login(acessoModel);
+    public void run(CredenciaisModel acessosModel) {
+        login(acessosModel);
         goToExperiencias();
         goToExtrato();
         quit();
     }
 
-    private void login(AcessoModel acessoModel) {
+    private void login(CredenciaisModel acessosModel) {
         logger.registraLog("Iniciando o processo de login no site do Sócio Torcedor | Dia: " + dateUtility.getToday("dd/MM/yyyy HH:mm:ss"));
 
         while (true) {
@@ -66,12 +66,12 @@ public class SocioTorcedorService {
                 driver.findElement(By.xpath("//a[text()=' LOGIN ']")).click();
 
                 wait.until(ExpectedConditions.presenceOfElementLocated(By.id("mat-input-0")));
-                driver.findElement(By.id("mat-input-0")).sendKeys(acessoModel.getLogin());
-                logger.registraLog("Inserindo o e-mail: " + acessoModel.getLogin());
+                driver.findElement(By.id("mat-input-0")).sendKeys(acessosModel.getLogin());
+                logger.registraLog("Inserindo o e-mail: " + acessosModel.getLogin());
 
                 wait.until(ExpectedConditions.presenceOfElementLocated((By.id("mat-input-0"))));
-                driver.findElement(By.id("mat-input-1")).sendKeys(acessoModel.getSenha());
-                logger.registraLog("Inserindo a senha: " + new StringBuilder(acessoModel.getSenha()).replace(0, acessoModel.getSenha().length(), "*".repeat(acessoModel.getSenha().length())));
+                driver.findElement(By.id("mat-input-1")).sendKeys(acessosModel.getSenha());
+                logger.registraLog("Inserindo a senha: " + new StringBuilder(acessosModel.getSenha()).replace(0, acessosModel.getSenha().length(), "*".repeat(acessosModel.getSenha().length())));
 
                 wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[text()=' ENTRAR ']")));
                 driver.findElement(By.xpath("//button[text()=' ENTRAR ']")).click();
