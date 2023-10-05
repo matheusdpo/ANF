@@ -28,14 +28,16 @@ public class SocioTorcedorService {
     private final DataBase dataBase;
     private WebDriver driver;
     private WebDriverWait wait;
-
+    private static final String PLATAFORMA = "ST";
+    private static final String PATH_DOWNLOAD = "C:\\Workspace\\Downloads\\";
+    private static final String FORMAT = "dd/MM/yyyy HH:mm:ss";
 
     public void init() {
         List<CredenciaisModel> acessosModelList = dataBase.getAcessos();
 
         if (!acessosModelList.isEmpty()) {
             acessosModelList.forEach(e -> {
-                if (e.getPlataforma().equalsIgnoreCase("ST"))
+                if (e.getPlataforma().equalsIgnoreCase(PLATAFORMA))
                     run(e);
             });
         } else {
@@ -52,11 +54,11 @@ public class SocioTorcedorService {
     }
 
     private void login(CredenciaisModel acessosModel) {
-        logger.registraLog("Iniciando o processo de login no site do Sócio Torcedor | Dia: " + dateUtility.getToday("dd/MM/yyyy HH:mm:ss"));
+        logger.registraLog("Iniciando o processo de login no site do Sócio Torcedor | Dia: " + dateUtility.getToday(FORMAT));
 
         while (true) {
             try {
-                driver = seleniumUtility.getDriver(true, false, "C:\\Workspace\\Downloads\\");
+                driver = seleniumUtility.getDriver(true, false, PATH_DOWNLOAD);
                 wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
                 driver.get("https://sociotorcedor.com.br/");
