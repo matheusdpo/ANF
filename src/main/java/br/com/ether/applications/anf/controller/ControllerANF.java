@@ -1,6 +1,7 @@
 package br.com.ether.applications.anf.controller;
 
 import br.com.ether.applications.anf.services.ANFService;
+import br.com.ether.model.CredenciaisModel;
 import br.com.ether.model.DadosDBModel;
 import br.com.ether.repository.DataBase;
 import br.com.ether.utilities.DateUtility;
@@ -23,7 +24,13 @@ public class ControllerANF {
     private final DateUtility dateUtility;
     private final ANFService anfService;
 
-    @Scheduled(cron = "0 0 12 15 * *")
+    @Scheduled(cron = "0 0 4 * * *")
+    @PostConstruct
+    public void init() {
+        dataBase.connectDB();
+    }
+
+    @Scheduled(cron = "0 0 12 30 * *")
     public void run() {
         logger.registraLog("=============================================");
         logger.registraLog("Iniciando ANF | Mês: " + dateUtility.getToday("MM/yyyy"));
@@ -31,16 +38,14 @@ public class ControllerANF {
         List<DadosDBModel> dadosDBModelList = dataBase.getCasos();
 
         if (!dadosDBModelList.isEmpty()) {
-            dadosDBModelList.forEach(e -> anfService.run(e));
-        } else {
-            logger.registraLog("Não há notas fiscais para serem enviadas");
+            List<CredenciaisModel> acessosModelList = dataBase.getAcessos();
+            acessosModelList.forEach(e -> {
+                if (e.getPlataforma().equalsIgnoreCase("NF"))
+                    dadosDBModelList.forEach(d -> anfService.run(d, e));
+            });
         }
 
         logger.registraLog("Finalizando ANF | Mês: " + dateUtility.getToday("MM/yyyy"));
     }
 
-    @PostConstruct
-    public void init() {
-        dataBase.connectDB();
-    }
 }
