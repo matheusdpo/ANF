@@ -24,12 +24,14 @@ public class ControllerANF {
     private final DateUtility dateUtility;
     private final ANFService anfService;
 
-    @PostConstruct
+    //    @PostConstruct
     public void init() {
         dataBase.connectDB();
     }
 
-    @Scheduled(cron = "0 0 12 30 * *")
+
+    @PostConstruct
+    @Scheduled(cron = "0 30 12 20 * *")
     public void run() {
         logger.registraLog("=============================================");
         logger.registraLog("Iniciando ANF | Mês: " + dateUtility.getToday("MM/yyyy"));
@@ -46,5 +48,4 @@ public class ControllerANF {
 
         logger.registraLog("Finalizando ANF | Mês: " + dateUtility.getToday("MM/yyyy"));
     }
-
 }
