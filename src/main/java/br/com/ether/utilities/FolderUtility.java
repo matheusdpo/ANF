@@ -11,7 +11,12 @@ public class FolderUtility {
 
     public void isFolderExist(String path) {
         File file = new File(path);
-        if (!file.exists()) {
+        if (file.exists()) {//inicio if
+            System.out.println("essa pasta ja existe");
+        }//fim if
+
+        else {
+            System.out.println("essa pasta nao existe");
             file.mkdirs();
         }
     }
