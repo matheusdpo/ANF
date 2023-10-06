@@ -1837,3 +1837,908 @@ java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatem
 [INFO ] 2023-10-04 23:51:10.358 [main] ETHER - PASSWORD: ****
 [INFO ] 2023-10-04 23:51:10.793 [main] ETHER - Conexão com o banco de dados realizada com sucesso
 [INFO ] 2023-10-04 23:51:10.949 [main] EtherApplicationTests - Started EtherApplicationTests in 1.474 seconds (process running for 3.061)
+[INFO ] 2023-10-05 19:20:33.618 [main] AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [br.com.ether.anf.EtherApplicationTests]: EtherApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO ] 2023-10-05 19:20:33.748 [main] SpringBootTestContextBootstrapper - Found @SpringBootConfiguration br.com.ether.EtherApplication for test class br.com.ether.anf.EtherApplicationTests
+[INFO ] 2023-10-05 19:28:17.239 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 5496 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 19:28:17.245 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 19:28:18.458 [main] EtherApplication - Started EtherApplication in 1.724 seconds (process running for 3.107)
+[INFO ] 2023-10-05 19:37:14.893 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 13040 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 19:37:14.902 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 19:37:19.106 [main] WebDriverManager - Reading https://chromedriver.storage.googleapis.com/ to seek chromedriver
+[INFO ] 2023-10-05 19:37:20.142 [main] Downloader - Downloading https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/117.0.5938.149/win64/chromedriver-win64.zip
+[INFO ] 2023-10-05 19:37:21.053 [main] Downloader - Extracting driver from compressed file chromedriver-win64.zip
+[INFO ] 2023-10-05 19:37:21.237 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-05 19:37:22.509 [main] AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'controllerANF': Invocation of init method failed
+[INFO ] 2023-10-05 19:37:22.521 [main] ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[ERROR] 2023-10-05 19:37:22.551 [main] SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'controllerANF': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: cannot find Chrome binary 
+Host info: host: 'DESKTOP-GQGFCR4', ip: '192.168.0.186'
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--incognito, --disable-default-app, --accept-notifications, --remote-allow-origins=*], extensions: [], prefs: {download.default_directory: , download.prompt_for_download: false}}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [--incognito, --disable-default-app, --accept-notifications, --remote-allow-origins=*], extensions: [], prefs: {download.default_directory: , download.prompt_for_download: false}}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:106) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:165) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101) ~[selenium-chromium-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88) ~[selenium-chrome-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84) ~[selenium-chrome-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:73) ~[selenium-chrome-driver-4.8.3.jar:?]
+	at br.com.ether.utilities.SeleniumUtility.getDriver(SeleniumUtility.java:40) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.iniciar(ControllerANF.java:35) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	... 17 more
+[INFO ] 2023-10-05 19:39:57.702 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 11488 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 19:39:57.708 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 19:41:06.996 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-05 19:47:38.699 [main] AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'controllerANF': Invocation of init method failed
+[INFO ] 2023-10-05 19:47:38.718 [main] ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[ERROR] 2023-10-05 19:47:38.757 [main] SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'controllerANF': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: cannot find Chrome binary 
+Host info: host: 'DESKTOP-GQGFCR4', ip: '192.168.0.186'
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--incognito, --disable-default-app, --accept-notifications, --remote-allow-origins=*], extensions: [], prefs: {download.default_directory: , download.prompt_for_download: false}}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [--incognito, --disable-default-app, --accept-notifications, --remote-allow-origins=*], extensions: [], prefs: {download.default_directory: , download.prompt_for_download: false}}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:106) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:165) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101) ~[selenium-chromium-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88) ~[selenium-chrome-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84) ~[selenium-chrome-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:73) ~[selenium-chrome-driver-4.8.3.jar:?]
+	at br.com.ether.utilities.SeleniumUtility.getDriver(SeleniumUtility.java:40) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.iniciar(ControllerANF.java:35) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	... 17 more
+[INFO ] 2023-10-05 19:47:45.006 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 12212 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 19:47:45.011 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 19:47:47.717 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 19:47:47.745 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-05 19:47:49.334 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-05 19:47:54.718 [main] EtherApplication - Started EtherApplication in 10.219 seconds (process running for 11.566)
+[INFO ] 2023-10-05 19:58:07.469 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 11836 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 19:58:07.474 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 19:58:08.935 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 19:58:08.961 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[INFO ] 2023-10-05 19:59:02.504 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 6392 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 19:59:02.511 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 19:59:04.024 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 19:59:04.073 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-05 19:59:05.487 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-05 19:59:09.741 [main] EtherApplication - Started EtherApplication in 7.679 seconds (process running for 8.93)
+[INFO ] 2023-10-05 20:00:14.066 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 13228 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 20:00:14.071 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 20:00:15.413 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 20:00:15.437 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-05 20:00:17.039 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-05 20:00:22.956 [main] EtherApplication - Started EtherApplication in 9.322 seconds (process running for 10.664)
+[INFO ] 2023-10-05 20:04:44.843 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 13868 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 20:04:44.850 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 20:07:05.400 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 20:07:05.534 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[INFO ] 2023-10-05 20:12:46.885 [main] EtherApplication - Started EtherApplication in 482.889 seconds (process running for 484.699)
+[INFO ] 2023-10-05 20:12:46.898 [main] ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[INFO ] 2023-10-05 20:15:49.174 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 10828 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 20:15:49.180 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 20:17:40.070 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 20:17:40.199 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[INFO ] 2023-10-05 20:23:13.946 [main] EtherApplication - Started EtherApplication in 445.358 seconds (process running for 447.121)
+[INFO ] 2023-10-05 20:36:58.918 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 10856 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 20:36:58.924 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 20:37:00.290 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 20:37:00.319 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[INFO ] 2023-10-05 20:37:03.039 [main] EtherApplication - Started EtherApplication in 4.574 seconds (process running for 5.898)
+[INFO ] 2023-10-05 20:37:08.933 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 12720 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 20:37:08.939 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 20:37:27.545 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 20:37:27.675 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[INFO ] 2023-10-05 20:39:37.664 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 9412 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 20:39:37.672 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 20:39:39.310 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 20:39:39.342 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[INFO ] 2023-10-05 20:40:56.354 [main] EtherApplication - Started EtherApplication in 79.279 seconds (process running for 80.952)
+[INFO ] 2023-10-05 20:41:04.039 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 4528 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 20:41:04.046 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 20:41:05.646 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 20:41:05.683 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[INFO ] 2023-10-05 20:41:34.834 [main] EtherApplication - Started EtherApplication in 31.352 seconds (process running for 32.876)
+[INFO ] 2023-10-05 20:41:59.606 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 1108 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 20:41:59.612 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 20:42:01.316 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 20:42:01.366 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[INFO ] 2023-10-05 20:42:41.801 [main] EtherApplication - Started EtherApplication in 42.798 seconds (process running for 44.645)
+[INFO ] 2023-10-05 20:43:02.840 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 4904 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 20:43:02.846 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 20:43:04.480 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 20:43:04.517 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[INFO ] 2023-10-05 20:44:08.239 [main] EtherApplication - Started EtherApplication in 65.95 seconds (process running for 67.521)
+[INFO ] 2023-10-05 20:44:08.267 [main] ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[INFO ] 2023-10-05 20:45:42.745 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 11532 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 20:45:42.751 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 20:45:44.337 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 20:45:44.377 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[INFO ] 2023-10-05 20:46:29.842 [main] EtherApplication - Started EtherApplication in 47.703 seconds (process running for 49.257)
+[INFO ] 2023-10-05 20:46:39.624 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 12556 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 20:46:39.629 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 20:46:41.205 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 20:46:41.243 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-05 20:47:22.250 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[WARN ] 2023-10-05 20:47:29.139 [main] AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'controllerANF': Invocation of init method failed
+[INFO ] 2023-10-05 21:09:22.242 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 4272 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 21:09:22.248 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 21:09:25.468 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 21:09:25.487 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-05 21:09:53.075 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[WARN ] 2023-10-05 21:10:02.610 [main] AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'controllerANF': Invocation of init method failed
+[INFO ] 2023-10-05 21:10:07.105 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 12416 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 21:10:07.111 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 21:10:08.734 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 21:10:08.772 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-05 21:10:10.594 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[WARN ] 2023-10-05 21:13:37.834 [main] AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'controllerANF': Invocation of init method failed
+[INFO ] 2023-10-05 21:13:37.846 [main] ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[ERROR] 2023-10-05 21:13:37.878 [main] SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'controllerANF': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (590, 1671)
+  (Session info: chrome=117.0.5938.150)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e19e0ace261e06203e6c4877e2739b1a, clickElement {id=53638327F71E46F541F8553D9C107E68_element_27}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.150, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\phell\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57819}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57819/devtoo..., se:cdpVersion: 117.0.5938.150, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (e19e0ace261e06203e6c4877e2739b1a)] -> xpath: /html/body/div/main/div[5]/div[2]/div/div/p[3]/a]
+Session ID: e19e0ace261e06203e6c4877e2739b1a
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78) ~[selenium-remote-driver-4.8.3.jar:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.iniciar(ControllerANF.java:41) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	... 17 more
+[INFO ] 2023-10-05 21:13:42.788 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 9372 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 21:13:42.797 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 21:13:44.906 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 21:13:44.951 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-05 21:13:47.127 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[WARN ] 2023-10-05 21:14:00.655 [main] AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'controllerANF': Invocation of init method failed
+[INFO ] 2023-10-05 21:14:00.668 [main] ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[ERROR] 2023-10-05 21:14:00.696 [main] SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'controllerANF': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (590, 1671)
+  (Session info: chrome=117.0.5938.150)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b7363cea3c3794c66453b9a76e37ec2a, clickElement {id=CCED941499BB88CD9CA8238F1264C319_element_27}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.150, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\phell\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58000}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58000/devtoo..., se:cdpVersion: 117.0.5938.150, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b7363cea3c3794c66453b9a76e37ec2a)] -> xpath: /html/body/div/main/div[5]/div[2]/div/div/p[3]/a]
+Session ID: b7363cea3c3794c66453b9a76e37ec2a
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78) ~[selenium-remote-driver-4.8.3.jar:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.iniciar(ControllerANF.java:41) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	... 17 more
+[INFO ] 2023-10-05 21:15:08.787 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 14780 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 21:15:08.794 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 21:15:10.348 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 21:15:10.378 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-05 21:15:12.259 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[WARN ] 2023-10-05 21:20:00.574 [main] AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'controllerANF': Invocation of init method failed
+[INFO ] 2023-10-05 21:20:00.587 [main] ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[ERROR] 2023-10-05 21:20:00.625 [main] SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'controllerANF': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=117.0.5938.150)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cb08545ecdd70e2ad8710cd831d8b24a, findElement {using=xpath, value=/html/body/div/main/div[5]/div[2]/div/div/p[3]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.150, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\phell\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58098}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58098/devtoo..., se:cdpVersion: 117.0.5938.150, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cb08545ecdd70e2ad8710cd831d8b24a
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344) ~[selenium-remote-driver-4.8.3.jar:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.iniciar(ControllerANF.java:40) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	... 17 more
+[INFO ] 2023-10-05 21:20:11.026 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 11788 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 21:20:11.032 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 21:20:12.540 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 21:20:12.571 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-05 21:20:14.341 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-05 21:21:49.843 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 10276 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 21:21:49.848 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 21:21:51.106 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 21:21:51.132 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-05 21:21:52.502 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-05 21:22:00.593 [main] EtherApplication - Started EtherApplication in 11.196 seconds (process running for 12.437)
+[INFO ] 2023-10-05 21:31:11.723 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 7356 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 21:31:11.728 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 21:31:13.000 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 21:31:13.025 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-05 21:31:14.427 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-05 21:31:26.690 [main] EtherApplication - Started EtherApplication in 15.415 seconds (process running for 16.689)
+[INFO ] 2023-10-05 21:31:44.599 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 8172 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 21:31:44.604 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 21:31:45.892 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 21:31:45.919 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-05 21:31:47.479 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-05 21:31:55.702 [main] EtherApplication - Started EtherApplication in 11.544 seconds (process running for 12.797)
+[INFO ] 2023-10-05 21:34:09.912 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 5388 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 21:34:09.918 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 21:34:11.196 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 21:34:11.224 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-05 21:34:12.895 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[WARN ] 2023-10-05 21:34:20.654 [AsyncHttpClient-1-4] WebSocketHandler - onError
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254) ~[netty-buffer-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+[WARN ] 2023-10-05 21:34:20.666 [AsyncHttpClient-1-4] WebSocket - Connection reset
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254) ~[netty-buffer-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+[INFO ] 2023-10-05 21:34:21.068 [main] EtherApplication - Started EtherApplication in 11.598 seconds (process running for 12.868)
+[INFO ] 2023-10-05 21:44:38.140 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 15244 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 21:44:38.145 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 21:44:39.489 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 21:44:39.518 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-05 21:44:41.177 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[WARN ] 2023-10-05 21:44:53.799 [AsyncHttpClient-1-4] WebSocketHandler - onError
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254) ~[netty-buffer-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+[WARN ] 2023-10-05 21:44:53.809 [AsyncHttpClient-1-4] WebSocket - Connection reset
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254) ~[netty-buffer-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+[INFO ] 2023-10-05 21:44:54.153 [main] EtherApplication - Started EtherApplication in 16.482 seconds (process running for 17.962)
+[INFO ] 2023-10-05 22:02:17.583 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 13668 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 22:02:17.588 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 22:02:18.923 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 22:02:18.952 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-05 22:02:20.578 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[WARN ] 2023-10-05 22:02:32.480 [main] AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'controllerANF': Invocation of init method failed
+[INFO ] 2023-10-05 22:02:32.493 [main] ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[ERROR] 2023-10-05 22:02:32.531 [main] SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'controllerANF': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="liveresults-sports-immersive__match-fullpage"]/div/div[2]/div[4]/div[1]/div[3]/div/div/div/div[1]/div[2]/div/div[1]/div[2]"}
+  (Session info: chrome=117.0.5938.150)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5b9d36d0ce7ca1edc45be98332b640d6, findElement {using=xpath, value=//*[@id="liveresults-sports-immersive__match-fullpage"]/div/div[2]/div[4]/div[1]/div[3]/div/div/div/div[1]/div[2]/div/div[1]/div[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.150, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\phell\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60561}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60561/devtoo..., se:cdpVersion: 117.0.5938.150, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5b9d36d0ce7ca1edc45be98332b640d6
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344) ~[selenium-remote-driver-4.8.3.jar:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.iniciar(ControllerANF.java:47) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	... 17 more
+[INFO ] 2023-10-05 22:03:09.389 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 14548 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 22:03:09.396 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 22:03:11.088 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 22:03:11.118 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-05 22:03:12.980 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[WARN ] 2023-10-05 22:04:09.563 [main] AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'controllerANF': Invocation of init method failed
+[INFO ] 2023-10-05 22:04:09.589 [main] ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[ERROR] 2023-10-05 22:04:09.623 [main] SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'controllerANF': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="liveresults-sports-immersive__match-fullpage"]/div/div[2]/div[4]/div[1]/div[3]/div/div/div/div[1]/div[2]/div/div[1]/div[2]"}
+  (Session info: chrome=117.0.5938.150)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2d0d11beef837cf8bba8f1ecd79fea2b, findElement {using=xpath, value=//*[@id="liveresults-sports-immersive__match-fullpage"]/div/div[2]/div[4]/div[1]/div[3]/div/div/div/div[1]/div[2]/div/div[1]/div[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.150, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\phell\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60679}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60679/devtoo..., se:cdpVersion: 117.0.5938.150, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2d0d11beef837cf8bba8f1ecd79fea2b
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344) ~[selenium-remote-driver-4.8.3.jar:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.iniciar(ControllerANF.java:47) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	... 17 more
+[INFO ] 2023-10-05 22:04:21.547 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 6368 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 22:04:21.552 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 22:04:23.036 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 22:04:23.067 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-05 22:04:24.866 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[WARN ] 2023-10-05 22:09:28.726 [main] AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'controllerANF': Invocation of init method failed
+[INFO ] 2023-10-05 22:09:28.738 [main] ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[ERROR] 2023-10-05 22:09:28.770 [main] SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'controllerANF': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=117.0.5938.150)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9b7a65d6b6a16c86713dbb1829711311, findElement {using=xpath, value=//*[@id="liveresults-sports-immersive__match-fullpage"]/div/div[2]/div[4]/div[1]/div[3]/div/div/div/div[1]/div[2]/div/div[1]/div[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.150, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\phell\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60816}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60816/devtoo..., se:cdpVersion: 117.0.5938.150, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9b7a65d6b6a16c86713dbb1829711311
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344) ~[selenium-remote-driver-4.8.3.jar:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.iniciar(ControllerANF.java:47) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	... 17 more
+[INFO ] 2023-10-05 22:10:07.634 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 11152 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 22:10:07.640 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 22:10:10.686 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 22:10:10.705 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-05 22:10:12.480 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[WARN ] 2023-10-05 22:10:15.155 [main] AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'controllerANF': Invocation of init method failed
+[INFO ] 2023-10-05 22:10:15.175 [main] ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[ERROR] 2023-10-05 22:10:15.227 [main] SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'controllerANF': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=117.0.5938.150)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0ef822f2a3e6da2720124f8659911e07, findElement {using=id, value=download-alt-win}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.150, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\phell\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61201}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61201/devtoo..., se:cdpVersion: 117.0.5938.150, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0ef822f2a3e6da2720124f8659911e07
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344) ~[selenium-remote-driver-4.8.3.jar:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.iniciar(ControllerANF.java:42) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	... 17 more
+[INFO ] 2023-10-05 22:11:05.637 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 13492 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 22:11:05.642 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 22:11:07.038 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 22:11:07.066 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-05 22:11:08.944 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-05 22:55:45.187 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 12396 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 22:55:45.192 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 22:55:46.482 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 22:55:46.512 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-05 22:55:48.227 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-05 22:56:00.174 [main] EtherApplication - Started EtherApplication in 15.448 seconds (process running for 16.722)
+[INFO ] 2023-10-05 22:59:16.059 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 14276 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 22:59:16.065 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 22:59:17.363 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 22:59:17.391 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-05 22:59:18.910 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-05 22:59:32.625 [main] EtherApplication - Started EtherApplication in 17.072 seconds (process running for 18.439)
+[INFO ] 2023-10-05 23:01:03.713 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 12884 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 23:01:03.719 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 23:01:04.990 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 23:01:05.017 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-05 23:01:06.610 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-05 23:01:19.926 [main] EtherApplication - Started EtherApplication in 16.65 seconds (process running for 17.962)
+[INFO ] 2023-10-05 23:02:51.972 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 15168 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 23:02:51.978 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 23:02:53.375 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 23:02:53.404 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-05 23:02:55.291 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-05 23:03:06.823 [main] EtherApplication - Started EtherApplication in 15.339 seconds (process running for 16.62)
+[INFO ] 2023-10-05 23:15:59.901 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 15352 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 23:15:59.906 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 23:16:02.392 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 23:16:02.409 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-05 23:16:03.927 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[WARN ] 2023-10-05 23:16:35.034 [main] AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'controllerANF': Invocation of init method failed
+[INFO ] 2023-10-05 23:16:35.044 [main] ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[ERROR] 2023-10-05 23:16:35.068 [main] SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'controllerANF': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //a[text()=' LOGIN '] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87) ~[selenium-support-4.8.3.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231) ~[selenium-support-4.8.3.jar:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.iniciar(ControllerANF.java:45) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	... 17 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()=' LOGIN ']"}
+  (Session info: chrome=117.0.5938.150)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [db275448783dfea234cc1c34135e3f49, findElement {using=xpath, value=//a[text()=' LOGIN ']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.150, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\phell\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49385}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49385/devtoo..., se:cdpVersion: 117.0.5938.150, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: db275448783dfea234cc1c34135e3f49
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174) ~[selenium-support-4.8.3.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171) ~[selenium-support-4.8.3.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208) ~[selenium-support-4.8.3.jar:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.iniciar(ControllerANF.java:45) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	... 17 more
+[INFO ] 2023-10-05 23:28:37.574 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 7460 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 23:28:37.579 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 23:28:38.910 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 23:28:38.936 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-05 23:28:40.622 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[WARN ] 2023-10-05 23:29:11.082 [main] AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'controllerANF': Invocation of init method failed
+[INFO ] 2023-10-05 23:29:11.093 [main] ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[ERROR] 2023-10-05 23:29:11.123 [main] SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'controllerANF': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //a[text()=' LOGIN '] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87) ~[selenium-support-4.8.3.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231) ~[selenium-support-4.8.3.jar:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.iniciar(ControllerANF.java:43) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	... 17 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()=' LOGIN ']"}
+  (Session info: chrome=117.0.5938.150)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3a1545ce538ade069607e7d4784922c0, findElement {using=xpath, value=//a[text()=' LOGIN ']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.150, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\phell\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49903}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49903/devtoo..., se:cdpVersion: 117.0.5938.150, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a1545ce538ade069607e7d4784922c0
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174) ~[selenium-support-4.8.3.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171) ~[selenium-support-4.8.3.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208) ~[selenium-support-4.8.3.jar:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.iniciar(ControllerANF.java:43) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	... 17 more
+[INFO ] 2023-10-05 23:30:58.537 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 14788 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 23:30:58.543 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 23:30:59.973 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 23:31:00.000 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-05 23:31:01.539 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-05 23:31:03.647 [main] EtherApplication - Started EtherApplication in 5.579 seconds (process running for 6.877)
+[INFO ] 2023-10-05 23:36:04.137 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 3728 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 23:36:04.142 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 23:36:05.378 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 23:36:05.406 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-05 23:36:06.985 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-05 23:36:09.314 [main] EtherApplication - Started EtherApplication in 5.61 seconds (process running for 6.955)
+[INFO ] 2023-10-05 23:37:36.231 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 10636 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-05 23:37:36.237 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-05 23:37:37.640 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-05 23:37:37.667 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-05 23:37:39.271 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-05 23:37:41.681 [main] EtherApplication - Started EtherApplication in 5.908 seconds (process running for 7.178)
+[INFO ] 2023-10-06 00:04:10.415 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 2888 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-06 00:04:10.420 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-06 00:04:11.701 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-06 00:04:11.725 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-06 00:04:13.350 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-06 00:04:15.933 [main] EtherApplication - Started EtherApplication in 6.033 seconds (process running for 7.591)
