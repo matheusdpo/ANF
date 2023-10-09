@@ -4,12 +4,12 @@ import br.com.ether.applications.anf.services.ANFService;
 import br.com.ether.model.CredenciaisModel;
 import br.com.ether.model.DadosDBModel;
 import br.com.ether.repository.DataBase;
+import br.com.ether.utilities.Aguardar;
 import br.com.ether.utilities.DateUtility;
 import br.com.ether.utilities.LogUtility;
 import br.com.ether.utilities.SeleniumUtility;
 import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
-import org.apache.hc.client5.http.impl.auth.SystemDefaultCredentialsProvider;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -20,7 +20,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Controller;
 
-import java.sql.SQLOutput;
 import java.time.Duration;
 import java.util.List;
 
@@ -34,24 +33,105 @@ public class ControllerANF {
     private final LogUtility logger;
     private final DateUtility dateUtility;
     private final ANFService anfService;
+    private final Aguardar aguardar;
 
     @PostConstruct
-    public void iniciar() {
+    public void iniciar() throws InterruptedException {
         WebDriver driver = seleniumUtility.getDriver(false, false, "E:\\mapeamentoSelerium");
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         driver.manage().window().maximize();
         driver.get("https://www.nfse.gov.br/EmissorNacional/Notas/Visualizar/Index/35541022251335957000120000000000000123076587295936");
+
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Inscricao")));
         WebElement usuario = driver.findElement(By.id("Inscricao"));
         usuario.sendKeys("");
+
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Senha")));
         WebElement senha = driver.findElement(By.id("Senha"));
         senha.sendKeys("");
+
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/section/div/div/div[2]/div[2]/div[1]/div/form/div[3]/button")));
         WebElement botaoLogin = driver.findElement(By.xpath("/html/body/section/div/div/div[2]/div[2]/div[1]/div/form/div[3]/button"));
         botaoLogin.click();
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("btnNovaNFSe")));
+        WebElement novanf = driver.findElement(By.id("btnNovaNFSe"));
+        novanf.click();
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("DataCompetencia")));
+        WebElement campoData = driver.findElement(By.id("DataCompetencia"));
+        campoData.sendKeys(dateUtility.getToday("dd/MM/yyyy"), Keys.ENTER);
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"pnlTomador\"]/div[1]/div/div")));
+        WebElement tomadorLocal = driver.findElement(By.xpath("//*[@id=\"pnlTomador\"]/div[1]/div/div"));
+        tomadorLocal.click();
+
+        aguardar.segundos(4);
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[contains(text(), 'Brasil')]")));
+        WebElement brasil = driver.findElement(By.xpath("//label[contains(text(), 'Brasil')]"));
+        brasil.click();
+
+        aguardar.segundos(4);
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Tomador_Inscricao")));
+        WebElement cnpjoto = driver.findElement(By.id("Tomador_Inscricao"));
+        cnpjoto.sendKeys("");
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("btn_Tomador_Inscricao_pesquisar")));
+        WebElement cnpjotoPesquisar = driver.findElement(By.id("btn_Tomador_Inscricao_pesquisar"));
+        cnpjotoPesquisar.click();
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Tomador_InscricaoMunicipal")));
+        WebElement inscricaoMunicipal = driver.findElement(By.id("Tomador_InscricaoMunicipal"));
+        inscricaoMunicipal.sendKeys("");
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Tomador_Telefone")));
+        WebElement tomadorTel = driver.findElement(By.id("Tomador_Telefone"));
+        tomadorTel.sendKeys("");
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Tomador_Email")));
+        WebElement tomadorEmail = driver.findElement(By.id("Tomador_Email"));
+        tomadorEmail.sendKeys("");
+
+        //aguardar.segundos(4);
+
+        //wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"Tomador_EnderecoNacional_CEP\"]")));
+        //WebElement tomadorCEP = driver.findElement(By.xpath("//*[@id=\"Tomador_EnderecoNacional_CEP\"]"));
+
+        //driver.findElement(By.xpath("//div[@id=\"pnlTomadorEndereco\" and contains(@style, 'display: none;')]"));
+        //tomadorCEP.sendKeys("25561231");
+
+        //wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"Tomador_EnderecoNacional_CEP\"]")));
+        //WebElement cepPesquisar = driver.findElement(By.xpath("//*[@id=\"btn_Tomador_EnderecoNacional_CEP\"]"));
+        //cepPesquisar.click();
+
+        //wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Tomador_EnderecoNacional_Numero")));
+        //WebElement numeroCasa = driver.findElement(By.id("Tomador_EnderecoNacional_Numero"));
+        //numeroCasa.sendKeys("13");
+
+        aguardar.segundos(3);
+
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("btnAvancar")));
+        WebElement avancarPessoas = driver.findElement(By.id("btnAvancar"));
+        avancarPessoas.click();
+
+        aguardar.segundos(5);
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"pnlLocalPrestacao\"]/div/div/div[2]/div/span[1]/span[1]/span")));
+        WebElement clickMunicipio = driver.findElement(By.xpath("//*[@id=\"pnlLocalPrestacao\"]/div/div/div[2]/div/span[1]/span[1]/span"));
+        clickMunicipio.click();
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/span/span/span[1]/input")));
+        WebElement sendMunicipio = driver.findElement(By.xpath("/html/body/span/span/span[1]/input"));
+        sendMunicipio.sendKeys("");
+
+        aguardar.segundos(5);
+
+        driver.findElement(By.id("select2-LocalPrestacao_CodigoMunicipioPrestacao-results")).click();
+
+        System.out.println("a");
 
 
 
