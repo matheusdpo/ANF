@@ -14,6 +14,4 @@ public class DateUtility {
         //retorna dia de hoje
         return new SimpleDateFormat(format).format(new Date());
     }
-
-
 }
