@@ -14,4 +14,5 @@ public class DadosHistoricoModel {
     private String data_da_emissao;
     private String valor;
     private String chave;
+    private String base64;
 }
