@@ -100,7 +100,7 @@ public class ControllerANF {
         //WebElement tomadorCEP = driver.findElement(By.xpath("//*[@id=\"Tomador_EnderecoNacional_CEP\"]"));
 
         //driver.findElement(By.xpath("//div[@id=\"pnlTomadorEndereco\" and contains(@style, 'display: none;')]"));
-        //tomadorCEP.sendKeys("25561231");
+        //tomadorCEP.sendKeys("");
 
         //wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"Tomador_EnderecoNacional_CEP\"]")));
         //WebElement cepPesquisar = driver.findElement(By.xpath("//*[@id=\"btn_Tomador_EnderecoNacional_CEP\"]"));
@@ -132,6 +132,40 @@ public class ControllerANF {
         driver.findElement(By.id("select2-LocalPrestacao_CodigoMunicipioPrestacao-results")).click();
 
         System.out.println("a");
+
+        aguardar.segundos(5);
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"pnlServicoPrestado\"]/div/div[1]/div/div/span[1]/span[1]/span")));
+        WebElement clickCodigo = driver.findElement(By.xpath("//*[@id=\"pnlServicoPrestado\"]/div/div[1]/div/div/span[1]/span[1]/span"));
+        clickCodigo.click();
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/span/span/span[1]/input")));
+        WebElement sendCodigo = driver.findElement(By.xpath("/html/body/span/span/span[1]/input"));
+        sendCodigo.sendKeys("Análise e desenvolvimento de sistemas");
+
+        aguardar.segundos(5);
+
+        driver.findElement(By.xpath("//*[@id=\"select2-ServicoPrestado_CodigoTributacaoNacional-results\"]/li[1]")).click();
+
+        System.out.println("funfou bb");
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[contains(text(), 'Não')]")));
+        WebElement clickServico = driver.findElement(By.xpath("//label[contains(text(), 'Não')]"));
+        clickServico.click();
+
+        aguardar.segundos(5);
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("ServicoPrestado_Descricao")));
+        WebElement clickDescricao = driver.findElement(By.id("ServicoPrestado_Descricao"));
+        clickDescricao.click();
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("ServicoPrestado_Descricao")));
+        WebElement sendDescricao = driver.findElement(By.id("ServicoPrestado_Descricao"));
+        sendDescricao.sendKeys("Clube de Regatas do Flamengo");
+
+
+
+
 
 
 
