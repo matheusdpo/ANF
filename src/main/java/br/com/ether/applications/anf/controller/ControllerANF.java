@@ -44,11 +44,11 @@ public class ControllerANF {
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Inscricao")));
         WebElement usuario = driver.findElement(By.id("Inscricao"));
-        usuario.sendKeys("");
+        usuario.sendKeys("51335957000120");
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Senha")));
         WebElement senha = driver.findElement(By.id("Senha"));
-        senha.sendKeys("");
+        senha.sendKeys("#FazoL13");
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/section/div/div/div[2]/div[2]/div[1]/div/form/div[3]/button")));
         WebElement botaoLogin = driver.findElement(By.xpath("/html/body/section/div/div/div[2]/div[2]/div[1]/div/form/div[3]/button"));
@@ -76,7 +76,7 @@ public class ControllerANF {
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Tomador_Inscricao")));
         WebElement cnpjoto = driver.findElement(By.id("Tomador_Inscricao"));
-        cnpjoto.sendKeys("");
+        cnpjoto.sendKeys("15149076000150");
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("btn_Tomador_Inscricao_pesquisar")));
         WebElement cnpjotoPesquisar = driver.findElement(By.id("btn_Tomador_Inscricao_pesquisar"));
@@ -84,17 +84,18 @@ public class ControllerANF {
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Tomador_InscricaoMunicipal")));
         WebElement inscricaoMunicipal = driver.findElement(By.id("Tomador_InscricaoMunicipal"));
-        inscricaoMunicipal.sendKeys("");
+        inscricaoMunicipal.sendKeys("40028922");
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Tomador_Telefone")));
         WebElement tomadorTel = driver.findElement(By.id("Tomador_Telefone"));
-        tomadorTel.sendKeys("");
+        tomadorTel.sendKeys("40028922");
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Tomador_Email")));
         WebElement tomadorEmail = driver.findElement(By.id("Tomador_Email"));
-        tomadorEmail.sendKeys("");
+        tomadorEmail.sendKeys("flamengo@gmail.com");
 
-        //aguardar.segundos(4);
+
+        aguardar.segundos(4);
 
         //wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"Tomador_EnderecoNacional_CEP\"]")));
         //WebElement tomadorCEP = driver.findElement(By.xpath("//*[@id=\"Tomador_EnderecoNacional_CEP\"]"));
@@ -167,10 +168,34 @@ public class ControllerANF {
         WebElement avancarServico = driver.findElement(By.xpath("/html/body/div[1]/form/div[7]/button"));
         avancarServico.click();
 
+        aguardar.segundos(2);
 
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Valores_ValorServico")));
+        WebElement clickValor = driver.findElement(By.id("Valores_ValorServico"));
+        clickValor.click();
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Valores_ValorServico")));
+        WebElement sendValor = driver.findElement(By.id("Valores_ValorServico"));
+        sendValor.sendKeys("000");
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Valores_ValorServico")));
+        WebElement clickNenhumValor = driver.findElement(By.xpath("//*[@id=\"pnlOpcaoParaMEI\"]/div/div/label"));
+        clickNenhumValor.click();
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[1]/form/div[7]/button")));
+        WebElement avancarValores = driver.findElement(By.xpath("/html/body/div[1]/form/div[7]/button"));
+        avancarValores.click();
+
+        System.out.println("Revisao da NFS-e");
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("btnProsseguir")));
+        WebElement emitirNota = driver.findElement(By.id("btnProsseguir"));
+        emitirNota.click();
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[text()='Baixar XML']")));
+        WebElement baixarNota = driver.findElement(By.xpath("//span[text()='Baixar XML']"));
+        baixarNota.click();
 
     }
 
