@@ -125,7 +125,7 @@ public class ControllerANF {
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/span/span/span[1]/input")));
         WebElement sendMunicipio = driver.findElement(By.xpath("/html/body/span/span/span[1]/input"));
-        sendMunicipio.sendKeys("");
+        sendMunicipio.sendKeys("Taubaté");
 
         aguardar.segundos(5);
 
@@ -163,6 +163,9 @@ public class ControllerANF {
         WebElement sendDescricao = driver.findElement(By.id("ServicoPrestado_Descricao"));
         sendDescricao.sendKeys("Clube de Regatas do Flamengo");
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[1]/form/div[7]/button")));
+        WebElement avancarServico = driver.findElement(By.xpath("/html/body/div[1]/form/div[7]/button"));
+        avancarServico.click();
 
 
 
