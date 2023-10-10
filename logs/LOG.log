@@ -5202,3 +5202,116 @@ Session ID: 28e2836b1761b2680acb797b80425052
 [INFO ] 2023-10-09 23:28:31.302 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
 [WARN ] 2023-10-09 23:28:32.778 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
 [INFO ] 2023-10-09 23:29:15.158 [main] EtherApplication - Started EtherApplication in 45.343 seconds (process running for 46.511)
+[INFO ] 2023-10-10 16:02:21.371 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 5388 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-10 16:02:21.379 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 16:02:24.172 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-10 16:02:24.191 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-10 16:02:27.304 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-10 18:18:27.681 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 2680 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-10 18:18:27.686 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 18:18:29.990 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-10 18:18:30.007 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-10 18:18:31.577 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[WARN ] 2023-10-10 18:18:47.322 [main] AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'controllerANF': Invocation of init method failed
+[INFO ] 2023-10-10 18:18:47.332 [main] ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[ERROR] 2023-10-10 18:18:47.361 [main] SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'controllerANF': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button id="btnAvancar" type="submit" class="btn btn-lg btn-primary direita has-spin">...</button> is not clickable at point (1145, 547). Other element would receive the click: <div class="jconfirm-cell">...</div>
+  (Session info: chrome=117.0.5938.150)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1e9760b60bd2bcb8a3516625fd1416d8, clickElement {id=ADE6EBAAAFD7DEC49C7E33328E86E72F_element_269}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.150, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\phell\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54854}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54854/devtoo..., se:cdpVersion: 117.0.5938.150, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (1e9760b60bd2bcb8a3516625fd1416d8)] -> id: btnAvancar]
+Session ID: 1e9760b60bd2bcb8a3516625fd1416d8
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78) ~[selenium-remote-driver-4.8.3.jar:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.iniciar(ControllerANF.java:118) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	... 17 more
+[INFO ] 2023-10-10 18:19:21.620 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 14100 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-10 18:19:21.627 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 18:19:23.008 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-10 18:19:23.036 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-10 18:19:24.659 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-10 18:20:06.396 [main] EtherApplication - Started EtherApplication in 45.263 seconds (process running for 46.76)
+[INFO ] 2023-10-10 18:25:38.064 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 11836 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-10 18:25:38.070 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 18:25:39.714 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-10 18:25:39.755 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-10 18:25:41.765 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-10 18:32:49.680 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 10708 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-10 18:32:49.686 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 18:32:51.276 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-10 18:32:51.304 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-10 18:32:53.081 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-10 18:35:22.599 [main] EtherApplication - Started EtherApplication in 153.495 seconds (process running for 155.197)
+[INFO ] 2023-10-10 18:35:30.750 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 1980 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-10 18:35:30.755 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 18:35:32.246 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-10 18:35:32.275 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-10 18:35:33.987 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-10 18:36:18.361 [main] EtherApplication - Started EtherApplication in 48.094 seconds (process running for 49.51)
+[INFO ] 2023-10-10 18:49:22.899 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 13008 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-10 18:49:22.905 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 18:49:24.416 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-10 18:49:24.470 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-10 18:49:26.669 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-10 18:51:54.050 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 6608 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-10 18:51:54.056 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 18:51:55.744 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-10 18:51:55.779 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-10 18:51:57.625 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-10 18:57:05.185 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 14280 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-10 18:57:05.191 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 18:57:06.526 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-10 18:57:06.553 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-10 18:57:08.222 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-10 19:04:56.407 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 11584 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-10 19:04:56.416 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 19:04:58.003 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-10 19:04:58.034 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-10 19:04:59.889 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-10 19:12:05.767 [main] EtherApplication - Starting EtherApplication using Java 21 with PID 2556 (E:\meus\ANF\target\classes started by phell in E:\meus\ANF)
+[INFO ] 2023-10-10 19:12:05.773 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 19:12:07.075 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-10 19:12:07.112 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\phell\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-10 19:12:08.705 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-10 19:12:52.619 [main] EtherApplication - Started EtherApplication in 47.312 seconds (process running for 48.651)
+[INFO ] 2023-10-10 19:14:15.072 [main] AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [br.com.ether.anf.EtherApplicationTests]: EtherApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO ] 2023-10-10 19:14:15.216 [main] SpringBootTestContextBootstrapper - Found @SpringBootConfiguration br.com.ether.EtherApplication for test class br.com.ether.anf.EtherApplicationTests
