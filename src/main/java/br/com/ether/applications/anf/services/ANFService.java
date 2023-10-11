@@ -15,6 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.stereotype.Component;
 
 import java.time.Duration;
+import java.time.Instant;
 import java.util.List;
 
 @Component
@@ -54,6 +55,8 @@ public class ANFService {
 
         try {
             while (true) {
+                Instant start = Instant.now();
+
                 login(credenciaisModel);
 
                 driver.get(LINK_EMITIR);
@@ -199,6 +202,10 @@ public class ANFService {
                 logger.registraLog("Nota fiscal emitida com sucesso");
 
                 driver.quit();
+
+                Instant end = Instant.now();
+                Duration timeElapsed = Duration.between(start, end);
+                logger.registraLog("Tempo de execução: " + timeElapsed.toHours() + ":" + timeElapsed.toMinutes() + ":" + timeElapsed.toSeconds());
                 break;
             }
         } catch (Exception e) {
@@ -207,6 +214,8 @@ public class ANFService {
             aguardar.minutos(1);
             driver.quit();
         }
+
+        logger.registraLog("Capturando informações");
 
         String chave = "";
         String base64 = "";
@@ -223,12 +232,15 @@ public class ANFService {
             caminho = folderUtility.moveFile(PATH_DOWNLOAD_WINDOWS, PATH_SAVE_NF, OS);
         }
 
+        logger.registraLog("Chave: " + chave);
+        logger.registraLog("Caminho: " + caminho);
+
         DadosHistoricoModel dadosHistoricoModel = DadosHistoricoModel.builder()
                 .cnpj(credenciaisModel.getLogin())
                 .data_da_emissao(dateUtility.getToday("dd/MM/yyyy"))
                 .valor(dadosDBModel.getValor_nf())
                 .chave(chave)
-                .base64(base64)
+//                .base64(base64)
                 .build();
 
         dataBase.insertHistorico(dadosHistoricoModel);
@@ -243,9 +255,9 @@ public class ANFService {
                 emailUtility.sendMail(
                         "NF mês " + dateUtility.getToday("MM/yyyy") + " | Yank! Solutions",
                         BODY,
+                        "joaopimentelv@gmail.com",
+                        "polandmafia01@gmail.com",
                         "matheusoliveira1991@hotmail.com",
-                        "",
-                        "",
                         finalCaminho, e);
         });
     }
@@ -257,9 +269,9 @@ public class ANFService {
         while (true) {
             try {
                 if (OS.equalsIgnoreCase("linux"))
-                    driver = seleniumUtility.getDriver(false, false, PATH_DOWNLOAD_LINUX);
+                    driver = seleniumUtility.getDriver(true, false, PATH_DOWNLOAD_LINUX);
                 else
-                    driver = seleniumUtility.getDriver(false, false, PATH_DOWNLOAD_WINDOWS);
+                    driver = seleniumUtility.getDriver(true, false, PATH_DOWNLOAD_WINDOWS);
 
                 wait = new WebDriverWait(driver, Duration.ofSeconds(30));
                 driver.manage().window().maximize();
