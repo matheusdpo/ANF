@@ -47,7 +47,7 @@ public class ANFService {
             + "<p>Enviamos a seguir a nota fiscal referente aos serviços prestados.</p>"
             + "<p>Por favor, encontre o arquivo da nota fiscal em anexo a este email.</p>"
             + "<p>Caso tenha alguma dúvida ou necessite de mais informações, não hesite em nos contatar.</p>"
-            + "<p>Atenciosamente,<br>Sua Empresa</p>"
+            + "<p>Atenciosamente,<br>Matheus P. Oliveira</p>"
             + "<p><i>Nota: Este é um email automático. Por favor, não responda a este email.</i></p>"
             + "</body></html>";
 
