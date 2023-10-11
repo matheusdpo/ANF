@@ -6,7 +6,6 @@ import br.com.ether.model.DadosDBModel;
 import br.com.ether.repository.DataBase;
 import br.com.ether.utilities.DateUtility;
 import br.com.ether.utilities.LogUtility;
-import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
