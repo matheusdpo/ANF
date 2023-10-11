@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class EtherApplicationTests {
     @Test
     void contextLoads() {
-        System.out.println("test");
+        System.out.println("teste");
     }
 
 }
