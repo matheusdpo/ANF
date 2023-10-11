@@ -16880,3 +16880,15 @@ java.net.SocketException: Connection reset
 [INFO ] 2023-10-10 23:03:43.394 [scheduling-1] ETHER - USERNAME: root
 [INFO ] 2023-10-10 23:03:43.394 [scheduling-1] ETHER - PASSWORD: ****
 [INFO ] 2023-10-10 23:03:43.420 [scheduling-1] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 23:15:01.030 [main] AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [br.com.ether.anf.EtherApplicationTests]: EtherApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO ] 2023-10-10 23:15:01.158 [main] SpringBootTestContextBootstrapper - Found @SpringBootConfiguration br.com.ether.EtherApplication for test class br.com.ether.anf.EtherApplicationTests
+[INFO ] 2023-10-10 23:16:41.065 [main] AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [br.com.ether.anf.EtherApplicationTests]: EtherApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO ] 2023-10-10 23:16:41.204 [main] SpringBootTestContextBootstrapper - Found @SpringBootConfiguration br.com.ether.EtherApplication for test class br.com.ether.anf.EtherApplicationTests
+[INFO ] 2023-10-10 23:16:41.791 [main] EtherApplicationTests - Starting EtherApplicationTests using Java 19.0.2 with PID 2896 (started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-10 23:16:41.793 [main] EtherApplicationTests - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 23:16:42.686 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-10 23:16:42.687 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-10 23:16:42.687 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-10 23:16:42.687 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-10 23:16:43.249 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 23:16:43.430 [main] EtherApplicationTests - Started EtherApplicationTests in 1.956 seconds (process running for 3.891)
