@@ -14754,3 +14754,2054 @@ com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long
 [INFO ] 2023-10-10 21:46:15.998 [main] ETHER - USERNAME: root
 [INFO ] 2023-10-10 21:46:15.998 [main] ETHER - PASSWORD: ****
 [INFO ] 2023-10-10 21:46:16.011 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 21:58:00.373 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 15496 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-10 21:58:00.379 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 21:58:01.098 [main] ETHER - =============================================
+[INFO ] 2023-10-10 21:58:01.101 [main] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 21:58:01.101 [main] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 21:58:01.101 [main] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 21:58:01.101 [main] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[ERROR] 2023-10-10 21:58:01.102 [main] ETHER - Erro ao consultar o banco de dados
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+	at br.com.ether.repository.DataBase.select(DataBase.java:155) ~[classes/:?]
+	at br.com.ether.repository.DataBase.getCasos(DataBase.java:73) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:32) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-10 21:58:01.114 [main] ETHER - Tentando novamente em 1 minuto
+[INFO ] 2023-10-10 22:03:44.420 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 7592 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-10 22:03:44.427 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 22:03:45.227 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-10 22:03:45.227 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-10 22:03:45.227 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-10 22:03:45.227 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-10 22:03:45.797 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 22:03:46.031 [main] EtherApplication - Started EtherApplication in 2.007 seconds (process running for 3.319)
+[INFO ] 2023-10-10 22:03:47.012 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-10 22:03:47.014 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:03:47.014 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 22:03:47.014 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:03:47.014 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-10 22:03:47.046 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:03:47.046 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:03:47.046 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:03:47.046 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:03:47.049 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-10 22:03:47.049 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-10 22:03:48.370 [scheduling-1] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-10 22:03:48.395 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-10 22:03:50.569 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-10 22:03:52.076 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-10 22:03:52.253 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-10 22:04:32.236 [scheduling-1] ETHER - Nota fiscal emitida com sucesso
+[WARN ] 2023-10-10 22:04:32.316 [AsyncHttpClient-1-4] WebSocketHandler - onError
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254) ~[netty-buffer-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+[WARN ] 2023-10-10 22:04:32.337 [AsyncHttpClient-1-4] WebSocket - Connection reset
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254) ~[netty-buffer-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+[INFO ] 2023-10-10 22:04:32.509 [scheduling-1] ETHER - Tempo de execução: 0:0:45
+[INFO ] 2023-10-10 22:04:32.509 [scheduling-1] ETHER - Capturando informações
+[INFO ] 2023-10-10 22:04:32.545 [scheduling-1] ETHER - Chave: 35541022251335957000120000000000000923103806069642
+[INFO ] 2023-10-10 22:04:32.545 [scheduling-1] ETHER - Caminho: C:\Users\mathe\Área de Trabalho\ANF\NF\10-23\
+[INFO ] 2023-10-10 22:04:32.547 [scheduling-1] ETHER - Iniciando a inserção de dados no banco de dados
+[INFO ] 2023-10-10 22:04:32.547 [scheduling-1] ETHER - INSERT: INSERT INTO historico_notas (cnpj, data_da_emissao, valor, chave) VALUES (?, ?, ?, ?);
+[INFO ] 2023-10-10 22:04:32.554 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:04:32.554 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:04:32.554 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:04:32.555 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:04:47.786 [scheduling-1] ETHER - Preparando envio de e-mail
+[INFO ] 2023-10-10 22:07:02.065 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 1232 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-10 22:07:02.070 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 22:07:02.868 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-10 22:07:02.868 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-10 22:07:02.868 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-10 22:07:02.868 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-10 22:07:03.893 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 22:07:04.112 [main] EtherApplication - Started EtherApplication in 2.454 seconds (process running for 3.878)
+[INFO ] 2023-10-10 22:07:05.004 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-10 22:07:05.010 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:07:05.011 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 22:07:05.012 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:05.012 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-10 22:07:05.086 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:05.086 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:05.086 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:05.087 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:05.090 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:05.090 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:05.090 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:05.090 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:05.092 [scheduling-1] ETHER - Preparando envio de e-mail
+[ERROR] 2023-10-10 22:07:05.358 [scheduling-1] ETHER - Erro ao enviar e-mail
+javax.mail.MessagingException: Could not convert socket to TLS
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.utilities.EmailUtility.sendMail(EmailUtility.java:71) ~[classes/:?]
+	at br.com.ether.applications.anf.services.ANFService.lambda$run$0(ANFService.java:255) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.services.ANFService.run(ANFService.java:252) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$0(ControllerANF.java:39) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$1(ControllerANF.java:39) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:37) [classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+	at sun.security.ssl.HandshakeContext.<init>(HandshakeContext.java:172) ~[?:?]
+	at sun.security.ssl.ClientHandshakeContext.<init>(ClientHandshakeContext.java:103) ~[?:?]
+	at sun.security.ssl.TransportContext.kickstart(TransportContext.java:240) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:448) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426) ~[?:?]
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:527) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:464) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	... 27 more
+[INFO ] 2023-10-10 22:07:05.366 [scheduling-1] ETHER - Finalizando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:07:06.009 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-10 22:07:06.011 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:07:06.011 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 22:07:06.012 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:06.012 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-10 22:07:06.018 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:06.019 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:06.020 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:06.021 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:06.026 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:06.027 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:06.027 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:06.028 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:06.032 [scheduling-1] ETHER - Preparando envio de e-mail
+[ERROR] 2023-10-10 22:07:06.133 [scheduling-1] ETHER - Erro ao enviar e-mail
+javax.mail.MessagingException: Could not convert socket to TLS
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.utilities.EmailUtility.sendMail(EmailUtility.java:71) ~[classes/:?]
+	at br.com.ether.applications.anf.services.ANFService.lambda$run$0(ANFService.java:255) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.services.ANFService.run(ANFService.java:252) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$0(ControllerANF.java:39) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$1(ControllerANF.java:39) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:37) [classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+	at sun.security.ssl.HandshakeContext.<init>(HandshakeContext.java:172) ~[?:?]
+	at sun.security.ssl.ClientHandshakeContext.<init>(ClientHandshakeContext.java:103) ~[?:?]
+	at sun.security.ssl.TransportContext.kickstart(TransportContext.java:240) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:448) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426) ~[?:?]
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:527) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:464) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	... 27 more
+[INFO ] 2023-10-10 22:07:06.135 [scheduling-1] ETHER - Finalizando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:07:07.007 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-10 22:07:07.008 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:07:07.008 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 22:07:07.008 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:07.008 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-10 22:07:07.011 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:07.012 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:07.012 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:07.012 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:07.014 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:07.014 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:07.015 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:07.015 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:07.017 [scheduling-1] ETHER - Preparando envio de e-mail
+[ERROR] 2023-10-10 22:07:07.119 [scheduling-1] ETHER - Erro ao enviar e-mail
+javax.mail.MessagingException: Could not convert socket to TLS
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.utilities.EmailUtility.sendMail(EmailUtility.java:71) ~[classes/:?]
+	at br.com.ether.applications.anf.services.ANFService.lambda$run$0(ANFService.java:255) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.services.ANFService.run(ANFService.java:252) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$0(ControllerANF.java:39) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$1(ControllerANF.java:39) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:37) [classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+	at sun.security.ssl.HandshakeContext.<init>(HandshakeContext.java:172) ~[?:?]
+	at sun.security.ssl.ClientHandshakeContext.<init>(ClientHandshakeContext.java:103) ~[?:?]
+	at sun.security.ssl.TransportContext.kickstart(TransportContext.java:240) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:448) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426) ~[?:?]
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:527) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:464) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	... 27 more
+[INFO ] 2023-10-10 22:07:07.121 [scheduling-1] ETHER - Finalizando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:07:08.013 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-10 22:07:08.014 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:07:08.014 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 22:07:08.014 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:08.014 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-10 22:07:08.016 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:08.017 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:08.017 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:08.017 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:08.018 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:08.019 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:08.019 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:08.019 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:08.020 [scheduling-1] ETHER - Preparando envio de e-mail
+[ERROR] 2023-10-10 22:07:08.123 [scheduling-1] ETHER - Erro ao enviar e-mail
+javax.mail.MessagingException: Could not convert socket to TLS
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.utilities.EmailUtility.sendMail(EmailUtility.java:71) ~[classes/:?]
+	at br.com.ether.applications.anf.services.ANFService.lambda$run$0(ANFService.java:255) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.services.ANFService.run(ANFService.java:252) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$0(ControllerANF.java:39) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$1(ControllerANF.java:39) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:37) [classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+	at sun.security.ssl.HandshakeContext.<init>(HandshakeContext.java:172) ~[?:?]
+	at sun.security.ssl.ClientHandshakeContext.<init>(ClientHandshakeContext.java:103) ~[?:?]
+	at sun.security.ssl.TransportContext.kickstart(TransportContext.java:240) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:448) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426) ~[?:?]
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:527) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:464) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	... 27 more
+[INFO ] 2023-10-10 22:07:08.124 [scheduling-1] ETHER - Finalizando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:07:09.006 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-10 22:07:09.007 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:07:09.008 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 22:07:09.008 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:09.009 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-10 22:07:09.014 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:09.015 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:09.015 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:09.016 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:09.019 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:09.020 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:09.020 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:09.020 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:09.023 [scheduling-1] ETHER - Preparando envio de e-mail
+[ERROR] 2023-10-10 22:07:09.126 [scheduling-1] ETHER - Erro ao enviar e-mail
+javax.mail.MessagingException: Could not convert socket to TLS
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.utilities.EmailUtility.sendMail(EmailUtility.java:71) ~[classes/:?]
+	at br.com.ether.applications.anf.services.ANFService.lambda$run$0(ANFService.java:255) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.services.ANFService.run(ANFService.java:252) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$0(ControllerANF.java:39) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$1(ControllerANF.java:39) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:37) [classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+	at sun.security.ssl.HandshakeContext.<init>(HandshakeContext.java:172) ~[?:?]
+	at sun.security.ssl.ClientHandshakeContext.<init>(ClientHandshakeContext.java:103) ~[?:?]
+	at sun.security.ssl.TransportContext.kickstart(TransportContext.java:240) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:448) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426) ~[?:?]
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:527) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:464) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	... 27 more
+[INFO ] 2023-10-10 22:07:09.127 [scheduling-1] ETHER - Finalizando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:07:10.014 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-10 22:07:10.015 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:07:10.015 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 22:07:10.015 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:10.015 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-10 22:07:10.016 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:10.017 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:10.017 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:10.017 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:10.018 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:10.019 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:10.019 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:10.019 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:10.021 [scheduling-1] ETHER - Preparando envio de e-mail
+[ERROR] 2023-10-10 22:07:10.154 [scheduling-1] ETHER - Erro ao enviar e-mail
+javax.mail.MessagingException: Could not convert socket to TLS
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.utilities.EmailUtility.sendMail(EmailUtility.java:71) ~[classes/:?]
+	at br.com.ether.applications.anf.services.ANFService.lambda$run$0(ANFService.java:255) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.services.ANFService.run(ANFService.java:252) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$0(ControllerANF.java:39) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$1(ControllerANF.java:39) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:37) [classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+	at sun.security.ssl.HandshakeContext.<init>(HandshakeContext.java:172) ~[?:?]
+	at sun.security.ssl.ClientHandshakeContext.<init>(ClientHandshakeContext.java:103) ~[?:?]
+	at sun.security.ssl.TransportContext.kickstart(TransportContext.java:240) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:448) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426) ~[?:?]
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:527) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:464) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	... 27 more
+[INFO ] 2023-10-10 22:07:10.156 [scheduling-1] ETHER - Finalizando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:07:11.008 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-10 22:07:11.008 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:07:11.008 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 22:07:11.009 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:11.009 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-10 22:07:11.009 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:11.010 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:11.010 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:11.010 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:11.011 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:11.011 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:11.011 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:11.012 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:11.012 [scheduling-1] ETHER - Preparando envio de e-mail
+[ERROR] 2023-10-10 22:07:11.110 [scheduling-1] ETHER - Erro ao enviar e-mail
+javax.mail.MessagingException: Could not convert socket to TLS
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.utilities.EmailUtility.sendMail(EmailUtility.java:71) ~[classes/:?]
+	at br.com.ether.applications.anf.services.ANFService.lambda$run$0(ANFService.java:255) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.services.ANFService.run(ANFService.java:252) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$0(ControllerANF.java:39) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$1(ControllerANF.java:39) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:37) [classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+	at sun.security.ssl.HandshakeContext.<init>(HandshakeContext.java:172) ~[?:?]
+	at sun.security.ssl.ClientHandshakeContext.<init>(ClientHandshakeContext.java:103) ~[?:?]
+	at sun.security.ssl.TransportContext.kickstart(TransportContext.java:240) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:448) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426) ~[?:?]
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:527) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:464) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	... 27 more
+[INFO ] 2023-10-10 22:07:11.112 [scheduling-1] ETHER - Finalizando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:07:12.004 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-10 22:07:12.004 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:07:12.004 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 22:07:12.004 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:12.004 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-10 22:07:12.006 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:12.006 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:12.006 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:12.006 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:12.008 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:12.008 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:12.008 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:12.008 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:12.010 [scheduling-1] ETHER - Preparando envio de e-mail
+[ERROR] 2023-10-10 22:07:12.110 [scheduling-1] ETHER - Erro ao enviar e-mail
+javax.mail.MessagingException: Could not convert socket to TLS
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.utilities.EmailUtility.sendMail(EmailUtility.java:71) ~[classes/:?]
+	at br.com.ether.applications.anf.services.ANFService.lambda$run$0(ANFService.java:255) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.services.ANFService.run(ANFService.java:252) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$0(ControllerANF.java:39) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$1(ControllerANF.java:39) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:37) [classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+	at sun.security.ssl.HandshakeContext.<init>(HandshakeContext.java:172) ~[?:?]
+	at sun.security.ssl.ClientHandshakeContext.<init>(ClientHandshakeContext.java:103) ~[?:?]
+	at sun.security.ssl.TransportContext.kickstart(TransportContext.java:240) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:448) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426) ~[?:?]
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:527) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:464) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	... 27 more
+[INFO ] 2023-10-10 22:07:12.112 [scheduling-1] ETHER - Finalizando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:07:13.010 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-10 22:07:13.010 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:07:13.010 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 22:07:13.010 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:13.010 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-10 22:07:13.013 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:13.013 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:13.013 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:13.013 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:13.015 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:13.015 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:13.015 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:13.015 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:13.016 [scheduling-1] ETHER - Preparando envio de e-mail
+[ERROR] 2023-10-10 22:07:13.119 [scheduling-1] ETHER - Erro ao enviar e-mail
+javax.mail.MessagingException: Could not convert socket to TLS
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.utilities.EmailUtility.sendMail(EmailUtility.java:71) ~[classes/:?]
+	at br.com.ether.applications.anf.services.ANFService.lambda$run$0(ANFService.java:255) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.services.ANFService.run(ANFService.java:252) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$0(ControllerANF.java:39) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$1(ControllerANF.java:39) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:37) [classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+	at sun.security.ssl.HandshakeContext.<init>(HandshakeContext.java:172) ~[?:?]
+	at sun.security.ssl.ClientHandshakeContext.<init>(ClientHandshakeContext.java:103) ~[?:?]
+	at sun.security.ssl.TransportContext.kickstart(TransportContext.java:240) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:448) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426) ~[?:?]
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:527) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:464) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	... 27 more
+[INFO ] 2023-10-10 22:07:13.120 [scheduling-1] ETHER - Finalizando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:07:14.000 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-10 22:07:14.001 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:07:14.001 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 22:07:14.001 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:14.001 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-10 22:07:14.003 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:14.003 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:14.003 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:14.003 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:14.005 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:14.005 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:14.005 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:14.006 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:14.007 [scheduling-1] ETHER - Preparando envio de e-mail
+[ERROR] 2023-10-10 22:07:14.106 [scheduling-1] ETHER - Erro ao enviar e-mail
+javax.mail.MessagingException: Could not convert socket to TLS
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.utilities.EmailUtility.sendMail(EmailUtility.java:71) ~[classes/:?]
+	at br.com.ether.applications.anf.services.ANFService.lambda$run$0(ANFService.java:255) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.services.ANFService.run(ANFService.java:252) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$0(ControllerANF.java:39) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$1(ControllerANF.java:39) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:37) [classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+	at sun.security.ssl.HandshakeContext.<init>(HandshakeContext.java:172) ~[?:?]
+	at sun.security.ssl.ClientHandshakeContext.<init>(ClientHandshakeContext.java:103) ~[?:?]
+	at sun.security.ssl.TransportContext.kickstart(TransportContext.java:240) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:448) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426) ~[?:?]
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:527) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:464) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	... 27 more
+[INFO ] 2023-10-10 22:07:14.107 [scheduling-1] ETHER - Finalizando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:07:15.008 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-10 22:07:15.008 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:07:15.008 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 22:07:15.008 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:15.008 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-10 22:07:15.009 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:15.010 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:15.010 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:15.010 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:15.011 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:15.011 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:15.011 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:15.011 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:15.012 [scheduling-1] ETHER - Preparando envio de e-mail
+[ERROR] 2023-10-10 22:07:15.107 [scheduling-1] ETHER - Erro ao enviar e-mail
+javax.mail.MessagingException: Could not convert socket to TLS
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.utilities.EmailUtility.sendMail(EmailUtility.java:71) ~[classes/:?]
+	at br.com.ether.applications.anf.services.ANFService.lambda$run$0(ANFService.java:255) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.services.ANFService.run(ANFService.java:252) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$0(ControllerANF.java:39) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$1(ControllerANF.java:39) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:37) [classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+	at sun.security.ssl.HandshakeContext.<init>(HandshakeContext.java:172) ~[?:?]
+	at sun.security.ssl.ClientHandshakeContext.<init>(ClientHandshakeContext.java:103) ~[?:?]
+	at sun.security.ssl.TransportContext.kickstart(TransportContext.java:240) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:448) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426) ~[?:?]
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:527) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:464) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	... 27 more
+[INFO ] 2023-10-10 22:07:15.108 [scheduling-1] ETHER - Finalizando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:07:16.015 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-10 22:07:16.015 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:07:16.015 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 22:07:16.015 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:16.015 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-10 22:07:16.016 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:16.016 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:16.016 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:16.017 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:16.018 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:16.018 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:16.018 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:16.018 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:16.019 [scheduling-1] ETHER - Preparando envio de e-mail
+[ERROR] 2023-10-10 22:07:16.113 [scheduling-1] ETHER - Erro ao enviar e-mail
+javax.mail.MessagingException: Could not convert socket to TLS
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.utilities.EmailUtility.sendMail(EmailUtility.java:71) ~[classes/:?]
+	at br.com.ether.applications.anf.services.ANFService.lambda$run$0(ANFService.java:255) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.services.ANFService.run(ANFService.java:252) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$0(ControllerANF.java:39) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$1(ControllerANF.java:39) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:37) [classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+	at sun.security.ssl.HandshakeContext.<init>(HandshakeContext.java:172) ~[?:?]
+	at sun.security.ssl.ClientHandshakeContext.<init>(ClientHandshakeContext.java:103) ~[?:?]
+	at sun.security.ssl.TransportContext.kickstart(TransportContext.java:240) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:448) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426) ~[?:?]
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:527) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:464) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	... 27 more
+[INFO ] 2023-10-10 22:07:16.113 [scheduling-1] ETHER - Finalizando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:07:25.746 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 7872 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-10 22:07:25.753 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 22:07:26.407 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-10 22:07:26.408 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-10 22:07:26.408 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-10 22:07:26.408 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-10 22:07:26.900 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 22:07:27.094 [main] EtherApplication - Started EtherApplication in 1.709 seconds (process running for 2.93)
+[INFO ] 2023-10-10 22:07:28.013 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-10 22:07:28.019 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:07:28.019 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 22:07:28.020 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:28.020 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-10 22:07:28.060 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:28.060 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:28.060 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:28.060 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:28.063 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:28.063 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:28.063 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:07:28.063 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:07:33.013 [scheduling-1] ETHER - Preparando envio de e-mail
+[INFO ] 2023-10-10 22:08:15.990 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 11080 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-10 22:08:15.994 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 22:08:16.682 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-10 22:08:16.682 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-10 22:08:16.682 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-10 22:08:16.682 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-10 22:08:17.183 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 22:08:17.443 [main] EtherApplication - Started EtherApplication in 1.85 seconds (process running for 3.115)
+[INFO ] 2023-10-10 22:08:18.004 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-10 22:08:18.006 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:08:18.007 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 22:08:18.007 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:08:18.007 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-10 22:08:18.031 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:08:18.031 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:08:18.031 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:08:18.031 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:08:18.033 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:08:18.034 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:08:18.034 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:08:18.034 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:08:18.036 [scheduling-1] ETHER - Preparando envio de e-mail
+[ERROR] 2023-10-10 22:08:27.300 [scheduling-1] ETHER - Erro ao enviar e-mail
+javax.mail.MessagingException: Could not convert socket to TLS
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.utilities.EmailUtility.sendMail(EmailUtility.java:71) ~[classes/:?]
+	at br.com.ether.applications.anf.services.ANFService.lambda$run$0(ANFService.java:255) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.services.ANFService.run(ANFService.java:252) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$0(ControllerANF.java:39) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$1(ControllerANF.java:39) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:37) [classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+	at sun.security.ssl.HandshakeContext.<init>(HandshakeContext.java:172) ~[?:?]
+	at sun.security.ssl.ClientHandshakeContext.<init>(ClientHandshakeContext.java:103) ~[?:?]
+	at sun.security.ssl.TransportContext.kickstart(TransportContext.java:240) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:448) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426) ~[?:?]
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:527) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:464) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	... 27 more
+[INFO ] 2023-10-10 22:08:52.694 [scheduling-1] ETHER - Finalizando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:08:56.561 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 13944 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-10 22:08:56.566 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 22:08:57.358 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-10 22:08:57.358 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-10 22:08:57.358 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-10 22:08:57.359 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-10 22:08:57.865 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 22:08:58.068 [main] EtherApplication - Started EtherApplication in 1.882 seconds (process running for 3.187)
+[INFO ] 2023-10-10 22:08:59.007 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-10 22:08:59.008 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:08:59.009 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 22:08:59.009 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:08:59.009 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-10 22:08:59.032 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:08:59.032 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:08:59.032 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:08:59.032 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:08:59.035 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:08:59.035 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:08:59.035 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:08:59.035 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:08:59.037 [scheduling-1] ETHER - Preparando envio de e-mail
+[ERROR] 2023-10-10 22:09:47.581 [scheduling-1] ETHER - Erro ao enviar e-mail
+javax.mail.MessagingException: Could not convert socket to TLS
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.utilities.EmailUtility.sendMail(EmailUtility.java:71) ~[classes/:?]
+	at br.com.ether.applications.anf.services.ANFService.lambda$run$0(ANFService.java:255) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.services.ANFService.run(ANFService.java:252) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$0(ControllerANF.java:39) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$1(ControllerANF.java:39) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:37) [classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+	at sun.security.ssl.HandshakeContext.<init>(HandshakeContext.java:172) ~[?:?]
+	at sun.security.ssl.ClientHandshakeContext.<init>(ClientHandshakeContext.java:103) ~[?:?]
+	at sun.security.ssl.TransportContext.kickstart(TransportContext.java:240) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:448) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426) ~[?:?]
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:527) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:464) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	... 27 more
+[INFO ] 2023-10-10 22:10:07.238 [scheduling-1] ETHER - Finalizando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:18:24.774 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 9740 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-10 22:18:24.780 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 22:18:25.656 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-10 22:18:25.656 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-10 22:18:25.656 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-10 22:18:25.656 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-10 22:18:26.307 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 22:18:26.524 [main] EtherApplication - Started EtherApplication in 2.263 seconds (process running for 3.916)
+[INFO ] 2023-10-10 22:18:27.008 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-10 22:18:27.014 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:18:27.015 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 22:18:27.016 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:18:27.016 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-10 22:18:27.081 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:18:27.082 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:18:27.082 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:18:27.082 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:18:27.086 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:18:27.086 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:18:27.086 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:18:27.086 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:18:27.087 [scheduling-1] ETHER - Preparando envio de e-mail
+[ERROR] 2023-10-10 22:19:07.826 [scheduling-1] ETHER - Erro ao enviar e-mail
+javax.mail.MessagingException: Could not convert socket to TLS
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.utilities.EmailUtility.sendMail(EmailUtility.java:71) ~[classes/:?]
+	at br.com.ether.applications.anf.services.ANFService.lambda$run$0(ANFService.java:255) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.services.ANFService.run(ANFService.java:252) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$0(ControllerANF.java:39) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$1(ControllerANF.java:39) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:37) [classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+	at sun.security.ssl.HandshakeContext.<init>(HandshakeContext.java:172) ~[?:?]
+	at sun.security.ssl.ClientHandshakeContext.<init>(ClientHandshakeContext.java:103) ~[?:?]
+	at sun.security.ssl.TransportContext.kickstart(TransportContext.java:240) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:448) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426) ~[?:?]
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:527) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:464) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	... 27 more
+[INFO ] 2023-10-10 22:19:12.632 [scheduling-1] ETHER - Finalizando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:19:16.004 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-10 22:19:16.005 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:19:16.006 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 22:19:16.006 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:19:16.006 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-10 22:19:16.008 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:19:16.009 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:19:16.009 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:19:16.009 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:19:16.011 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:19:16.011 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:19:16.011 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:19:16.011 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:19:16.013 [scheduling-1] ETHER - Preparando envio de e-mail
+[ERROR] 2023-10-10 22:19:50.968 [scheduling-1] ETHER - Erro ao enviar e-mail
+javax.mail.MessagingException: Could not convert socket to TLS
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.utilities.EmailUtility.sendMail(EmailUtility.java:71) ~[classes/:?]
+	at br.com.ether.applications.anf.services.ANFService.lambda$run$0(ANFService.java:255) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.services.ANFService.run(ANFService.java:252) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$0(ControllerANF.java:39) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$1(ControllerANF.java:39) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:37) [classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+	at sun.security.ssl.HandshakeContext.<init>(HandshakeContext.java:172) ~[?:?]
+	at sun.security.ssl.ClientHandshakeContext.<init>(ClientHandshakeContext.java:103) ~[?:?]
+	at sun.security.ssl.TransportContext.kickstart(TransportContext.java:240) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:448) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426) ~[?:?]
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:527) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:464) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	... 27 more
+[INFO ] 2023-10-10 22:19:50.981 [scheduling-1] ETHER - Finalizando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:19:51.009 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-10 22:19:51.009 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:19:51.009 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 22:19:51.009 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:19:51.010 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-10 22:19:51.011 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:19:51.011 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:19:51.011 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:19:51.011 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:19:51.013 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:19:51.013 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:19:51.013 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:19:51.013 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:19:51.014 [scheduling-1] ETHER - Preparando envio de e-mail
+[INFO ] 2023-10-10 22:20:54.472 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 15140 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-10 22:20:54.478 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 22:20:55.157 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-10 22:20:55.157 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-10 22:20:55.157 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-10 22:20:55.158 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-10 22:20:55.626 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 22:20:55.849 [main] EtherApplication - Started EtherApplication in 1.779 seconds (process running for 3.04)
+[INFO ] 2023-10-10 22:22:17.023 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-10 22:22:17.025 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:22:17.026 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 22:22:17.026 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:22:17.026 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-10 22:22:17.056 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:22:17.056 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:22:17.056 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:22:17.056 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:22:17.060 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:22:17.060 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:22:17.060 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:22:17.060 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:22:17.063 [scheduling-1] ETHER - Preparando envio de e-mail
+[INFO ] 2023-10-10 22:22:23.718 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 13272 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-10 22:22:23.723 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 22:22:24.437 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-10 22:22:24.438 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-10 22:22:24.438 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-10 22:22:24.438 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-10 22:22:24.987 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 22:22:25.198 [main] EtherApplication - Started EtherApplication in 1.86 seconds (process running for 3.135)
+[INFO ] 2023-10-10 22:22:43.868 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 5688 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-10 22:22:43.874 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 22:22:44.572 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-10 22:22:44.573 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-10 22:22:44.573 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-10 22:22:44.573 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-10 22:22:44.979 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 22:22:45.170 [main] EtherApplication - Started EtherApplication in 1.651 seconds (process running for 2.815)
+[ERROR] 2023-10-10 22:23:21.670 [scheduling-1] TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+java.lang.RuntimeException: javax.mail.MessagingException: Could not connect to SMTP host: smtp.live.com, port: 587;
+  nested exception is:
+	java.net.ConnectException: Connection timed out: connect
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:62) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.mail.MessagingException: Could not connect to SMTP host: smtp.live.com, port: 587
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1961) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:654) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:58) ~[classes/:?]
+	... 12 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at sun.nio.ch.Net.connect0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.connect(Net.java:579) ~[?:?]
+	at sun.nio.ch.Net.connect(Net.java:568) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:576) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.net.Socket.connect(Socket.java:666) ~[?:?]
+	at java.net.Socket.connect(Socket.java:600) ~[?:?]
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:299) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:234) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1927) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:654) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:58) ~[classes/:?]
+	... 12 more
+[INFO ] 2023-10-10 22:23:32.035 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 9580 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-10 22:23:32.039 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 22:23:32.721 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-10 22:23:32.721 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-10 22:23:32.721 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-10 22:23:32.721 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-10 22:23:33.160 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 22:23:33.354 [main] EtherApplication - Started EtherApplication in 1.7 seconds (process running for 2.891)
+[ERROR] 2023-10-10 22:23:39.761 [scheduling-1] TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+java.lang.RuntimeException: javax.mail.MessagingException: Could not convert socket to TLS;
+  nested exception is:
+	javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:62) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.mail.MessagingException: Could not convert socket to TLS
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:58) ~[classes/:?]
+	... 12 more
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+	at sun.security.ssl.HandshakeContext.<init>(HandshakeContext.java:172) ~[?:?]
+	at sun.security.ssl.ClientHandshakeContext.<init>(ClientHandshakeContext.java:103) ~[?:?]
+	at sun.security.ssl.TransportContext.kickstart(TransportContext.java:240) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:448) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426) ~[?:?]
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:527) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:464) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:58) ~[classes/:?]
+	... 12 more
+[INFO ] 2023-10-10 22:23:46.435 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 2228 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-10 22:23:46.439 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 22:23:47.176 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-10 22:23:47.177 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-10 22:23:47.177 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-10 22:23:47.177 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-10 22:23:47.620 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 22:23:47.822 [main] EtherApplication - Started EtherApplication in 1.748 seconds (process running for 3.137)
+[ERROR] 2023-10-10 22:23:56.938 [scheduling-1] TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+java.lang.RuntimeException: javax.mail.MessagingException: Could not convert socket to TLS;
+  nested exception is:
+	javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:62) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.mail.MessagingException: Could not convert socket to TLS
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:58) ~[classes/:?]
+	... 12 more
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+	at sun.security.ssl.HandshakeContext.<init>(HandshakeContext.java:172) ~[?:?]
+	at sun.security.ssl.ClientHandshakeContext.<init>(ClientHandshakeContext.java:103) ~[?:?]
+	at sun.security.ssl.TransportContext.kickstart(TransportContext.java:240) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:448) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426) ~[?:?]
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:527) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:464) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:58) ~[classes/:?]
+	... 12 more
+[INFO ] 2023-10-10 22:24:02.691 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 13180 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-10 22:24:02.695 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 22:24:03.381 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-10 22:24:03.382 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-10 22:24:03.382 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-10 22:24:03.382 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-10 22:24:03.820 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 22:24:04.012 [main] EtherApplication - Started EtherApplication in 1.688 seconds (process running for 2.934)
+[ERROR] 2023-10-10 22:25:17.824 [scheduling-1] TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+java.lang.RuntimeException: javax.mail.MessagingException: Unknown SMTP host: mail.outlook.com;
+  nested exception is:
+	java.net.UnknownHostException: mail.outlook.com
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:62) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.mail.MessagingException: Unknown SMTP host: mail.outlook.com
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1959) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:654) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:58) ~[classes/:?]
+	... 12 more
+Caused by: java.net.UnknownHostException: mail.outlook.com
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:560) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.net.Socket.connect(Socket.java:666) ~[?:?]
+	at java.net.Socket.connect(Socket.java:600) ~[?:?]
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:299) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:234) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1927) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:654) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:58) ~[classes/:?]
+	... 12 more
+[INFO ] 2023-10-10 22:25:25.574 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 12856 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-10 22:25:25.578 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 22:25:26.261 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-10 22:25:26.261 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-10 22:25:26.262 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-10 22:25:26.262 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-10 22:25:26.814 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 22:25:27.008 [main] EtherApplication - Started EtherApplication in 1.809 seconds (process running for 3.518)
+[ERROR] 2023-10-10 22:26:52.369 [scheduling-1] TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+java.lang.RuntimeException: javax.mail.MessagingException: Could not convert socket to TLS;
+  nested exception is:
+	javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:62) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.mail.MessagingException: Could not convert socket to TLS
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:58) ~[classes/:?]
+	... 12 more
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+	at sun.security.ssl.HandshakeContext.<init>(HandshakeContext.java:172) ~[?:?]
+	at sun.security.ssl.ClientHandshakeContext.<init>(ClientHandshakeContext.java:103) ~[?:?]
+	at sun.security.ssl.TransportContext.kickstart(TransportContext.java:240) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:448) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426) ~[?:?]
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:527) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:464) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:58) ~[classes/:?]
+	... 12 more
+[INFO ] 2023-10-10 22:26:58.304 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 2552 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-10 22:26:58.310 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 22:26:59.006 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-10 22:26:59.006 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-10 22:26:59.006 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-10 22:26:59.007 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-10 22:26:59.469 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 22:26:59.659 [main] EtherApplication - Started EtherApplication in 1.766 seconds (process running for 3.007)
+[ERROR] 2023-10-10 22:27:18.232 [scheduling-1] TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+java.lang.RuntimeException: com.sun.mail.smtp.SMTPSendFailedException: 451 5.7.3 STARTTLS is required to send mail [CP5P284CA0051.BRAP284.PROD.OUTLOOK.COM 2023-10-11T01:27:05.292Z 08DBC93A54F613EA]
+
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:62) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: com.sun.mail.smtp.SMTPSendFailedException: 451 5.7.3 STARTTLS is required to send mail [CP5P284CA0051.BRAP284.PROD.OUTLOOK.COM 2023-10-11T01:27:05.292Z 08DBC93A54F613EA]
+
+	at com.sun.mail.smtp.SMTPTransport.issueSendCommand(SMTPTransport.java:2108) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.mailFrom(SMTPTransport.java:1609) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1117) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:254) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:58) ~[classes/:?]
+	... 12 more
+[INFO ] 2023-10-10 22:27:25.215 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 15552 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-10 22:27:25.220 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 22:27:25.885 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-10 22:27:25.885 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-10 22:27:25.885 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-10 22:27:25.885 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-10 22:27:26.319 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 22:27:26.532 [main] EtherApplication - Started EtherApplication in 1.683 seconds (process running for 2.821)
+[ERROR] 2023-10-10 22:27:40.050 [scheduling-1] TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+java.lang.RuntimeException: javax.mail.MessagingException: Could not convert socket to TLS;
+  nested exception is:
+	javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:62) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.mail.MessagingException: Could not convert socket to TLS
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:58) ~[classes/:?]
+	... 12 more
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+	at sun.security.ssl.HandshakeContext.<init>(HandshakeContext.java:172) ~[?:?]
+	at sun.security.ssl.ClientHandshakeContext.<init>(ClientHandshakeContext.java:103) ~[?:?]
+	at sun.security.ssl.TransportContext.kickstart(TransportContext.java:240) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:448) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426) ~[?:?]
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:527) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:464) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:58) ~[classes/:?]
+	... 12 more
+[INFO ] 2023-10-10 22:27:46.579 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 3848 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-10 22:27:46.586 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 22:27:47.312 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-10 22:27:47.312 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-10 22:27:47.312 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-10 22:27:47.312 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-10 22:27:47.789 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 22:27:47.989 [main] EtherApplication - Started EtherApplication in 1.789 seconds (process running for 2.997)
+[ERROR] 2023-10-10 22:28:08.162 [scheduling-1] TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+java.lang.RuntimeException: com.sun.mail.smtp.SMTPSendFailedException: 451 5.7.3 STARTTLS is required to send mail [CP5P284CA0047.BRAP284.PROD.OUTLOOK.COM 2023-10-11T01:27:53.280Z 08DBC88B161EB29F]
+
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:62) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: com.sun.mail.smtp.SMTPSendFailedException: 451 5.7.3 STARTTLS is required to send mail [CP5P284CA0047.BRAP284.PROD.OUTLOOK.COM 2023-10-11T01:27:53.280Z 08DBC88B161EB29F]
+
+	at com.sun.mail.smtp.SMTPTransport.issueSendCommand(SMTPTransport.java:2108) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.mailFrom(SMTPTransport.java:1609) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1117) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:254) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:58) ~[classes/:?]
+	... 12 more
+[INFO ] 2023-10-10 22:28:15.693 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 7172 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-10 22:28:15.698 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 22:28:16.606 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-10 22:28:16.607 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-10 22:28:16.607 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-10 22:28:16.607 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-10 22:28:17.116 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 22:28:17.419 [main] EtherApplication - Started EtherApplication in 2.127 seconds (process running for 3.352)
+[ERROR] 2023-10-10 22:29:04.065 [scheduling-1] TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+java.lang.RuntimeException: javax.mail.MessagingException: Could not convert socket to TLS;
+  nested exception is:
+	javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:62) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.mail.MessagingException: Could not convert socket to TLS
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:58) ~[classes/:?]
+	... 12 more
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+	at sun.security.ssl.HandshakeContext.<init>(HandshakeContext.java:172) ~[?:?]
+	at sun.security.ssl.ClientHandshakeContext.<init>(ClientHandshakeContext.java:103) ~[?:?]
+	at sun.security.ssl.TransportContext.kickstart(TransportContext.java:240) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:448) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426) ~[?:?]
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:527) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:464) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:58) ~[classes/:?]
+	... 12 more
+[INFO ] 2023-10-10 22:29:11.438 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 10044 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-10 22:29:11.442 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 22:29:12.137 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-10 22:29:12.137 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-10 22:29:12.137 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-10 22:29:12.137 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-10 22:29:12.531 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 22:29:12.726 [main] EtherApplication - Started EtherApplication in 1.667 seconds (process running for 2.966)
+[ERROR] 2023-10-10 22:29:30.649 [scheduling-1] TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+java.lang.RuntimeException: javax.mail.internet.AddressException: Local address contains control or whitespace in string ``enter your outlook mail address''
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:63) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.mail.internet.AddressException: Local address contains control or whitespace
+	at javax.mail.internet.InternetAddress.checkAddress(InternetAddress.java:1213) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.internet.InternetAddress.parse(InternetAddress.java:1091) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.internet.InternetAddress.parse(InternetAddress.java:633) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.internet.InternetAddress.<init>(InternetAddress.java:111) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:52) ~[classes/:?]
+	... 12 more
+[INFO ] 2023-10-10 22:29:36.761 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 16952 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-10 22:29:36.768 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 22:29:37.505 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-10 22:29:37.505 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-10 22:29:37.505 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-10 22:29:37.505 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-10 22:29:37.984 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 22:29:38.213 [main] EtherApplication - Started EtherApplication in 1.859 seconds (process running for 3.035)
+[ERROR] 2023-10-10 22:29:40.533 [scheduling-1] TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+java.lang.RuntimeException: javax.mail.internet.AddressException: Local address contains control or whitespace in string ``Enter the recipient mail address''
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:63) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.mail.internet.AddressException: Local address contains control or whitespace
+	at javax.mail.internet.InternetAddress.checkAddress(InternetAddress.java:1213) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.internet.InternetAddress.parse(InternetAddress.java:1091) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.internet.InternetAddress.parse(InternetAddress.java:633) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.internet.InternetAddress.parse(InternetAddress.java:610) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:54) ~[classes/:?]
+	... 12 more
+[INFO ] 2023-10-10 22:29:52.959 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 288 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-10 22:29:52.964 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 22:29:53.692 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-10 22:29:53.692 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-10 22:29:53.692 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-10 22:29:53.692 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-10 22:29:54.132 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 22:29:54.345 [main] EtherApplication - Started EtherApplication in 1.882 seconds (process running for 3.279)
+[ERROR] 2023-10-10 22:30:32.566 [scheduling-1] TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+java.lang.RuntimeException: javax.mail.MessagingException: Could not convert socket to TLS;
+  nested exception is:
+	javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:63) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.mail.MessagingException: Could not convert socket to TLS
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:58) ~[classes/:?]
+	... 12 more
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+	at sun.security.ssl.HandshakeContext.<init>(HandshakeContext.java:172) ~[?:?]
+	at sun.security.ssl.ClientHandshakeContext.<init>(ClientHandshakeContext.java:103) ~[?:?]
+	at sun.security.ssl.TransportContext.kickstart(TransportContext.java:240) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:448) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426) ~[?:?]
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:527) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:464) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:58) ~[classes/:?]
+	... 12 more
+[INFO ] 2023-10-10 22:30:38.860 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 6076 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-10 22:30:38.866 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 22:30:39.543 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-10 22:30:39.544 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-10 22:30:39.544 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-10 22:30:39.544 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-10 22:30:39.999 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 22:30:40.198 [main] EtherApplication - Started EtherApplication in 1.697 seconds (process running for 3.007)
+[ERROR] 2023-10-10 22:31:25.605 [scheduling-1] TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+java.lang.RuntimeException: javax.mail.MessagingException: Could not convert socket to TLS;
+  nested exception is:
+	javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:65) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.mail.MessagingException: Could not convert socket to TLS
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:60) ~[classes/:?]
+	... 12 more
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+	at sun.security.ssl.HandshakeContext.<init>(HandshakeContext.java:172) ~[?:?]
+	at sun.security.ssl.ClientHandshakeContext.<init>(ClientHandshakeContext.java:103) ~[?:?]
+	at sun.security.ssl.TransportContext.kickstart(TransportContext.java:240) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:448) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426) ~[?:?]
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:527) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:464) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:60) ~[classes/:?]
+	... 12 more
+[INFO ] 2023-10-10 22:31:32.135 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 17180 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-10 22:31:32.140 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 22:31:32.926 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-10 22:31:32.928 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-10 22:31:32.928 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-10 22:31:32.928 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-10 22:31:33.496 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 22:31:33.685 [main] EtherApplication - Started EtherApplication in 1.977 seconds (process running for 3.284)
+[INFO ] 2023-10-10 22:32:42.579 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-10 22:32:42.584 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:32:42.584 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 22:32:42.584 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:32:42.585 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-10 22:32:49.624 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 17136 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-10 22:32:49.628 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 22:32:50.333 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-10 22:32:50.333 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-10 22:32:50.333 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-10 22:32:50.333 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-10 22:32:50.750 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 22:32:50.938 [main] EtherApplication - Started EtherApplication in 1.71 seconds (process running for 3.265)
+[INFO ] 2023-10-10 22:32:52.804 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-10 22:32:52.810 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:32:52.810 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 22:32:52.811 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:32:52.812 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-10 22:32:52.983 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:32:52.983 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:32:52.983 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:32:52.984 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:32:52.991 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:32:52.992 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:32:52.992 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:32:52.993 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:32:52.999 [scheduling-1] ETHER - Preparando envio de e-mail
+[INFO ] 2023-10-10 22:33:01.468 [scheduling-1] ETHER - E-mail enviado com sucesso!
+[INFO ] 2023-10-10 22:33:01.471 [scheduling-1] ETHER - Finalizando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:38:04.625 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 15608 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-10 22:38:04.633 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 22:38:05.755 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-10 22:38:05.755 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-10 22:38:05.755 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-10 22:38:05.756 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-10 22:38:06.609 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 22:38:06.932 [main] EtherApplication - Started EtherApplication in 3.007 seconds (process running for 5.219)
+[INFO ] 2023-10-10 22:38:15.818 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-10 22:38:15.820 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:38:15.820 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 22:38:15.821 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:38:15.821 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-10 22:38:15.859 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:38:15.859 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:38:15.859 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:38:15.859 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:38:15.864 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-10 22:38:15.864 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-10 22:38:16.318 [scheduling-1] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-10 22:38:16.353 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-10 22:38:18.842 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-10 22:38:22.842 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-10 22:38:23.012 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-10 22:39:36.713 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 10832 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-10 22:39:36.719 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 22:39:37.827 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-10 22:39:37.828 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-10 22:39:37.828 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-10 22:39:37.828 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-10 22:39:38.760 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 22:39:39.154 [main] EtherApplication - Started EtherApplication in 3.138 seconds (process running for 5.539)
+[INFO ] 2023-10-10 22:39:41.334 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-10 22:39:41.338 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:39:41.338 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 22:39:41.338 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:39:41.339 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-10 22:39:41.386 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:39:41.387 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:39:41.387 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:39:41.387 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:39:41.391 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-10 22:39:41.392 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-10 22:39:41.964 [scheduling-1] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-10 22:39:42.010 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-10 22:39:44.521 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-10 22:39:45.824 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-10 22:39:45.987 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-10 22:40:25.520 [scheduling-1] ETHER - Nota fiscal emitida com sucesso
+[WARN ] 2023-10-10 22:40:25.540 [AsyncHttpClient-1-4] WebSocketHandler - onError
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254) ~[netty-buffer-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+[WARN ] 2023-10-10 22:40:25.555 [AsyncHttpClient-1-4] WebSocket - Connection reset
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254) ~[netty-buffer-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+[INFO ] 2023-10-10 22:40:25.666 [scheduling-1] ETHER - Tempo de execução: 0:0:44
+[INFO ] 2023-10-10 22:40:25.666 [scheduling-1] ETHER - Capturando informações
+[INFO ] 2023-10-10 22:40:25.769 [scheduling-1] ETHER - Chave: 35541022251335957000120000000000001023108998986453
+[INFO ] 2023-10-10 22:40:25.769 [scheduling-1] ETHER - Caminho: C:\Users\mathe\Área de Trabalho\ANF\NF\10-23\
+[INFO ] 2023-10-10 22:40:25.771 [scheduling-1] ETHER - Iniciando a inserção de dados no banco de dados
+[INFO ] 2023-10-10 22:40:25.771 [scheduling-1] ETHER - INSERT: INSERT INTO historico_notas (cnpj, data_da_emissao, valor, chave) VALUES (?, ?, ?, ?);
+[INFO ] 2023-10-10 22:40:25.781 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:40:25.782 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:40:25.782 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:40:25.782 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:40:25.786 [scheduling-1] ETHER - Preparando envio de e-mail
+[INFO ] 2023-10-10 22:40:49.534 [scheduling-1] ETHER - E-mail enviado com sucesso!
+[INFO ] 2023-10-10 22:40:49.535 [scheduling-1] ETHER - Finalizando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:42:03.745 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-10 22:42:03.746 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:42:03.747 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 22:42:03.747 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:42:03.747 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-10 22:42:03.749 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:42:03.749 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:42:03.750 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:42:03.750 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:42:03.751 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-10 22:42:03.751 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-10 22:42:03.769 [scheduling-1] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-10 22:42:03.784 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[INFO ] 2023-10-10 22:42:20.776 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 13016 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-10 22:42:20.782 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 22:42:21.836 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-10 22:42:21.836 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-10 22:42:21.836 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-10 22:42:21.836 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-10 22:42:22.636 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 22:42:22.937 [main] EtherApplication - Started EtherApplication in 2.773 seconds (process running for 5.034)
+[INFO ] 2023-10-10 22:42:23.502 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-10 22:42:23.505 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:42:23.505 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 22:42:23.505 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:42:23.505 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-10 22:42:23.542 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:42:23.542 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:42:23.542 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:42:23.542 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:42:23.547 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-10 22:42:23.547 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-10 22:42:23.968 [scheduling-1] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-10 22:42:24.002 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-10 22:42:26.062 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-10 22:42:27.418 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-10 22:42:27.605 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-10 22:43:07.160 [scheduling-1] ETHER - Nota fiscal emitida com sucesso
+[INFO ] 2023-10-10 22:43:07.303 [scheduling-1] ETHER - Tempo de execução: 0:0:43
+[INFO ] 2023-10-10 22:43:07.303 [scheduling-1] ETHER - Capturando informações
+[INFO ] 2023-10-10 22:43:07.356 [scheduling-1] ETHER - Chave: 35541022251335957000120000000000001123105440781662
+[INFO ] 2023-10-10 22:43:07.357 [scheduling-1] ETHER - Caminho: C:\Users\mathe\Área de Trabalho\ANF\NF\10-23\
+[INFO ] 2023-10-10 22:43:07.357 [scheduling-1] ETHER - Iniciando a inserção de dados no banco de dados
+[INFO ] 2023-10-10 22:43:07.357 [scheduling-1] ETHER - INSERT: INSERT INTO historico_notas (cnpj, data_da_emissao, valor, chave) VALUES (?, ?, ?, ?);
+[INFO ] 2023-10-10 22:43:07.366 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:43:07.366 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:43:07.366 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:43:07.366 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:43:07.370 [scheduling-1] ETHER - Preparando envio de e-mail
+[ERROR] 2023-10-10 22:43:08.316 [scheduling-1] ETHER - Erro ao enviar e-mail
+javax.mail.MessagingException: IOException while sending message
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1167) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:254) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.utilities.EmailUtility.sendMail(EmailUtility.java:71) ~[classes/:?]
+	at br.com.ether.applications.anf.services.ANFService.lambda$run$0(ANFService.java:255) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.services.ANFService.run(ANFService.java:252) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$0(ControllerANF.java:42) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$1(ControllerANF.java:42) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:40) [classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: java.io.FileNotFoundException: C:\Users\mathe\Área de Trabalho\ANF\NF\10-23 (Access is denied)
+	at java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.io.FileInputStream.open(FileInputStream.java:219) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:158) ~[?:?]
+	at javax.activation.FileDataSource.getInputStream(FileDataSource.java:97) ~[activation-1.1.jar:1.1]
+	at javax.activation.DataHandler.writeTo(DataHandler.java:304) ~[activation-1.1.jar:1.1]
+	at javax.mail.internet.MimeBodyPart.writeTo(MimeBodyPart.java:1574) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.internet.MimeBodyPart.writeTo(MimeBodyPart.java:948) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.internet.MimeMultipart.writeTo(MimeMultipart.java:538) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.handlers.multipart_mixed.writeTo(multipart_mixed.java:103) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.activation.ObjectDataContentHandler.writeTo(DataHandler.java:883) ~[activation-1.1.jar:1.1]
+	at javax.activation.DataHandler.writeTo(DataHandler.java:316) ~[activation-1.1.jar:1.1]
+	at javax.mail.internet.MimeBodyPart.writeTo(MimeBodyPart.java:1574) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.internet.MimeMessage.writeTo(MimeMessage.java:1840) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1119) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	... 23 more
+[INFO ] 2023-10-10 22:43:08.330 [scheduling-1] ETHER - Finalizando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:43:43.095 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-10 22:43:43.096 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:43:43.096 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 22:43:43.096 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:43:43.096 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-10 22:43:43.099 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:43:43.099 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:43:43.099 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:43:43.100 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:43:43.105 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-10 22:43:43.106 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-10 22:43:43.123 [scheduling-1] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-10 22:43:43.139 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[INFO ] 2023-10-10 22:45:07.364 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 1612 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-10 22:45:07.370 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 22:45:08.535 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-10 22:45:08.535 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-10 22:45:08.536 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-10 22:45:08.536 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-10 22:45:09.324 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 22:45:09.600 [main] EtherApplication - Started EtherApplication in 3.018 seconds (process running for 5.386)
+[INFO ] 2023-10-10 22:45:11.827 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-10 22:45:11.830 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:45:11.831 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 22:45:11.831 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:45:11.832 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-10 22:45:12.079 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:45:12.080 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:45:12.080 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:45:12.081 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:45:12.099 [scheduling-1] ETHER - Capturando informações
+[INFO ] 2023-10-10 22:46:01.241 [scheduling-1] ETHER - Chave: 35541022251335957000120000000000001123105440781662
+[INFO ] 2023-10-10 22:46:01.241 [scheduling-1] ETHER - Caminho: C:\Users\mathe\Área de Trabalho\ANF\NF\10-23\
+[INFO ] 2023-10-10 22:46:01.243 [scheduling-1] ETHER - Iniciando a inserção de dados no banco de dados
+[INFO ] 2023-10-10 22:46:01.244 [scheduling-1] ETHER - INSERT: INSERT INTO historico_notas (cnpj, data_da_emissao, valor, chave) VALUES (?, ?, ?, ?);
+[INFO ] 2023-10-10 22:46:01.259 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:46:01.260 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:46:01.260 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:46:01.261 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:46:01.271 [scheduling-1] ETHER - Preparando envio de e-mail
+[INFO ] 2023-10-10 22:46:10.826 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 12464 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-10 22:46:10.835 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 22:46:12.405 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-10 22:46:12.405 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-10 22:46:12.406 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-10 22:46:12.406 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-10 22:46:13.175 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 22:46:13.483 [main] EtherApplication - Started EtherApplication in 3.443 seconds (process running for 5.558)
+[INFO ] 2023-10-10 22:46:25.088 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-10 22:46:25.093 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:46:25.094 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 22:46:25.095 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:46:25.096 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-10 22:46:25.347 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:46:25.348 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:46:25.348 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:46:25.349 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:46:25.359 [scheduling-1] ETHER - Capturando informações
+[INFO ] 2023-10-10 22:46:31.065 [scheduling-1] ETHER - Chave: 35541022251335957000120000000000001123105440781662
+[INFO ] 2023-10-10 22:46:32.384 [scheduling-1] ETHER - Caminho: C:\Users\mathe\Área de Trabalho\ANF\NF\10-23\35541022251335957000120000000000001123105440781662.pdf
+[INFO ] 2023-10-10 22:46:39.576 [scheduling-1] ETHER - Iniciando a inserção de dados no banco de dados
+[INFO ] 2023-10-10 22:46:39.577 [scheduling-1] ETHER - INSERT: INSERT INTO historico_notas (cnpj, data_da_emissao, valor, chave) VALUES (?, ?, ?, ?);
+[INFO ] 2023-10-10 22:46:39.747 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:46:39.747 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:46:39.747 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:46:39.748 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:46:40.222 [scheduling-1] ETHER - Preparando envio de e-mail
+[INFO ] 2023-10-10 22:46:43.719 [scheduling-1] ETHER - E-mail enviado com sucesso!
+[INFO ] 2023-10-10 22:47:08.839 [scheduling-1] ETHER - Finalizando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:47:29.572 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 5464 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-10 22:47:29.578 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 22:47:30.818 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-10 22:47:30.819 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-10 22:47:30.819 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-10 22:47:30.819 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-10 22:47:31.628 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 22:47:31.972 [main] EtherApplication - Started EtherApplication in 3.132 seconds (process running for 5.303)
+[INFO ] 2023-10-10 22:47:36.585 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-10 22:47:36.587 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:47:36.587 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 22:47:36.587 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:47:36.588 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-10 22:47:36.627 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:47:36.627 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:47:36.628 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:47:36.628 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:47:36.631 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-10 22:47:36.631 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-10 22:47:37.188 [scheduling-1] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-10 22:47:37.216 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-10 22:47:39.503 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-10 22:47:40.680 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-10 22:47:40.853 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-10 22:48:20.523 [scheduling-1] ETHER - Nota fiscal emitida com sucesso
+[WARN ] 2023-10-10 22:48:20.545 [AsyncHttpClient-1-4] WebSocketHandler - onError
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254) ~[netty-buffer-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+[WARN ] 2023-10-10 22:48:20.560 [AsyncHttpClient-1-4] WebSocket - Connection reset
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254) ~[netty-buffer-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+[INFO ] 2023-10-10 22:48:20.682 [scheduling-1] ETHER - Tempo de execução: 0:0:44
+[INFO ] 2023-10-10 22:48:20.683 [scheduling-1] ETHER - Capturando informações
+[INFO ] 2023-10-10 22:48:29.083 [scheduling-1] ETHER - Chave: 35541022251335957000120000000000001223108563261657
+[INFO ] 2023-10-10 22:48:29.083 [scheduling-1] ETHER - Caminho: C:\Users\mathe\Área de Trabalho\ANF\NF\10-23\35541022251335957000120000000000001223108563261657.pdf
+[INFO ] 2023-10-10 22:48:29.084 [scheduling-1] ETHER - Iniciando a inserção de dados no banco de dados
+[INFO ] 2023-10-10 22:48:29.085 [scheduling-1] ETHER - INSERT: INSERT INTO historico_notas (cnpj, data_da_emissao, valor, chave) VALUES (?, ?, ?, ?);
+[INFO ] 2023-10-10 22:48:29.097 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:48:29.098 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:48:29.098 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:48:29.098 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:48:29.102 [scheduling-1] ETHER - Preparando envio de e-mail
+[INFO ] 2023-10-10 22:48:31.078 [scheduling-1] ETHER - E-mail enviado com sucesso!
+[INFO ] 2023-10-10 22:48:31.078 [scheduling-1] ETHER - Finalizando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:49:00.124 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-10 22:49:00.125 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:49:00.125 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 22:49:00.126 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:49:00.126 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-10 22:49:00.128 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:49:00.129 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:49:00.129 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:49:00.129 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:49:00.130 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-10 22:49:00.131 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-10 22:49:00.156 [scheduling-1] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-10 22:49:00.166 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
