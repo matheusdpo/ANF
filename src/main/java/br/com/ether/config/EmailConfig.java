@@ -32,6 +32,7 @@ public class EmailConfig {
         props.put("mail.smtp.port", port);
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.starttls.enable", "true");
+        props.put("mail.smtp.ssl.protocols", "TLSv1.2");
 
         // Autenticação
         Authenticator auth = new Authenticator() {
