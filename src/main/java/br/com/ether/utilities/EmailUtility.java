@@ -25,9 +25,6 @@ public class EmailUtility {
     private final LogUtility logger;
     private final EmailConfig emailConfig;
 
-    @Value("${br.com.ether.mail.mail}")
-    private String mail;
-
     public void sendMail(String subject, String body, String to, String cc, String bcc, String attachment, CredenciaisModel credenciaisModel) {
 
         logger.registraLog("Preparando envio de e-mail");
@@ -38,7 +35,7 @@ public class EmailUtility {
         try {
             // Cria uma mensagem de email
             Message mensagem = new MimeMessage(session);
-            mensagem.setFrom(new InternetAddress(mail));
+            mensagem.setFrom(new InternetAddress(credenciaisModel.getLogin()));
 
             // Adiciona destinatários (TO, CC, BCC)
             mensagem.setRecipients(Message.RecipientType.TO,
