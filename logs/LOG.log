@@ -16805,3 +16805,78 @@ java.net.SocketException: Connection reset
 [INFO ] 2023-10-10 22:49:00.131 [scheduling-1] ETHER - OS: windows 10
 [INFO ] 2023-10-10 22:49:00.156 [scheduling-1] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
 [INFO ] 2023-10-10 22:49:00.166 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[INFO ] 2023-10-10 22:59:51.631 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 10380 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-10 22:59:51.636 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-10 22:59:52.517 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-10 22:59:52.518 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-10 22:59:52.518 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-10 22:59:52.518 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-10 22:59:53.126 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-10 22:59:53.352 [main] EtherApplication - Started EtherApplication in 2.191 seconds (process running for 3.873)
+[INFO ] 2023-10-10 22:59:54.014 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-10 22:59:54.021 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 22:59:54.022 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-10 22:59:54.022 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:59:54.022 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-10 22:59:54.054 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 22:59:54.055 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:59:54.055 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 22:59:54.055 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 22:59:54.058 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-10 22:59:54.058 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-10 22:59:54.467 [scheduling-1] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-10 22:59:54.493 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-10 22:59:56.369 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-10 22:59:59.806 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-10 22:59:59.948 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-10 23:00:39.053 [scheduling-1] ETHER - Nota fiscal emitida com sucesso
+[WARN ] 2023-10-10 23:00:39.077 [AsyncHttpClient-1-4] WebSocketHandler - onError
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254) ~[netty-buffer-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+[WARN ] 2023-10-10 23:00:39.091 [AsyncHttpClient-1-4] WebSocket - Connection reset
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254) ~[netty-buffer-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+[INFO ] 2023-10-10 23:00:39.214 [scheduling-1] ETHER - Tempo de execução: 0:0:45
+[INFO ] 2023-10-10 23:00:39.215 [scheduling-1] ETHER - Capturando informações
+[INFO ] 2023-10-10 23:00:39.277 [scheduling-1] ETHER - Chave: 35541022251335957000120000000000001323109630233968
+[INFO ] 2023-10-10 23:00:39.278 [scheduling-1] ETHER - Caminho: C:\Users\mathe\Área de Trabalho\ANF\NF\10-23\35541022251335957000120000000000001323109630233968.pdf
+[INFO ] 2023-10-10 23:00:39.279 [scheduling-1] ETHER - Iniciando a inserção de dados no banco de dados
+[INFO ] 2023-10-10 23:00:39.279 [scheduling-1] ETHER - INSERT: INSERT INTO historico_notas (cnpj, data_da_emissao, valor, chave) VALUES (?, ?, ?, ?);
+[INFO ] 2023-10-10 23:00:39.291 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-10 23:00:39.292 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 23:00:39.293 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-10 23:00:39.293 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-10 23:00:39.296 [scheduling-1] ETHER - Preparando envio de e-mail
+[INFO ] 2023-10-10 23:00:41.347 [scheduling-1] ETHER - E-mail enviado com sucesso!
+[INFO ] 2023-10-10 23:03:43.393 [scheduling-1] ETHER - Finalizando ANF | Mês: 10/2023
+[INFO ] 2023-10-10 23:03:43.394 [scheduling-1] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-10 23:03:43.394 [scheduling-1] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-10 23:03:43.394 [scheduling-1] ETHER - USERNAME: root
+[INFO ] 2023-10-10 23:03:43.394 [scheduling-1] ETHER - PASSWORD: ****
+[INFO ] 2023-10-10 23:03:43.420 [scheduling-1] ETHER - Conexão com o banco de dados realizada com sucesso
