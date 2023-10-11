@@ -168,7 +168,7 @@ public class DataBase {
 
     public void insertHistorico(DadosHistoricoModel dadosHistoricoModel) {
         logger.registraLog("Iniciando a inserção de dados no banco de dados");
-        logger.registraLog("INSERT: " + dadosHistoricoModel.toString());
+        logger.registraLog("INSERT: " + INSERT);
 
         while (true) {
             try {
