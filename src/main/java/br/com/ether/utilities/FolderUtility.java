@@ -8,10 +8,7 @@ import java.io.File;
 @Component
 @RequiredArgsConstructor
 public class FolderUtility {
-
     private final DateUtility dateUtility;
-    private final LogUtility logger;
-
     public void isFolderExist(String path) {
         File file = new File(path);
         if (!file.exists())
@@ -32,7 +29,7 @@ public class FolderUtility {
         String caminho = "";
 
         for (File f : files) {
-            if (f.getName().contains(".pdf")) {
+            if (f.getName().contains(".pdf") || f.getName().contains(".PDF")) {
                 if (os.equalsIgnoreCase("linux"))
                     caminho = System.getProperty("user.dir") + pathSaveNf + dateUtility.getToday("MM-yy") + "/";
                 else
@@ -41,6 +38,8 @@ public class FolderUtility {
                 isFolderExist(caminho);
 
                 f.renameTo(new File(caminho + f.getName()));
+
+                caminho = caminho + f.getName();
             }
         }
 
