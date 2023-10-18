@@ -1,6 +1,6 @@
 package br.com.ether.config;
 
-import br.com.ether.model.CredenciaisModel;
+import br.com.ether.model.CredentialsModel;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
@@ -20,11 +20,11 @@ public class EmailConfig {
     @Value("${br.com.ether.mail.port}")
     private int port;
 
-    public Session setMailConfig(CredenciaisModel credenciaisModel) {
+    public Session setMailConfig(CredentialsModel credentialsModel) {
         // Configurações para o servidor SMTP do Outlook
 
-        String usuario = credenciaisModel.getLogin();
-        String senha = credenciaisModel.getSenha();
+        String usuario = credentialsModel.getLogin();
+        String senha = credentialsModel.getPasswd();
 
         // Configurações adicionais
         Properties props = new Properties();
