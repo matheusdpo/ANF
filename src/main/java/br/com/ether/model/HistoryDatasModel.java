@@ -8,7 +8,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Builder
-public class DadosHistoricoModel {
+public class HistoryDatasModel {
     private long id;
     private String cnpj;
     private String data_da_emissao;

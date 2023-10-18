@@ -2,7 +2,7 @@ package br.com.ether.anf.services;
 
 
 import br.com.ether.model.CredentialsModel;
-import br.com.ether.model.DadosHistoricoModel;
+import br.com.ether.model.HistoryDatasModel;
 import br.com.ether.model.DatasDBModel;
 import br.com.ether.repository.DataBase;
 import br.com.ether.utilities.*;
@@ -219,7 +219,7 @@ public class ANFService {
     }
 
     private void insertDB(DatasDBModel datasDBModel, String CNPJ) {
-        DadosHistoricoModel dadosHistoricoModel = DadosHistoricoModel.builder()
+        HistoryDatasModel historyDatasModel = HistoryDatasModel.builder()
                 .cnpj(CNPJ)
                 .data_da_emissao(dateUtility.getToday("dd/MM/yyyy"))
                 .valor(datasDBModel.getValue())
@@ -231,7 +231,7 @@ public class ANFService {
         logger.registerLog("Key: " + KEY);
         logger.registerLog("Path: " + PATH);
         logger.registerLog("Base64: " + BASE64);
-        dataBase.insertHistorico(dadosHistoricoModel);
+        dataBase.insertHistorico(historyDatasModel);
         logger.registerLog("Information inserted successfully!");
     }
 

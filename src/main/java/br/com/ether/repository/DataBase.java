@@ -1,7 +1,7 @@
 package br.com.ether.repository;
 
 import br.com.ether.model.CredentialsModel;
-import br.com.ether.model.DadosHistoricoModel;
+import br.com.ether.model.HistoryDatasModel;
 import br.com.ether.model.DatasDBModel;
 import br.com.ether.utilities.LogUtility;
 import br.com.ether.utilities.WaitMoment;
@@ -166,7 +166,7 @@ public class DataBase {
         return resultSet;
     }
 
-    public void insertHistorico(DadosHistoricoModel dadosHistoricoModel) {
+    public void insertHistorico(HistoryDatasModel historyDatasModel) {
         logger.registerLog("Starting to insert data into the database");
         logger.registerLog("INSERT: " + INSERT);
 
@@ -174,10 +174,10 @@ public class DataBase {
             try {
                 PreparedStatement preparedStatement = connection.prepareStatement(INSERT);
 
-                preparedStatement.setString(1, dadosHistoricoModel.getCnpj());
-                preparedStatement.setString(2, dadosHistoricoModel.getData_da_emissao());
-                preparedStatement.setString(3, dadosHistoricoModel.getValor());
-                preparedStatement.setString(4, dadosHistoricoModel.getChave());
+                preparedStatement.setString(1, historyDatasModel.getCnpj());
+                preparedStatement.setString(2, historyDatasModel.getData_da_emissao());
+                preparedStatement.setString(3, historyDatasModel.getValor());
+                preparedStatement.setString(4, historyDatasModel.getChave());
                 preparedStatement.execute();
                 break;
             } catch (Exception e) {
