@@ -7,10 +7,10 @@ import lombok.Setter;
 @Getter
 @Setter
 @Builder
-public class CredenciaisModel {
+public class CredentialsModel {
     private long id;
-    private String plataforma;
+    private String plataform;
     private String login;
-    private String senha;
+    private String passwd;
 
 }
