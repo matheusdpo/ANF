@@ -1,304 +1,257 @@
 package br.com.ether.applications.anf.services;
 
 
-import br.com.ether.model.CredenciaisModel;
-import br.com.ether.model.DadosDBModel;
+import br.com.ether.model.CredentialsModel;
 import br.com.ether.model.DadosHistoricoModel;
+import br.com.ether.model.DatasDBModel;
 import br.com.ether.repository.DataBase;
 import br.com.ether.utilities.*;
 import lombok.RequiredArgsConstructor;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.time.Duration;
-import java.time.Instant;
-import java.util.List;
 
 @Component
 @RequiredArgsConstructor
 public class ANFService {
-
     private WebDriverWait wait = null;
     private WebDriver driver = null;
     private final DateUtility dateUtility;
     private final DataBase dataBase;
     private final EmailUtility emailUtility;
     private final SeleniumUtility seleniumUtility;
-    private final Aguardar aguardar;
+    private final WaitMoment waitMoment;
     private final FolderUtility folderUtility;
     private final ConverterUtility converterUtility;
     private final LogUtility logger;
     private static final String LINK_LOGIN = "https://www.nfse.gov.br/EmissorNacional/Login?ReturnUrl=%2fEmissorNacional%2f";
-    private static final String LINK_EMITIR = "https://www.nfse.gov.br/EmissorNacional/DPS/Pessoas";
-
+    private static final String LINK_ISSUE = "https://www.nfse.gov.br/EmissorNacional/DPS/Pessoas";
     private static final String NAME = System.getenv("USERNAME");
     private static final String PATH_DOWNLOAD_WINDOWS = "C:\\Workspace\\Downloads\\";
     private static final String PATH_DOWNLOAD_LINUX = "/home/" + NAME + "/Downloads/";
     private static final String OS = System.getProperty("os.name").toLowerCase();
     private static final String PATH_SAVE_NF = "\\NF\\";
+    private static String KEY = "";
+    private static String BASE64 = "";
+    private static String PATH = "";
+    @Value("${br.com.ether.mail.body}")
+    private String body;
+    @Value("${br.com.ether.mail.to}")
+    private String to;
+    @Value("${br.com.ether.mail.cc}")
+    private String cc;
+    @Value("${br.com.ether.mail.bcc}")
+    private String bcc;
+    @Value("${br.com.ether.mail.mail}")
+    private String mailLogin;
+    @Value("${br.com.ether.mail.passwd}")
+    private String passwdMail;
+    @Value("${br.com.ether.cnpj}")
+    private String CNPJ;
+    @Value("${br.com.ether.passwdCNPJ}")
+    private String passwdCNPJ;
 
-    private static final String BODY = "<html><body>"
-            + "<h1>Assunto do Email</h1>"
-            + "<p>Prezado(a) destinatário,</p>"
-            + "<p>Enviamos a seguir a nota fiscal referente aos serviços prestados.</p>"
-            + "<p>Por favor, encontre o arquivo da nota fiscal em anexo a este email.</p>"
-            + "<p>Caso tenha alguma dúvida ou necessite de mais informações, não hesite em nos contatar.</p>"
-            + "<p>Atenciosamente,<br>Matheus P. Oliveira</p>"
-            + "<p><i>Nota: Este é um email automático. Por favor, não responda a este email.</i></p>"
-            + "</body></html>";
+    public void run(DatasDBModel datasDBModel) {
+        issueInvoice(datasDBModel);
 
-    public void run(DadosDBModel dadosDBModel, CredenciaisModel credenciaisModel) {
+        getInformations();
 
+        insertDB(datasDBModel, CNPJ);
+
+        sendMail();
+    }
+
+    private void issueInvoice(DatasDBModel datasDBModel) {
         try {
             while (true) {
-                Instant start = Instant.now();
+                login();
 
-                login(credenciaisModel);
+                driver.get(LINK_ISSUE);
 
-                driver.get(LINK_EMITIR);
+                logger.registerLog("Issuing Invoice");
 
-                logger.registraLog("Emitindo nota fiscal");
+                seleniumUtility.sendKeysByID(driver, wait, "DataCompetencia", dateUtility.getToday("dd/MM/yyyy"));
 
-                wait.until(ExpectedConditions.presenceOfElementLocated(By.id("DataCompetencia")));
-                WebElement campoData = driver.findElement(By.id("DataCompetencia"));
-                campoData.sendKeys(dateUtility.getToday("dd/MM/yyyy"));
+                seleniumUtility.clickElementByXPath(driver, wait, "//label[contains(text(), 'Prestador')]");
 
-                wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"pnlTomador\"]/div[1]/div/div")));
-                WebElement tomadorLocal = driver.findElement(By.xpath("//*[@id=\"pnlTomador\"]/div[1]/div/div"));
-                tomadorLocal.click();
+                seleniumUtility.waitByXpath(driver, wait, "//div[@id=\"modalLoading\" and contains(@style, \"display: none;\")]");
 
-                aguardar.segundos(5);
+                seleniumUtility.waitByXpath(driver, wait, "//div[@id=\"modalLoading\" and contains(@style, \"display: none;\")]");
 
-                wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[contains(text(), 'Brasil')]")));
-                WebElement brasil = driver.findElement(By.xpath("//label[contains(text(), 'Brasil')]"));
-                brasil.click();
+                seleniumUtility.clickElementByXPath(driver, wait, "//label[contains(text(), 'Brasil')]");
 
-                aguardar.segundos(5);
+                seleniumUtility.sendKeysByID(driver, wait, "Tomador_Inscricao", datasDBModel.getCnpj_tomador());
 
-                wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Tomador_Inscricao")));
-                WebElement cnpjoto = driver.findElement(By.id("Tomador_Inscricao"));
-                cnpjoto.sendKeys(dadosDBModel.getCnpj_tomador());
+                seleniumUtility.clickElementByID(driver, wait, "btn_Tomador_Inscricao_pesquisar");
 
-                wait.until(ExpectedConditions.presenceOfElementLocated(By.id("btn_Tomador_Inscricao_pesquisar")));
-                WebElement cnpjotoPesquisar = driver.findElement(By.id("btn_Tomador_Inscricao_pesquisar"));
-                cnpjotoPesquisar.click();
-
-                if (!dadosDBModel.getIm_prestador().equalsIgnoreCase("")) {
-                    wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Tomador_InscricaoMunicipal")));
-                    WebElement inscricaoMunicipal = driver.findElement(By.id("Tomador_InscricaoMunicipal"));
-                    inscricaoMunicipal.sendKeys(dadosDBModel.getIm_prestador());
+                if (!datasDBModel.getIm_prestador().equalsIgnoreCase("")) {
+                    seleniumUtility.sendKeysByID(driver, wait, "Tomador_InscricaoMunicipal", datasDBModel.getIm_prestador());
                 }
 
-                if (!dadosDBModel.getTelefone_prestador().equalsIgnoreCase("")) {
-                    wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Tomador_Telefone")));
-                    WebElement tomadorTel = driver.findElement(By.id("Tomador_Telefone"));
-                    tomadorTel.sendKeys(dadosDBModel.getTelefone_prestador());
+                if (!datasDBModel.getTelefone_prestador().equalsIgnoreCase("")) {
+                    seleniumUtility.sendKeysByID(driver, wait, "Tomador_Telefone", datasDBModel.getTelefone_prestador());
                 }
 
-                if (!dadosDBModel.getEmail_prestador().equalsIgnoreCase("")) {
-                    wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Tomador_Email")));
-                    WebElement tomadorEmail = driver.findElement(By.id("Tomador_Email"));
-                    tomadorEmail.sendKeys(dadosDBModel.getEmail_prestador());
+                if (!datasDBModel.getEmail_prestador().equalsIgnoreCase("")) {
+                    seleniumUtility.sendKeysByID(driver, wait, "Tomador_Email", datasDBModel.getEmail_prestador());
                 }
-
-                aguardar.segundos(5);
 
                 //TODO ADICIONAR ENDEREÇO
 
-                //wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"Tomador_EnderecoNacional_CEP\"]")));
-                //WebElement tomadorCEP = driver.findElement(By.xpath("//*[@id=\"Tomador_EnderecoNacional_CEP\"]"));
+                seleniumUtility.clickElementByID(driver, wait, "btnAvancar");
 
-                //driver.findElement(By.xpath("//div[@id=\"pnlTomadorEndereco\" and contains(@style, 'display: none;')]"));
-                //tomadorCEP.sendKeys("");
+                seleniumUtility.clickElementByXPath(driver, wait, "//*[@id=\"pnlLocalPrestacao\"]/div/div/div[2]/div/span[1]/span[1]/span");
 
-                //wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"Tomador_EnderecoNacional_CEP\"]")));
-                //WebElement cepPesquisar = driver.findElement(By.xpath("//*[@id=\"btn_Tomador_EnderecoNacional_CEP\"]"));
-                //cepPesquisar.click();
+                seleniumUtility.sendKeysByXPath(driver, wait, "/html/body/span/span/span[1]/input", datasDBModel.getMunicipio());
 
-                //wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Tomador_EnderecoNacional_Numero")));
-                //WebElement numeroCasa = driver.findElement(By.id("Tomador_EnderecoNacional_Numero"));
-                //numeroCasa.sendKeys("13");
+                seleniumUtility.clickElementByXPath(driver, wait, "//li[@class=\"select2-results__option select2-results__option--selectable select2-results__option--highlighted\" and @role=\"option\" and @aria-selected=\"true\"]");
 
-                wait.until(ExpectedConditions.presenceOfElementLocated(By.id("btnAvancar")));
-                WebElement avancarPessoas = driver.findElement(By.id("btnAvancar"));
-                avancarPessoas.click();
+                seleniumUtility.clickElementByXPath(driver, wait, "//span[@class=\"select2-selection select2-selection--single\" and @role=\"combobox\" and @aria-haspopup=\"true\" and @aria-expanded=\"false\" and @tabindex=\"0\" and @aria-disabled=\"false\" and @aria-labelledby=\"select2-ServicoPrestado_CodigoTributacaoNacional-container\" and @aria-controls=\"select2-ServicoPrestado_CodigoTributacaoNacional-container\"]");
 
-                wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"pnlLocalPrestacao\"]/div/div/div[2]/div/span[1]/span[1]/span")));
-                WebElement clickMunicipio = driver.findElement(By.xpath("//*[@id=\"pnlLocalPrestacao\"]/div/div/div[2]/div/span[1]/span[1]/span"));
-                clickMunicipio.click();
+                seleniumUtility.sendKeysByXPath(driver, wait, "/html/body/span/span/span[1]/input", datasDBModel.getCnae());
 
-                wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/span/span/span[1]/input")));
-                WebElement sendMunicipio = driver.findElement(By.xpath("/html/body/span/span/span[1]/input"));
-                sendMunicipio.sendKeys(dadosDBModel.getMunicipio());
+                seleniumUtility.clickElementByXPath(driver, wait, "//li[@class=\"select2-results__option select2-results__option--selectable select2-results__option--highlighted\"]");
 
-                aguardar.segundos(5);
+                seleniumUtility.waitByXpath(driver, wait, "//div[@id=\"modalLoading\" and contains(@style, \"display: none;\")]");
 
-                driver.findElement(By.id("select2-LocalPrestacao_CodigoMunicipioPrestacao-results")).click();
+                seleniumUtility.clickElementByXPath(driver, wait, "//label[contains(text(), 'Não')]");
 
-                wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"pnlServicoPrestado\"]/div/div[1]/div/div/span[1]/span[1]/span")));
-                WebElement clickCodigo = driver.findElement(By.xpath("//*[@id=\"pnlServicoPrestado\"]/div/div[1]/div/div/span[1]/span[1]/span"));
-                clickCodigo.click();
+                seleniumUtility.waitByXpath(driver, wait, "//div[@id=\"modalLoading\" and contains(@style, \"display: none;\")]");
 
-                wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/span/span/span[1]/input")));
-                WebElement sendCodigo = driver.findElement(By.xpath("/html/body/span/span/span[1]/input"));
-                sendCodigo.sendKeys(dadosDBModel.getCnae());
+                seleniumUtility.clickElementByID(driver, wait, "ServicoPrestado_Descricao");
 
-                aguardar.segundos(5);
+                seleniumUtility.sendKeysByID(driver, wait, "ServicoPrestado_Descricao", datasDBModel.getDescricao_servico());
 
-                driver.findElement(By.xpath("//*[@id=\"select2-ServicoPrestado_CodigoTributacaoNacional-results\"]/li[1]")).click();
+                seleniumUtility.clickElementByXPath(driver, wait, "/html/body/div[1]/form/div[7]/button");
 
-                wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[contains(text(), 'Não')]")));
-                WebElement clickServico = driver.findElement(By.xpath("//label[contains(text(), 'Não')]"));
-                clickServico.click();
+                seleniumUtility.clickElementByID(driver, wait, "Valores_ValorServico");
 
-                aguardar.segundos(5);
+                seleniumUtility.sendKeysByID(driver, wait, "Valores_ValorServico", datasDBModel.getValor_nf());
 
-                wait.until(ExpectedConditions.presenceOfElementLocated(By.id("ServicoPrestado_Descricao")));
-                WebElement clickDescricao = driver.findElement(By.id("ServicoPrestado_Descricao"));
-                clickDescricao.click();
+                seleniumUtility.clickElementByXPath(driver, wait, "//*[@id=\"pnlOpcaoParaMEI\"]/div/div/label");
 
-                wait.until(ExpectedConditions.presenceOfElementLocated(By.id("ServicoPrestado_Descricao")));
-                WebElement sendDescricao = driver.findElement(By.id("ServicoPrestado_Descricao"));
-                sendDescricao.sendKeys(dadosDBModel.getDescricao_servico());
+                seleniumUtility.clickElementByXPath(driver, wait, "/html/body/div[1]/form/div[7]/button");
 
-                wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[1]/form/div[7]/button")));
-                WebElement avancarServico = driver.findElement(By.xpath("/html/body/div[1]/form/div[7]/button"));
-                avancarServico.click();
+                seleniumUtility.clickElementByID(driver, wait, "btnProsseguir");
 
-                wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Valores_ValorServico")));
-                WebElement clickValor = driver.findElement(By.id("Valores_ValorServico"));
-                clickValor.click();
+                seleniumUtility.clickElementByXPath(driver, wait, "//span[text()='Visualizar NFS-e']");
 
-                wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Valores_ValorServico")));
-                WebElement sendValor = driver.findElement(By.id("Valores_ValorServico"));
-                sendValor.sendKeys(dadosDBModel.getValor_nf());
+                seleniumUtility.clickElementByXPath(driver, wait, "//a[@data-original-title='Download DANFSe']");
 
-                wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Valores_ValorServico")));
-                WebElement clickNenhumValor = driver.findElement(By.xpath("//*[@id=\"pnlOpcaoParaMEI\"]/div/div/label"));
-                clickNenhumValor.click();
+                isDownloaded();
 
-                wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[1]/form/div[7]/button")));
-                WebElement avancarValores = driver.findElement(By.xpath("/html/body/div[1]/form/div[7]/button"));
-                avancarValores.click();
+                seleniumUtility.quit(driver);
 
-                wait.until(ExpectedConditions.presenceOfElementLocated(By.id("btnProsseguir")));
-                WebElement emitirNota = driver.findElement(By.id("btnProsseguir"));
-                emitirNota.click();
-
-                wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[text()='Visualizar NFS-e']")));
-                WebElement viewNota = driver.findElement(By.xpath("//span[text()='Visualizar NFS-e']"));
-                viewNota.click();
-
-                wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@data-original-title='Download DANFSe']")));
-                WebElement baixarNota = driver.findElement(By.xpath("//a[@data-original-title='Download DANFSe']"));
-                baixarNota.click();
-
-                aguardar.segundos(5);
-
-                logger.registraLog("Nota fiscal emitida com sucesso");
-
-                driver.quit();
-
-                Instant end = Instant.now();
-                Duration timeElapsed = Duration.between(start, end);
-                logger.registraLog("Tempo de execução: " + timeElapsed.toHours() + ":" + timeElapsed.toMinutes() + ":" + timeElapsed.toSeconds());
+                logger.registerLog("Invoice has been issued successfully!");
                 break;
             }
         } catch (Exception e) {
-            logger.registraException("Erro ao emitir nota fiscal", e);
-            logger.registraErro("Tentando novamente em 1 minuto");
-            aguardar.minutos(1);
-            driver.quit();
+            logger.registraException("There was an error issuing the invoice", e);
+            logger.registraErro("Trying again in 1 minute");
+            waitMoment.minutes(1);
+            seleniumUtility.quit(driver);
         }
-
-        logger.registraLog("Capturando informações");
-
-        String chave = "";
-        String base64 = "";
-        String caminho = "";
-
-        //Mover arquivo para pasta
-        if (OS.equalsIgnoreCase("linux")) {
-            base64 = converterUtility.encondeBase64(folderUtility.getFile(PATH_DOWNLOAD_LINUX));
-            chave = folderUtility.getChave(PATH_DOWNLOAD_LINUX);
-            caminho = folderUtility.moveFile(PATH_DOWNLOAD_LINUX, PATH_SAVE_NF, OS);
-        } else {
-            base64 = converterUtility.encondeBase64(folderUtility.getFile(PATH_DOWNLOAD_WINDOWS));
-            chave = folderUtility.getChave(PATH_DOWNLOAD_WINDOWS);
-            caminho = folderUtility.moveFile(PATH_DOWNLOAD_WINDOWS, PATH_SAVE_NF, OS);
-        }
-
-        logger.registraLog("Chave: " + chave);
-        logger.registraLog("Caminho: " + caminho);
-
-        DadosHistoricoModel dadosHistoricoModel = DadosHistoricoModel.builder()
-                .cnpj(credenciaisModel.getLogin())
-                .data_da_emissao(dateUtility.getToday("dd/MM/yyyy"))
-                .valor(dadosDBModel.getValor_nf())
-                .chave(chave)
-//                .base64(base64)
-                .build();
-
-        dataBase.insertHistorico(dadosHistoricoModel);
-
-        List<CredenciaisModel> acessosModelList = dataBase.getAcessos();
-
-        String finalCaminho = caminho;
-
-        acessosModelList.forEach(e -> {
-            if (e.getPlataforma().equalsIgnoreCase("outlook")) //change to yank
-//                if (e.getPlataforma().equalsIgnoreCase("yank"))
-                emailUtility.sendMail(
-                        "NF mês " + dateUtility.getToday("MM/yyyy") + " | Yank! Solutions",
-                        BODY,
-                        "joaopimentelv@gmail.com",
-                        "polandmafia01@gmail.com",
-                        "matheusoliveira1991@hotmail.com",
-                        finalCaminho, e);
-        });
     }
 
-    private void login(CredenciaisModel credenciaisModel) {
-        logger.registraLog("Realizando Login no Site do Governo");
-        logger.registraLog("OS: " + OS);
+    private void login() {
+        logger.registerLog("Loggin in to Goverment Website");
 
         while (true) {
             try {
                 if (OS.equalsIgnoreCase("linux"))
-                    driver = seleniumUtility.getDriver(true, false, PATH_DOWNLOAD_LINUX);
+                    driver = seleniumUtility.getDriver(false, false, PATH_DOWNLOAD_LINUX);
                 else
-                    driver = seleniumUtility.getDriver(true, false, PATH_DOWNLOAD_WINDOWS);
+                    driver = seleniumUtility.getDriver(false, false, PATH_DOWNLOAD_WINDOWS);
 
                 wait = new WebDriverWait(driver, Duration.ofSeconds(30));
                 driver.manage().window().maximize();
                 driver.get(LINK_LOGIN);
 
-                wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Inscricao")));
-                WebElement usuario = driver.findElement(By.id("Inscricao"));
-                usuario.sendKeys(credenciaisModel.getLogin());
+                seleniumUtility.sendKeysByID(driver, wait, "Inscricao", CNPJ);
 
-                wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Senha")));
-                WebElement senha = driver.findElement(By.id("Senha"));
-                senha.sendKeys(credenciaisModel.getSenha());
+                seleniumUtility.sendKeysByID(driver, wait, "Senha", passwdCNPJ);
 
-                wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[text()='Entrar']")));
-                WebElement botaoLogin = driver.findElement(By.xpath("//button[text()='Entrar']"));
-                botaoLogin.click();
+                seleniumUtility.clickElementByXPath(driver, wait, "//button[text()='Entrar']");
 
                 wait.until(ExpectedConditions.presenceOfElementLocated(By.id("wgtUltimasNFSe")));
 
-                logger.registraLog("Login realizado com sucesso");
+                logger.registerLog("Logged in successfully!");
                 break;
             } catch (Exception e) {
-                logger.registraException("Erro ao realizar login", e);
-                logger.registraErro("Tentando novamente em 1 minuto");
-                driver.quit();
-//            aguardar.minutos(1);
+                logger.registraException("There was an error trying to Loggin", e);
+                logger.registraErro("Trying again in 1 minute");
+                seleniumUtility.quit(driver);
+                waitMoment.minutes(1);
             }
         }
+    }
+
+    private void isDownloaded() {
+        while (true) {
+            if (OS.equalsIgnoreCase("linux")) {
+                if (folderUtility.isPDFHere(PATH_DOWNLOAD_LINUX))
+                    break;
+            } else {
+                if (folderUtility.isPDFHere(PATH_DOWNLOAD_WINDOWS))
+                    break;
+            }
+        }
+    }
+
+    private void getInformations() {
+        logger.registerLog("Getting informations");
+
+        //Mover arquivo para pasta
+        if (OS.equalsIgnoreCase("linux")) {
+            BASE64 = converterUtility.encondeBase64(folderUtility.getFile(PATH_DOWNLOAD_LINUX));
+            KEY = folderUtility.getChave(PATH_DOWNLOAD_LINUX);
+            PATH = folderUtility.moveFile(PATH_DOWNLOAD_LINUX, PATH_SAVE_NF, OS);
+        } else {
+            BASE64 = converterUtility.encondeBase64(folderUtility.getFile(PATH_DOWNLOAD_WINDOWS));
+            KEY = folderUtility.getChave(PATH_DOWNLOAD_WINDOWS);
+            PATH = folderUtility.moveFile(PATH_DOWNLOAD_WINDOWS, PATH_SAVE_NF, OS);
+        }
+    }
+
+    private void insertDB(DatasDBModel datasDBModel, String CNPJ) {
+        DadosHistoricoModel dadosHistoricoModel = DadosHistoricoModel.builder()
+                .cnpj(CNPJ)
+                .data_da_emissao(dateUtility.getToday("dd/MM/yyyy"))
+                .valor(datasDBModel.getValor_nf())
+                .chave(KEY)
+//                .base64(base64)
+                .build();
+
+        logger.registerLog("Inserting data into the database");
+        logger.registerLog("Key: " + KEY);
+        logger.registerLog("Path: " + PATH);
+        logger.registerLog("Base64: " + BASE64);
+        dataBase.insertHistorico(dadosHistoricoModel);
+        logger.registerLog("Information inserted successfully!");
+    }
+
+    private void sendMail() {
+
+        CredentialsModel credentialsModel = CredentialsModel.builder()
+                .login(mailLogin)
+                .senha(passwdMail)
+                .build();
+
+        String subject = "NF mês " + dateUtility.getToday("MM/yyyy") + " | Yank! Solutions";
+
+        emailUtility.sendMail(
+                subject,
+                body,
+                to,
+                cc,
+                bcc,
+                PATH,
+                credentialsModel);
+
     }
 }
