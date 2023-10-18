@@ -16892,3 +16892,1352 @@ java.net.SocketException: Connection reset
 [INFO ] 2023-10-10 23:16:42.687 [main] ETHER - PASSWORD: ****
 [INFO ] 2023-10-10 23:16:43.249 [main] ETHER - Conexão com o banco de dados realizada com sucesso
 [INFO ] 2023-10-10 23:16:43.430 [main] EtherApplicationTests - Started EtherApplicationTests in 1.956 seconds (process running for 3.891)
+[INFO ] 2023-10-13 11:27:20.194 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 10948 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-13 11:27:20.202 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-13 11:27:21.112 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-13 11:27:21.112 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-13 11:27:21.113 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-13 11:27:21.113 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-13 11:27:21.861 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-13 11:27:22.082 [main] EtherApplication - Started EtherApplication in 2.428 seconds (process running for 4.37)
+[INFO ] 2023-10-13 11:27:36.300 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 5760 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-13 11:27:36.305 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-13 11:27:37.029 [main] ETHER - =============================================
+[INFO ] 2023-10-13 11:27:37.031 [main] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-13 11:27:37.031 [main] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-13 11:27:37.031 [main] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-13 11:27:37.032 [main] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[ERROR] 2023-10-13 11:27:37.032 [main] ETHER - Erro ao consultar o banco de dados
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+	at br.com.ether.repository.DataBase.select(DataBase.java:155) ~[classes/:?]
+	at br.com.ether.repository.DataBase.getCasos(DataBase.java:73) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:32) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-13 11:27:37.044 [main] ETHER - Tentando novamente em 1 minuto
+[ERROR] 2023-10-13 11:28:37.047 [main] ETHER - =============================================
+[INFO ] 2023-10-13 11:28:37.047 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-13 11:28:37.047 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-13 11:28:37.048 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-13 11:28:37.049 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-13 11:28:37.464 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-13 11:28:37.702 [main] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-13 11:28:37.702 [main] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-13 11:28:37.702 [main] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-13 11:28:37.702 [main] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-13 11:28:37.709 [main] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-13 11:28:37.709 [main] ETHER - OS: windows 10
+[INFO ] 2023-10-13 11:28:38.687 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-13 11:28:38.711 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-13 11:28:41.700 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-13 11:29:49.789 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 16068 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-13 11:29:49.795 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-13 11:29:50.469 [main] ETHER - =============================================
+[INFO ] 2023-10-13 11:29:50.471 [main] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-13 11:29:50.471 [main] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-13 11:29:50.471 [main] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-13 11:29:50.471 [main] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[ERROR] 2023-10-13 11:29:50.472 [main] ETHER - Erro ao consultar o banco de dados
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+	at br.com.ether.repository.DataBase.select(DataBase.java:155) ~[classes/:?]
+	at br.com.ether.repository.DataBase.getCasos(DataBase.java:73) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:32) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-13 11:29:50.483 [main] ETHER - Tentando novamente em 1 minuto
+[ERROR] 2023-10-13 11:30:50.499 [main] ETHER - =============================================
+[INFO ] 2023-10-13 11:30:50.500 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-13 11:30:50.501 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-13 11:30:50.501 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-13 11:30:50.502 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-13 11:30:50.892 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-13 11:30:50.917 [main] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-13 11:30:50.917 [main] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-13 11:30:50.917 [main] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-13 11:30:50.917 [main] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-13 11:30:50.925 [main] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-13 11:30:50.925 [main] ETHER - OS: windows 10
+[INFO ] 2023-10-13 11:30:51.282 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-13 11:30:51.301 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-13 11:30:52.744 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-13 11:30:54.057 [main] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-13 11:30:54.254 [main] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-13 19:22:07.528 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 10992 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-13 19:22:07.534 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-13 19:22:08.571 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-13 19:22:08.572 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-13 19:22:08.572 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-13 19:22:08.572 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-13 19:22:09.623 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-13 19:22:09.636 [main] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-13 19:22:09.636 [main] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-13 19:22:09.636 [main] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-13 19:22:09.636 [main] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-13 19:22:38.410 [main] ETHER - Iniciando o processo de login no site do Sócio Torcedor | Dia: 13/10/2023 19:22:38
+[INFO ] 2023-10-13 19:22:43.539 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-13 19:22:43.636 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-13 19:22:51.334 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-13 19:23:22.319 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 12716 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-13 19:23:22.324 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-13 19:23:23.568 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-13 19:23:23.568 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-13 19:23:23.568 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-13 19:23:23.568 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-13 19:23:24.443 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-13 19:23:24.451 [main] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-13 19:23:24.451 [main] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-13 19:23:24.451 [main] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-13 19:23:24.452 [main] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-13 19:23:26.669 [main] ETHER - Iniciando o processo de login no site do Sócio Torcedor | Dia: 13/10/2023 19:23:26
+[INFO ] 2023-10-13 19:23:30.109 [main] WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[INFO ] 2023-10-13 19:23:30.500 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+[WARN ] 2023-10-13 19:23:35.183 [main] CdpVersionFinder - Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[INFO ] 2023-10-13 19:23:45.574 [main] ETHER - Inserindo o e-mail: matheusoliveira1991@hotmail.com
+[INFO ] 2023-10-13 19:23:46.913 [main] ETHER - Inserindo a senha: **********
+[INFO ] 2023-10-13 19:24:10.571 [main] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-13 19:24:12.487 [main] ETHER - Acessando a página de experiências
+[INFO ] 2023-10-13 19:24:13.300 [main] ETHER - Acessando a página de extrato
+[INFO ] 2023-10-13 19:24:23.435 [main] ETHER - Extrato acessado com sucesso
+[INFO ] 2023-10-13 19:24:23.467 [main] ETHER - Pontos disponíveis: 930 pts
+[INFO ] 2023-10-13 19:24:23.468 [main] ETHER - ========================================================================================================
+[INFO ] 2023-10-17 20:18:41.575 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 2572 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 20:18:41.585 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 20:18:42.773 [main] ETHER - =============================================
+[INFO ] 2023-10-17 20:18:42.774 [main] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 20:18:42.774 [main] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 20:18:42.775 [main] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:18:42.775 [main] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[ERROR] 2023-10-17 20:18:42.775 [main] ETHER - Erro ao consultar o banco de dados
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+	at br.com.ether.repository.DataBase.select(DataBase.java:155) ~[classes/:?]
+	at br.com.ether.repository.DataBase.getCasos(DataBase.java:73) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:32) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-17 20:18:42.790 [main] ETHER - Tentando novamente em 1 minuto
+[INFO ] 2023-10-17 20:19:18.011 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 11372 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 20:19:18.015 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 20:19:19.058 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 20:19:19.059 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 20:19:19.059 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 20:19:19.060 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 20:19:20.023 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 20:19:20.275 [main] EtherApplication - Started EtherApplication in 2.968 seconds (process running for 4.861)
+[INFO ] 2023-10-17 20:19:21.013 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 20:19:21.015 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 20:19:21.015 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 20:19:21.015 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:19:21.015 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 20:19:21.144 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 20:19:21.145 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:19:21.145 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:19:21.145 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:19:21.153 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 20:19:21.153 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-17 20:19:22.412 [scheduling-1] WebDriverManager - Using chromedriver 118.0.5993.70 (resolved driver for Chrome 118)
+[INFO ] 2023-10-17 20:19:22.447 [scheduling-1] WebDriverManager - Reading https://chromedriver.storage.googleapis.com/ to seek chromedriver
+[INFO ] 2023-10-17 20:19:23.367 [scheduling-1] Downloader - Downloading https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.70/win64/chromedriver-win64.zip
+[INFO ] 2023-10-17 20:19:24.250 [scheduling-1] Downloader - Extracting driver from compressed file chromedriver-win64.zip
+[INFO ] 2023-10-17 20:19:24.431 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\118.0.5993.70\chromedriver.exe
+[WARN ] 2023-10-17 20:19:27.065 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 118, so returning the closest version found: 114
+[INFO ] 2023-10-17 20:19:29.076 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-17 20:19:34.415 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-17 20:20:18.454 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 14752 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 20:20:18.461 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 20:20:19.418 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 20:20:19.419 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 20:20:19.419 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 20:20:19.419 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 20:20:20.056 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 20:20:20.351 [main] EtherApplication - Started EtherApplication in 2.469 seconds (process running for 4.174)
+[INFO ] 2023-10-17 20:20:21.012 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 20:20:21.013 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 20:20:21.014 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 20:20:21.014 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:20:21.014 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 20:20:21.056 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 20:20:21.056 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:20:21.056 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:20:21.056 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:20:21.062 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 20:20:21.062 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-17 20:20:21.523 [scheduling-1] WebDriverManager - Using chromedriver 118.0.5993.70 (resolved driver for Chrome 118)
+[INFO ] 2023-10-17 20:20:21.551 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\118.0.5993.70\chromedriver.exe
+[WARN ] 2023-10-17 20:20:23.494 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 118, so returning the closest version found: 114
+[INFO ] 2023-10-17 20:20:25.339 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-17 20:20:25.513 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-17 20:21:06.829 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 924 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 20:21:06.835 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 20:21:07.739 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 20:21:07.740 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 20:21:07.740 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 20:21:07.741 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 20:21:08.313 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 20:21:08.578 [main] EtherApplication - Started EtherApplication in 2.323 seconds (process running for 3.857)
+[INFO ] 2023-10-17 20:21:09.011 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 20:21:09.013 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 20:21:09.014 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 20:21:09.014 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:21:09.014 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 20:21:09.054 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 20:21:09.054 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:21:09.054 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:21:09.054 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:21:09.056 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 20:21:09.056 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-17 20:21:09.428 [scheduling-1] WebDriverManager - Using chromedriver 118.0.5993.70 (resolved driver for Chrome 118)
+[INFO ] 2023-10-17 20:21:09.452 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\118.0.5993.70\chromedriver.exe
+[WARN ] 2023-10-17 20:21:11.289 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 118, so returning the closest version found: 114
+[INFO ] 2023-10-17 20:21:13.255 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-17 20:21:13.416 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-17 20:21:38.682 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 16344 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 20:21:38.691 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 20:21:39.756 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 20:21:39.756 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 20:21:39.756 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 20:21:39.756 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 20:21:40.408 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 20:21:40.714 [main] EtherApplication - Started EtherApplication in 2.505 seconds (process running for 4.107)
+[INFO ] 2023-10-17 20:21:41.007 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 20:21:41.009 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 20:21:41.009 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 20:21:41.009 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:21:41.009 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 20:21:41.042 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 20:21:41.043 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:21:41.043 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:21:41.043 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:21:41.046 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 20:21:41.046 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-17 20:21:41.493 [scheduling-1] WebDriverManager - Using chromedriver 118.0.5993.70 (resolved driver for Chrome 118)
+[INFO ] 2023-10-17 20:21:41.534 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\118.0.5993.70\chromedriver.exe
+[WARN ] 2023-10-17 20:21:43.632 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 118, so returning the closest version found: 114
+[INFO ] 2023-10-17 20:21:45.328 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-17 20:21:45.483 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-17 20:23:23.240 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 11692 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 20:23:23.247 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 20:23:24.159 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 20:23:24.159 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 20:23:24.159 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 20:23:24.159 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 20:23:24.709 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 20:23:24.941 [main] EtherApplication - Started EtherApplication in 2.326 seconds (process running for 4.096)
+[INFO ] 2023-10-17 20:23:25.002 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 20:23:25.004 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 20:23:25.004 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 20:23:25.005 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:23:25.005 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 20:23:25.040 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 20:23:25.040 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:23:25.040 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:23:25.040 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:23:25.045 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 20:23:25.046 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-17 20:23:25.433 [scheduling-1] WebDriverManager - Using chromedriver 118.0.5993.70 (resolved driver for Chrome 118)
+[INFO ] 2023-10-17 20:23:25.465 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\118.0.5993.70\chromedriver.exe
+[WARN ] 2023-10-17 20:23:27.241 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 118, so returning the closest version found: 114
+[INFO ] 2023-10-17 20:23:29.213 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-17 20:23:29.399 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-17 20:24:12.696 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 11440 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 20:24:12.703 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 20:24:13.646 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 20:24:13.646 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 20:24:13.646 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 20:24:13.646 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 20:24:14.369 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 20:24:14.660 [main] EtherApplication - Started EtherApplication in 2.582 seconds (process running for 4.234)
+[INFO ] 2023-10-17 20:24:15.004 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 20:24:15.005 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 20:24:15.006 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 20:24:15.006 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:24:15.006 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 20:24:15.034 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 20:24:15.034 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:24:15.034 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:24:15.034 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:24:15.038 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 20:24:15.038 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-17 20:24:15.472 [scheduling-1] WebDriverManager - Using chromedriver 118.0.5993.70 (resolved driver for Chrome 118)
+[INFO ] 2023-10-17 20:24:15.505 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\118.0.5993.70\chromedriver.exe
+[WARN ] 2023-10-17 20:24:17.536 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 118, so returning the closest version found: 114
+[INFO ] 2023-10-17 20:24:19.393 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-17 20:24:19.593 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-17 20:27:47.210 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 14340 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 20:27:47.215 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 20:27:47.953 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 20:27:47.953 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 20:27:47.953 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 20:27:47.953 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 20:27:48.401 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 20:27:48.584 [main] EtherApplication - Started EtherApplication in 1.865 seconds (process running for 3.138)
+[INFO ] 2023-10-17 20:27:49.005 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 20:27:49.009 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 20:27:49.009 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 20:27:49.010 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:27:49.010 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 20:27:49.037 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 20:27:49.037 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:27:49.037 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:27:49.037 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:27:49.040 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 20:27:49.040 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-17 20:27:49.363 [scheduling-1] WebDriverManager - Using chromedriver 118.0.5993.70 (resolved driver for Chrome 118)
+[INFO ] 2023-10-17 20:27:49.396 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\118.0.5993.70\chromedriver.exe
+[WARN ] 2023-10-17 20:27:51.004 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 118, so returning the closest version found: 114
+[INFO ] 2023-10-17 20:27:52.646 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-17 20:27:52.843 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-17 20:28:49.169 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 10408 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 20:28:49.173 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 20:28:49.895 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 20:28:49.895 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 20:28:49.895 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 20:28:49.896 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 20:28:50.286 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 20:28:50.497 [main] EtherApplication - Started EtherApplication in 1.754 seconds (process running for 2.938)
+[INFO ] 2023-10-17 20:28:51.010 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 20:28:51.012 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 20:28:51.013 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 20:28:51.013 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:28:51.013 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 20:28:51.052 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 20:28:51.052 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:28:51.052 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:28:51.052 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:28:51.054 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 20:28:51.054 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-17 20:28:51.336 [scheduling-1] WebDriverManager - Using chromedriver 118.0.5993.70 (resolved driver for Chrome 118)
+[INFO ] 2023-10-17 20:28:51.366 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\118.0.5993.70\chromedriver.exe
+[WARN ] 2023-10-17 20:28:52.767 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 118, so returning the closest version found: 114
+[INFO ] 2023-10-17 20:28:54.172 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-17 20:28:54.319 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-17 20:29:45.671 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 5184 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 20:29:45.676 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 20:29:46.369 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 20:29:46.369 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 20:29:46.369 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 20:29:46.369 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 20:29:46.822 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 20:29:47.012 [main] EtherApplication - Started EtherApplication in 1.778 seconds (process running for 2.908)
+[INFO ] 2023-10-17 20:29:48.015 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 20:29:48.018 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 20:29:48.019 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 20:29:48.019 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:29:48.019 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 20:29:48.059 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 20:29:48.060 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:29:48.060 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:29:48.060 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:29:48.062 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 20:29:48.062 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-17 20:29:48.339 [scheduling-1] WebDriverManager - Using chromedriver 118.0.5993.70 (resolved driver for Chrome 118)
+[INFO ] 2023-10-17 20:29:48.360 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\118.0.5993.70\chromedriver.exe
+[WARN ] 2023-10-17 20:29:49.797 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 118, so returning the closest version found: 114
+[INFO ] 2023-10-17 20:29:51.133 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-17 20:29:51.333 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-17 20:31:30.118 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 9944 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 20:31:30.122 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 20:31:30.790 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 20:31:30.790 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 20:31:30.790 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 20:31:30.791 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 20:31:31.213 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 20:31:31.401 [main] EtherApplication - Started EtherApplication in 1.705 seconds (process running for 2.884)
+[INFO ] 2023-10-17 20:31:32.014 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 20:31:32.018 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 20:31:32.018 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 20:31:32.018 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:31:32.019 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 20:31:32.061 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 20:31:32.061 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:31:32.062 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:31:32.062 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:31:32.064 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 20:31:32.065 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-17 20:31:32.363 [scheduling-1] WebDriverManager - Using chromedriver 118.0.5993.70 (resolved driver for Chrome 118)
+[INFO ] 2023-10-17 20:31:32.380 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\118.0.5993.70\chromedriver.exe
+[WARN ] 2023-10-17 20:31:33.860 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 118, so returning the closest version found: 114
+[INFO ] 2023-10-17 20:31:35.479 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-17 20:31:35.628 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-17 20:33:12.171 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 2400 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 20:33:12.179 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 20:33:13.177 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 20:33:13.177 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 20:33:13.177 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 20:33:13.177 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 20:33:13.806 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 20:33:14.108 [main] EtherApplication - Started EtherApplication in 2.681 seconds (process running for 4.223)
+[INFO ] 2023-10-17 20:33:15.003 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 20:33:15.005 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 20:33:15.005 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 20:33:15.005 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:33:15.005 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 20:33:15.033 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 20:33:15.034 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:33:15.034 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:33:15.034 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:33:15.037 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 20:33:15.037 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-17 20:33:15.533 [scheduling-1] WebDriverManager - Using chromedriver 118.0.5993.70 (resolved driver for Chrome 118)
+[INFO ] 2023-10-17 20:33:15.571 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\118.0.5993.70\chromedriver.exe
+[WARN ] 2023-10-17 20:33:17.488 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 118, so returning the closest version found: 114
+[INFO ] 2023-10-17 20:33:19.222 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-17 20:33:19.385 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-17 20:34:54.444 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 2876 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 20:34:54.448 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 20:34:55.171 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 20:34:55.172 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 20:34:55.172 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 20:34:55.172 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 20:34:55.588 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 20:34:55.795 [main] EtherApplication - Started EtherApplication in 1.815 seconds (process running for 2.949)
+[INFO ] 2023-10-17 20:34:56.005 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 20:34:56.012 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 20:34:56.013 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 20:34:56.014 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:34:56.014 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 20:34:56.078 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 20:34:56.078 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:34:56.078 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:34:56.078 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:34:56.081 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 20:34:56.082 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-17 20:34:56.391 [scheduling-1] WebDriverManager - Using chromedriver 118.0.5993.70 (resolved driver for Chrome 118)
+[INFO ] 2023-10-17 20:34:56.420 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\118.0.5993.70\chromedriver.exe
+[WARN ] 2023-10-17 20:34:57.835 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 118, so returning the closest version found: 114
+[INFO ] 2023-10-17 20:34:58.973 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-17 20:34:59.128 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-17 20:36:02.661 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 4184 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 20:36:02.668 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 20:36:03.381 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 20:36:03.381 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 20:36:03.382 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 20:36:03.382 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 20:36:03.815 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 20:36:04.029 [main] EtherApplication - Started EtherApplication in 1.785 seconds (process running for 3.213)
+[INFO ] 2023-10-17 20:36:05.011 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 20:36:05.014 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 20:36:05.014 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 20:36:05.014 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:36:05.014 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 20:36:05.040 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 20:36:05.040 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:36:05.041 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:36:05.041 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:36:05.043 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 20:36:05.043 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-17 20:36:05.320 [scheduling-1] WebDriverManager - Using chromedriver 118.0.5993.70 (resolved driver for Chrome 118)
+[INFO ] 2023-10-17 20:36:05.345 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\118.0.5993.70\chromedriver.exe
+[WARN ] 2023-10-17 20:36:06.782 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 118, so returning the closest version found: 114
+[INFO ] 2023-10-17 20:36:07.957 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-17 20:36:08.114 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-17 20:37:56.455 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 7880 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 20:37:56.459 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 20:37:57.141 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 20:37:57.141 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 20:37:57.141 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 20:37:57.141 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 20:37:57.563 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 20:37:57.748 [main] EtherApplication - Started EtherApplication in 1.735 seconds (process running for 2.909)
+[INFO ] 2023-10-17 20:37:58.001 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 20:37:58.006 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 20:37:58.007 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 20:37:58.007 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:37:58.008 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 20:37:58.047 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 20:37:58.047 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:37:58.047 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:37:58.047 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:37:58.050 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 20:37:58.050 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-17 20:37:58.319 [scheduling-1] WebDriverManager - Using chromedriver 118.0.5993.70 (resolved driver for Chrome 118)
+[INFO ] 2023-10-17 20:37:58.343 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\118.0.5993.70\chromedriver.exe
+[WARN ] 2023-10-17 20:37:59.784 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 118, so returning the closest version found: 114
+[INFO ] 2023-10-17 20:38:01.131 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-17 20:38:01.319 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-17 20:39:36.939 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 12268 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 20:39:36.943 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 20:39:37.627 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 20:39:37.628 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 20:39:37.628 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 20:39:37.628 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 20:39:38.047 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 20:39:38.227 [main] EtherApplication - Started EtherApplication in 1.716 seconds (process running for 2.872)
+[INFO ] 2023-10-17 20:39:39.016 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 20:39:39.019 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 20:39:39.019 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 20:39:39.019 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:39:39.019 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 20:39:39.045 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 20:39:39.045 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:39:39.045 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:39:39.045 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:39:39.048 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 20:39:39.048 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-17 20:39:39.295 [scheduling-1] WebDriverManager - Using chromedriver 118.0.5993.70 (resolved driver for Chrome 118)
+[INFO ] 2023-10-17 20:39:39.324 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\118.0.5993.70\chromedriver.exe
+[WARN ] 2023-10-17 20:39:40.727 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 118, so returning the closest version found: 114
+[INFO ] 2023-10-17 20:39:41.975 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-17 20:39:42.155 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-17 20:40:36.959 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 9776 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 20:40:36.964 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 20:40:37.686 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 20:40:37.686 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 20:40:37.686 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 20:40:37.688 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 20:40:38.111 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 20:40:38.307 [main] EtherApplication - Started EtherApplication in 1.797 seconds (process running for 3.052)
+[INFO ] 2023-10-17 20:40:39.009 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 20:40:39.012 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 20:40:39.013 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 20:40:39.013 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:40:39.013 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 20:40:39.055 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 20:40:39.056 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:40:39.056 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:40:39.056 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:40:39.059 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 20:40:39.059 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-17 20:40:39.335 [scheduling-1] WebDriverManager - Using chromedriver 118.0.5993.70 (resolved driver for Chrome 118)
+[INFO ] 2023-10-17 20:40:39.356 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\118.0.5993.70\chromedriver.exe
+[WARN ] 2023-10-17 20:40:40.834 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 118, so returning the closest version found: 114
+[INFO ] 2023-10-17 20:40:42.282 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-17 20:40:42.452 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-17 20:41:32.924 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 16056 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 20:41:32.928 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 20:41:33.610 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 20:41:33.610 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 20:41:33.610 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 20:41:33.611 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 20:41:34.013 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 20:41:34.222 [main] EtherApplication - Started EtherApplication in 1.737 seconds (process running for 2.865)
+[INFO ] 2023-10-17 20:41:35.013 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 20:41:35.019 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 20:41:35.020 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 20:41:35.020 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:41:35.020 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 20:41:35.050 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 20:41:35.050 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:41:35.051 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:41:35.051 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:41:35.053 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 20:41:35.053 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-17 20:41:35.321 [scheduling-1] WebDriverManager - Using chromedriver 118.0.5993.70 (resolved driver for Chrome 118)
+[INFO ] 2023-10-17 20:41:35.353 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\118.0.5993.70\chromedriver.exe
+[WARN ] 2023-10-17 20:41:36.744 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 118, so returning the closest version found: 114
+[INFO ] 2023-10-17 20:41:38.060 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-17 20:41:38.221 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-17 20:42:09.847 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 15708 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 20:42:09.851 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 20:42:10.553 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 20:42:10.554 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 20:42:10.554 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 20:42:10.554 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 20:42:10.972 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 20:42:11.156 [main] EtherApplication - Started EtherApplication in 1.734 seconds (process running for 2.876)
+[INFO ] 2023-10-17 20:42:12.013 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 20:42:12.017 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 20:42:12.017 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 20:42:12.019 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:42:12.019 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 20:42:12.060 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 20:42:12.060 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:42:12.060 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:42:12.060 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:42:12.063 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 20:42:12.063 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-17 20:42:12.329 [scheduling-1] WebDriverManager - Using chromedriver 118.0.5993.70 (resolved driver for Chrome 118)
+[INFO ] 2023-10-17 20:42:12.350 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\118.0.5993.70\chromedriver.exe
+[WARN ] 2023-10-17 20:42:13.793 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 118, so returning the closest version found: 114
+[INFO ] 2023-10-17 20:42:15.060 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-17 20:42:15.462 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-17 20:43:40.295 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 7304 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 20:43:40.299 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 20:43:40.964 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 20:43:40.964 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 20:43:40.965 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 20:43:40.965 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 20:43:41.411 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 20:43:41.609 [main] EtherApplication - Started EtherApplication in 1.723 seconds (process running for 2.859)
+[INFO ] 2023-10-17 20:43:42.005 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 20:43:42.010 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 20:43:42.010 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 20:43:42.010 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:43:42.010 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 20:43:42.048 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 20:43:42.048 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:43:42.048 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:43:42.048 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:43:42.051 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 20:43:42.051 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-17 20:43:42.356 [scheduling-1] WebDriverManager - Using chromedriver 118.0.5993.70 (resolved driver for Chrome 118)
+[INFO ] 2023-10-17 20:43:42.376 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\118.0.5993.70\chromedriver.exe
+[WARN ] 2023-10-17 20:43:43.837 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 118, so returning the closest version found: 114
+[INFO ] 2023-10-17 20:43:45.047 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-17 20:43:45.206 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-17 20:45:21.533 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 10792 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 20:45:21.540 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 20:45:22.295 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 20:45:22.295 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 20:45:22.295 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 20:45:22.296 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 20:45:22.792 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 20:45:23.047 [main] EtherApplication - Started EtherApplication in 2.0 seconds (process running for 3.257)
+[INFO ] 2023-10-17 20:45:24.004 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 20:45:24.006 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 20:45:24.007 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 20:45:24.007 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:45:24.007 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 20:45:24.040 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 20:45:24.040 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:45:24.041 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:45:24.041 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:45:24.043 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 20:45:24.044 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-17 20:45:24.453 [scheduling-1] WebDriverManager - Using chromedriver 118.0.5993.70 (resolved driver for Chrome 118)
+[INFO ] 2023-10-17 20:45:24.494 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\118.0.5993.70\chromedriver.exe
+[WARN ] 2023-10-17 20:45:26.410 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 118, so returning the closest version found: 114
+[INFO ] 2023-10-17 20:45:27.763 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-17 20:45:27.987 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-17 20:45:45.745 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 484 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 20:45:45.751 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 20:45:46.426 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 20:45:46.427 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 20:45:46.427 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 20:45:46.427 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 20:45:46.855 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 20:45:47.045 [main] EtherApplication - Started EtherApplication in 1.737 seconds (process running for 3.024)
+[INFO ] 2023-10-17 20:45:48.001 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 20:45:48.007 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 20:45:48.008 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 20:45:48.009 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:45:48.010 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 20:45:48.046 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 20:45:48.046 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:45:48.046 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:45:48.046 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:45:48.048 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 20:45:48.049 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-17 20:45:48.324 [scheduling-1] WebDriverManager - Using chromedriver 118.0.5993.70 (resolved driver for Chrome 118)
+[INFO ] 2023-10-17 20:45:48.355 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\118.0.5993.70\chromedriver.exe
+[WARN ] 2023-10-17 20:45:49.760 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 118, so returning the closest version found: 114
+[INFO ] 2023-10-17 20:45:51.016 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-17 20:45:51.196 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-17 20:47:02.417 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 12672 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 20:47:02.423 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 20:47:03.092 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 20:47:03.092 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 20:47:03.093 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 20:47:03.093 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 20:47:03.511 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 20:47:03.726 [main] EtherApplication - Started EtherApplication in 1.758 seconds (process running for 3.037)
+[INFO ] 2023-10-17 20:47:04.015 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 20:47:04.020 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 20:47:04.020 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 20:47:04.020 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:47:04.021 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 20:47:04.060 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 20:47:04.060 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:47:04.060 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:47:04.060 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:47:04.063 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 20:47:04.063 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-17 20:47:04.329 [scheduling-1] WebDriverManager - Using chromedriver 118.0.5993.70 (resolved driver for Chrome 118)
+[INFO ] 2023-10-17 20:47:04.350 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\118.0.5993.70\chromedriver.exe
+[WARN ] 2023-10-17 20:47:05.744 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 118, so returning the closest version found: 114
+[INFO ] 2023-10-17 20:47:06.929 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-17 20:47:07.111 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-17 20:47:34.958 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 6424 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 20:47:34.963 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 20:47:35.817 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 20:47:35.817 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 20:47:35.818 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 20:47:35.819 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 20:47:36.413 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 20:47:36.690 [main] EtherApplication - Started EtherApplication in 2.224 seconds (process running for 3.51)
+[INFO ] 2023-10-17 20:47:37.010 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 20:47:37.014 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 20:47:37.015 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 20:47:37.015 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:47:37.016 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 20:47:37.057 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 20:47:37.057 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:47:37.058 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:47:37.058 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:47:37.062 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 20:47:37.062 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-17 20:47:37.491 [scheduling-1] WebDriverManager - Using chromedriver 118.0.5993.70 (resolved driver for Chrome 118)
+[INFO ] 2023-10-17 20:47:37.522 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\118.0.5993.70\chromedriver.exe
+[WARN ] 2023-10-17 20:47:39.440 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 118, so returning the closest version found: 114
+[INFO ] 2023-10-17 20:47:40.940 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-17 20:47:41.155 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-17 20:48:41.210 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 9060 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 20:48:41.215 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 20:48:41.916 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 20:48:41.917 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 20:48:41.917 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 20:48:41.917 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 20:48:42.364 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 20:48:42.577 [main] EtherApplication - Started EtherApplication in 1.835 seconds (process running for 3.049)
+[INFO ] 2023-10-17 20:48:43.006 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 20:48:43.011 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 20:48:43.011 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 20:48:43.012 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:48:43.013 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 20:48:43.061 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 20:48:43.061 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:48:43.061 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 20:48:43.061 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 20:48:43.064 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 20:48:43.064 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-17 20:48:43.341 [scheduling-1] WebDriverManager - Using chromedriver 118.0.5993.70 (resolved driver for Chrome 118)
+[INFO ] 2023-10-17 20:48:43.382 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\118.0.5993.70\chromedriver.exe
+[WARN ] 2023-10-17 20:48:44.929 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 118, so returning the closest version found: 114
+[INFO ] 2023-10-17 20:48:46.310 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-17 20:48:46.481 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-17 20:49:03.133 [scheduling-1] ETHER - Nota fiscal emitida com sucesso
+[WARN ] 2023-10-17 20:49:03.170 [AsyncHttpClient-1-4] WebSocketHandler - onError
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254) ~[netty-buffer-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+[WARN ] 2023-10-17 20:49:03.186 [AsyncHttpClient-1-4] WebSocket - Connection reset
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254) ~[netty-buffer-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357) ~[netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+[INFO ] 2023-10-17 20:49:03.343 [scheduling-1] ETHER - Tempo de execução: 0:0:20
+[INFO ] 2023-10-17 22:28:53.341 [scheduling-1] ETHER - Capturando informações
+[INFO ] 2023-10-17 22:28:53.381 [scheduling-1] ETHER - Chave: 35541022251335957000120000000000001423102601565628
+[INFO ] 2023-10-17 22:28:53.381 [scheduling-1] ETHER - Caminho: C:\Users\mathe\Área de Trabalho\ANF\NF\10-23\35541022251335957000120000000000001423102601565628.pdf
+[INFO ] 2023-10-17 22:28:53.382 [scheduling-1] ETHER - Iniciando a inserção de dados no banco de dados
+[INFO ] 2023-10-17 22:28:53.382 [scheduling-1] ETHER - INSERT: INSERT INTO historico_notas (cnpj, data_da_emissao, valor, chave) VALUES (?, ?, ?, ?);
+[INFO ] 2023-10-17 22:29:12.745 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 15136 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 22:29:12.750 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 22:29:13.749 [main] AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static java.lang.String br.com.ether.applications.anf.services.ANFService.BODY
+[INFO ] 2023-10-17 22:29:13.770 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 22:29:13.770 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 22:29:13.770 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 22:29:13.771 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 22:29:14.913 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 22:29:15.138 [main] EtherApplication - Started EtherApplication in 3.077 seconds (process running for 4.932)
+[INFO ] 2023-10-17 22:30:21.851 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 22:30:21.855 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 22:30:21.856 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 22:30:21.856 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 22:30:21.856 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 22:30:21.904 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 22:30:21.904 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 22:30:21.904 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 22:30:21.904 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 22:39:20.265 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 5744 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 22:39:20.270 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 22:39:21.047 [main] AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static java.lang.String br.com.ether.applications.anf.services.ANFService.BODY
+[INFO ] 2023-10-17 22:39:21.083 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 22:39:21.083 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 22:39:21.083 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 22:39:21.083 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 22:39:21.528 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 22:39:21.728 [main] EtherApplication - Started EtherApplication in 1.973 seconds (process running for 3.258)
+[INFO ] 2023-10-17 22:39:25.345 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 22:39:25.348 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 22:39:25.349 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 22:39:25.349 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 22:39:25.349 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 22:39:25.505 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 22:39:25.505 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 22:39:25.506 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 22:39:25.506 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 22:39:25.514 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 22:39:25.514 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-17 22:39:29.163 [scheduling-1] WebDriverManager - Using chromedriver 118.0.5993.70 (resolved driver for Chrome 118)
+[INFO ] 2023-10-17 22:39:29.234 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\118.0.5993.70\chromedriver.exe
+[WARN ] 2023-10-17 22:39:33.491 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 118, so returning the closest version found: 114
+[INFO ] 2023-10-17 22:39:34.992 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-17 22:39:35.159 [scheduling-1] ETHER - Emitindo nota fiscal
+[ERROR] 2023-10-17 22:39:44.972 [scheduling-1] ETHER - Erro ao emitir nota fiscal
+java.lang.NullPointerException: Cannot read the array length because "<local4>" is null
+	at br.com.ether.utilities.FolderUtility.isPDFHere(FolderUtility.java:83) ~[classes/:?]
+	at br.com.ether.applications.anf.services.ANFService.run(ANFService.java:143) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$0(ControllerANF.java:43) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$1(ControllerANF.java:43) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:42) [classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+[ERROR] 2023-10-17 22:39:45.029 [scheduling-1] ETHER - Tentando novamente em 1 minuto
+[INFO ] 2023-10-17 22:42:05.355 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 15864 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 22:42:05.360 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 22:42:06.339 [main] AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static java.lang.String br.com.ether.applications.anf.services.ANFService.BODY
+[INFO ] 2023-10-17 22:42:06.366 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 22:42:06.367 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 22:42:06.367 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 22:42:06.367 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 22:42:06.982 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 22:42:07.198 [main] EtherApplication - Started EtherApplication in 2.473 seconds (process running for 3.925)
+[INFO ] 2023-10-17 22:42:10.462 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 22:42:10.464 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 22:42:10.465 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 22:42:10.465 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 22:42:10.465 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 22:42:10.492 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 22:42:10.492 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 22:42:10.492 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 22:42:10.492 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 22:42:10.494 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 22:42:10.495 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-17 22:42:10.800 [scheduling-1] WebDriverManager - Using chromedriver 118.0.5993.70 (resolved driver for Chrome 118)
+[INFO ] 2023-10-17 22:42:10.825 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\118.0.5993.70\chromedriver.exe
+[WARN ] 2023-10-17 22:42:12.954 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 118, so returning the closest version found: 114
+[INFO ] 2023-10-17 22:42:14.665 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-17 22:42:14.838 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-17 22:42:24.323 [scheduling-1] ETHER - Nota fiscal emitida com sucesso
+[INFO ] 2023-10-17 22:42:25.519 [scheduling-1] ETHER - Tempo de execução para emitir e baixar: 00:00:15.024
+[INFO ] 2023-10-17 22:42:25.520 [scheduling-1] ETHER - Capturando informações
+[INFO ] 2023-10-17 22:42:25.583 [scheduling-1] ETHER - Chave: 35541022251335957000120000000000001623105941856086
+[INFO ] 2023-10-17 22:42:25.583 [scheduling-1] ETHER - Caminho: C:\Users\mathe\Área de Trabalho\ANF\NF\10-23\35541022251335957000120000000000001623105941856086.pdf
+[INFO ] 2023-10-17 22:42:25.583 [scheduling-1] ETHER - Iniciando a inserção de dados no banco de dados
+[INFO ] 2023-10-17 22:42:25.584 [scheduling-1] ETHER - INSERT: INSERT INTO historico_notas (cnpj, data_da_emissao, valor, chave) VALUES (?, ?, ?, ?);
+[INFO ] 2023-10-17 22:42:25.593 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 22:42:25.593 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 22:42:25.593 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 22:42:25.593 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 22:42:25.596 [scheduling-1] ETHER - Preparando envio de e-mail
+[ERROR] 2023-10-17 22:42:25.659 [scheduling-1] TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "obj" is null
+	at com.sun.mail.handlers.text_plain.writeTo(text_plain.java:152) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.activation.ObjectDataContentHandler.writeTo(DataHandler.java:883) ~[activation-1.1.jar:1.1]
+	at javax.activation.DataHandler.writeTo(DataHandler.java:316) ~[activation-1.1.jar:1.1]
+	at javax.mail.internet.MimeUtility.getEncoding(MimeUtility.java:321) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.internet.MimeBodyPart.updateHeaders(MimeBodyPart.java:1464) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.internet.MimeBodyPart.updateHeaders(MimeBodyPart.java:1110) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.internet.MimeMultipart.updateHeaders(MimeMultipart.java:500) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.internet.MimeBodyPart.updateHeaders(MimeBodyPart.java:1443) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.internet.MimeMessage.updateHeaders(MimeMessage.java:2180) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.internet.MimeMessage.saveChanges(MimeMessage.java:2142) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:123) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at br.com.ether.utilities.EmailUtility.sendMail(EmailUtility.java:68) ~[classes/:?]
+	at br.com.ether.applications.anf.services.ANFService.lambda$run$0(ANFService.java:207) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.services.ANFService.run(ANFService.java:204) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$0(ControllerANF.java:43) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$1(ControllerANF.java:43) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:42) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+[INFO ] 2023-10-17 22:43:57.087 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 22:43:57.088 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 22:43:57.089 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 22:43:57.089 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 22:43:57.089 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 22:43:57.091 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 22:43:57.091 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 22:43:57.091 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 22:43:57.091 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 22:43:57.093 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 22:43:57.093 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-17 22:43:57.108 [scheduling-1] WebDriverManager - Using chromedriver 118.0.5993.70 (resolved driver for Chrome 118)
+[INFO ] 2023-10-17 22:43:57.120 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\118.0.5993.70\chromedriver.exe
+[ERROR] 2023-10-17 22:43:57.137 [scheduling-1] ETHER - Erro ao realizar login
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DESKTOP-QG8TMCA', ip: '26.7.226.200'
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101) ~[selenium-chromium-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88) ~[selenium-chrome-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84) ~[selenium-chrome-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:73) ~[selenium-chrome-driver-4.8.3.jar:?]
+	at br.com.ether.utilities.SeleniumUtility.getDriver(SeleniumUtility.java:43) ~[classes/:?]
+	at br.com.ether.applications.anf.services.ANFService.login(ANFService.java:226) ~[classes/:?]
+	at br.com.ether.applications.anf.services.ANFService.run(ANFService.java:52) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$0(ControllerANF.java:43) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$1(ControllerANF.java:43) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:42) [classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: org.openqa.selenium.WebDriverException: java.lang.InterruptedException: sleep interrupted
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.os.OsProcess$SeleniumWatchDog.waitForProcessStarted(OsProcess.java:253) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.os.OsProcess$SeleniumWatchDog.access$000(OsProcess.java:226) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.os.OsProcess.waitForProcessStarted(OsProcess.java:109) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.os.CommandLine.waitForProcessStarted(CommandLine.java:105) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:207) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:114) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543) ~[selenium-remote-driver-4.8.3.jar:?]
+	... 26 more
+Caused by: java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep0(Native Method) ~[?:?]
+	at java.lang.Thread.sleep(Thread.java:465) ~[?:?]
+	at org.openqa.selenium.os.OsProcess$SeleniumWatchDog.waitForProcessStarted(OsProcess.java:250) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.os.OsProcess$SeleniumWatchDog.access$000(OsProcess.java:226) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.os.OsProcess.waitForProcessStarted(OsProcess.java:109) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.os.CommandLine.waitForProcessStarted(CommandLine.java:105) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:207) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:114) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543) ~[selenium-remote-driver-4.8.3.jar:?]
+	... 26 more
+[INFO ] 2023-10-17 22:45:26.718 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 1916 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 22:45:26.724 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 22:45:27.452 [main] AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static java.lang.String br.com.ether.applications.anf.services.ANFService.BODY
+[INFO ] 2023-10-17 22:45:27.475 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 22:45:27.476 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 22:45:27.476 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 22:45:27.476 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 22:45:27.926 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 22:45:28.104 [main] EtherApplication - Started EtherApplication in 1.849 seconds (process running for 3.06)
+[INFO ] 2023-10-17 22:45:31.056 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 22:45:31.061 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 22:45:31.061 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 22:45:31.061 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 22:45:31.062 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 22:45:31.220 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 22:45:31.221 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 22:45:31.222 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 22:45:31.222 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 22:45:46.846 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 22:45:46.848 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-17 22:45:55.866 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 6260 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 22:45:55.871 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 22:45:56.720 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 22:45:56.721 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 22:45:56.721 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 22:45:56.722 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 22:45:57.223 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 22:45:57.410 [main] EtherApplication - Started EtherApplication in 2.17 seconds (process running for 3.403)
+[INFO ] 2023-10-17 22:46:01.046 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 22:46:01.051 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 22:46:01.051 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 22:46:01.052 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 22:46:01.053 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 22:46:01.210 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 22:46:01.210 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 22:46:01.211 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 22:46:01.211 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 22:46:37.107 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 22:46:37.108 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-17 22:46:45.487 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 7528 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 22:46:45.492 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 22:46:46.239 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 22:46:46.240 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 22:46:46.240 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 22:46:46.240 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 22:46:46.761 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 22:46:46.956 [main] EtherApplication - Started EtherApplication in 1.942 seconds (process running for 3.132)
+[INFO ] 2023-10-17 22:46:49.897 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 22:46:49.900 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 22:46:49.900 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 22:46:49.901 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 22:46:49.901 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 22:46:49.935 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 22:46:49.935 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 22:46:49.936 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 22:46:49.936 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 22:46:49.938 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 22:46:49.938 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-17 22:46:50.260 [scheduling-1] WebDriverManager - Using chromedriver 118.0.5993.70 (resolved driver for Chrome 118)
+[INFO ] 2023-10-17 22:46:50.281 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\118.0.5993.70\chromedriver.exe
+[WARN ] 2023-10-17 22:46:51.758 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 118, so returning the closest version found: 114
+[INFO ] 2023-10-17 22:46:53.244 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-17 22:46:53.431 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-17 22:47:02.913 [scheduling-1] ETHER - Nota fiscal emitida com sucesso
+[INFO ] 2023-10-17 22:47:04.057 [scheduling-1] ETHER - Tempo de execução para emitir e baixar: 00:00:14.117
+[INFO ] 2023-10-17 22:47:04.057 [scheduling-1] ETHER - Capturando informações
+[INFO ] 2023-10-17 22:47:04.108 [scheduling-1] ETHER - Chave: 35541022251335957000120000000000001723101684780591
+[INFO ] 2023-10-17 22:47:04.108 [scheduling-1] ETHER - Caminho: C:\Users\mathe\Área de Trabalho\ANF\NF\10-23\35541022251335957000120000000000001723101684780591.pdf
+[INFO ] 2023-10-17 22:47:04.110 [scheduling-1] ETHER - Iniciando a inserção de dados no banco de dados
+[INFO ] 2023-10-17 22:47:04.110 [scheduling-1] ETHER - INSERT: INSERT INTO historico_notas (cnpj, data_da_emissao, valor, chave) VALUES (?, ?, ?, ?);
+[INFO ] 2023-10-17 22:47:04.115 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 22:47:04.115 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 22:47:04.115 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 22:47:04.115 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 22:47:04.117 [scheduling-1] ETHER - Preparando envio de e-mail
+[INFO ] 2023-10-17 22:47:32.289 [scheduling-1] ETHER - E-mail enviado com sucesso!
+[INFO ] 2023-10-17 22:47:32.291 [scheduling-1] ETHER - Finalizando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 22:47:32.291 [scheduling-1] ETHER - Finalizado em 00:00:42.390
+[INFO ] 2023-10-17 22:47:35.791 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 22:47:35.792 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 22:47:35.792 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 22:47:35.792 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 22:47:35.793 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 22:47:35.796 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 22:47:35.796 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 22:47:35.796 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 22:47:35.796 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 22:47:35.798 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 22:47:35.798 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-17 22:47:35.815 [scheduling-1] WebDriverManager - Using chromedriver 118.0.5993.70 (resolved driver for Chrome 118)
+[INFO ] 2023-10-17 22:47:35.827 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\118.0.5993.70\chromedriver.exe
+[ERROR] 2023-10-17 22:47:35.842 [scheduling-1] ETHER - Erro ao realizar login
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DESKTOP-QG8TMCA', ip: '26.7.226.200'
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101) ~[selenium-chromium-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88) ~[selenium-chrome-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84) ~[selenium-chrome-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:73) ~[selenium-chrome-driver-4.8.3.jar:?]
+	at br.com.ether.utilities.SeleniumUtility.getDriver(SeleniumUtility.java:43) ~[classes/:?]
+	at br.com.ether.applications.anf.services.ANFService.login(ANFService.java:226) ~[classes/:?]
+	at br.com.ether.applications.anf.services.ANFService.run(ANFService.java:52) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$0(ControllerANF.java:43) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.lambda$run$1(ControllerANF.java:43) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:42) [classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) [spring-context-6.0.12.jar:6.0.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: org.openqa.selenium.WebDriverException: java.lang.InterruptedException: sleep interrupted
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.os.OsProcess$SeleniumWatchDog.waitForProcessStarted(OsProcess.java:253) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.os.OsProcess$SeleniumWatchDog.access$000(OsProcess.java:226) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.os.OsProcess.waitForProcessStarted(OsProcess.java:109) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.os.CommandLine.waitForProcessStarted(CommandLine.java:105) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:207) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:114) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543) ~[selenium-remote-driver-4.8.3.jar:?]
+	... 26 more
+Caused by: java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep0(Native Method) ~[?:?]
+	at java.lang.Thread.sleep(Thread.java:465) ~[?:?]
+	at org.openqa.selenium.os.OsProcess$SeleniumWatchDog.waitForProcessStarted(OsProcess.java:250) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.os.OsProcess$SeleniumWatchDog.access$000(OsProcess.java:226) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.os.OsProcess.waitForProcessStarted(OsProcess.java:109) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.os.CommandLine.waitForProcessStarted(CommandLine.java:105) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:207) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:114) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543) ~[selenium-remote-driver-4.8.3.jar:?]
+	... 26 more
+[INFO ] 2023-10-17 22:47:40.059 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 9108 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 22:47:40.064 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 22:47:40.841 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 22:47:40.841 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 22:47:40.841 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 22:47:40.841 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 22:47:41.281 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 22:47:41.500 [main] EtherApplication - Started EtherApplication in 1.891 seconds (process running for 3.171)
+[INFO ] 2023-10-17 22:47:42.601 [scheduling-1] ETHER - =============================================
+[INFO ] 2023-10-17 22:47:42.606 [scheduling-1] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 22:47:42.607 [scheduling-1] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 22:47:42.608 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 22:47:42.609 [scheduling-1] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[INFO ] 2023-10-17 22:47:42.784 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 22:47:42.784 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 22:47:42.785 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 22:47:42.785 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 22:47:42.795 [scheduling-1] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 22:47:42.796 [scheduling-1] ETHER - OS: windows 10
+[INFO ] 2023-10-17 22:47:45.140 [scheduling-1] WebDriverManager - Using chromedriver 118.0.5993.70 (resolved driver for Chrome 118)
+[INFO ] 2023-10-17 22:47:45.235 [scheduling-1] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\118.0.5993.70\chromedriver.exe
+[WARN ] 2023-10-17 22:47:48.600 [scheduling-1] CdpVersionFinder - Unable to find an exact match for CDP version 118, so returning the closest version found: 114
+[INFO ] 2023-10-17 22:47:50.135 [scheduling-1] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-17 22:47:50.382 [scheduling-1] ETHER - Emitindo nota fiscal
+[INFO ] 2023-10-17 22:48:01.059 [scheduling-1] ETHER - Nota fiscal emitida com sucesso
+[INFO ] 2023-10-17 22:48:02.262 [scheduling-1] ETHER - Tempo de execução para emitir e baixar: 00:00:19.465
+[INFO ] 2023-10-17 22:48:02.263 [scheduling-1] ETHER - Capturando informações
+[INFO ] 2023-10-17 22:48:02.339 [scheduling-1] ETHER - Chave: 35541022251335957000120000000000001823107866346091
+[INFO ] 2023-10-17 22:48:02.340 [scheduling-1] ETHER - Caminho: C:\Users\mathe\Área de Trabalho\ANF\NF\10-23\35541022251335957000120000000000001823107866346091.pdf
+[INFO ] 2023-10-17 22:48:02.341 [scheduling-1] ETHER - Iniciando a inserção de dados no banco de dados
+[INFO ] 2023-10-17 22:48:02.341 [scheduling-1] ETHER - INSERT: INSERT INTO historico_notas (cnpj, data_da_emissao, valor, chave) VALUES (?, ?, ?, ?);
+[INFO ] 2023-10-17 22:48:02.359 [scheduling-1] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 22:48:02.359 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 22:48:02.360 [scheduling-1] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 22:48:02.360 [scheduling-1] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 22:48:02.366 [scheduling-1] ETHER - Preparando envio de e-mail
+[INFO ] 2023-10-17 22:48:09.721 [scheduling-1] ETHER - E-mail enviado com sucesso!
+[INFO ] 2023-10-17 22:48:09.724 [scheduling-1] ETHER - Finalizando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 22:48:09.725 [scheduling-1] ETHER - Finalizado em 00:00:27.114
+[INFO ] 2023-10-17 22:56:36.563 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 4724 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 22:56:36.567 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 22:56:37.336 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 22:56:37.337 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 22:56:37.337 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 22:56:37.337 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 22:56:37.915 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 22:56:38.154 [main] EtherApplication - Started EtherApplication in 2.033 seconds (process running for 3.464)
+[INFO ] 2023-10-17 22:57:11.700 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 15176 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 22:57:11.706 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 22:58:30.552 [main] ETHER - =============================================
+[INFO ] 2023-10-17 22:58:30.555 [main] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 22:58:30.556 [main] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 22:58:30.556 [main] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 22:58:30.556 [main] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[ERROR] 2023-10-17 22:58:30.557 [main] ETHER - Erro ao consultar o banco de dados
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+	at br.com.ether.repository.DataBase.select(DataBase.java:155) ~[classes/:?]
+	at br.com.ether.repository.DataBase.getCasos(DataBase.java:73) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:38) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-17 22:58:30.580 [main] ETHER - Tentando novamente em 1 minuto
+[INFO ] 2023-10-17 22:58:37.821 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 11696 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 22:58:37.825 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 22:59:30.791 [main] ETHER - =============================================
+[INFO ] 2023-10-17 22:59:30.794 [main] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 22:59:30.795 [main] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 22:59:30.795 [main] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 22:59:30.795 [main] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[ERROR] 2023-10-17 22:59:30.796 [main] ETHER - Erro ao consultar o banco de dados
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+	at br.com.ether.repository.DataBase.select(DataBase.java:155) ~[classes/:?]
+	at br.com.ether.repository.DataBase.getCasos(DataBase.java:73) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:55) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-17 22:59:30.811 [main] ETHER - Tentando novamente em 1 minuto
+[INFO ] 2023-10-17 22:59:36.935 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 8760 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 22:59:36.940 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 23:03:17.409 [main] ETHER - =============================================
+[INFO ] 2023-10-17 23:03:17.412 [main] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 23:03:17.413 [main] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 23:03:17.413 [main] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 23:03:17.413 [main] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[ERROR] 2023-10-17 23:03:17.413 [main] ETHER - Erro ao consultar o banco de dados
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+	at br.com.ether.repository.DataBase.select(DataBase.java:155) ~[classes/:?]
+	at br.com.ether.repository.DataBase.getCasos(DataBase.java:73) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:55) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-17 23:03:17.426 [main] ETHER - Tentando novamente em 1 minuto
+[INFO ] 2023-10-17 23:03:24.119 [main] EtherApplication - Starting EtherApplication using Java 19.0.2 with PID 14800 (C:\Users\mathe\Área de Trabalho\ANF\target\classes started by mathe in C:\Users\mathe\Área de Trabalho\ANF)
+[INFO ] 2023-10-17 23:03:24.124 [main] EtherApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-10-17 23:16:20.622 [main] ETHER - =============================================
+[INFO ] 2023-10-17 23:16:20.635 [main] ETHER - Iniciando ANF | Mês: 10/2023
+[INFO ] 2023-10-17 23:16:20.636 [main] ETHER - Iniciando a captura de dados do banco de dados
+[INFO ] 2023-10-17 23:16:20.636 [main] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 23:16:20.637 [main] ETHER - SELECT: SELECT * FROM dados_anf WHERE status = 1;
+[ERROR] 2023-10-17 23:16:20.637 [main] ETHER - Erro ao consultar o banco de dados
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+	at br.com.ether.repository.DataBase.select(DataBase.java:155) ~[classes/:?]
+	at br.com.ether.repository.DataBase.getCasos(DataBase.java:73) ~[classes/:?]
+	at br.com.ether.applications.anf.controller.ControllerANF.run(ControllerANF.java:65) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) [spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) [spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-3.1.4.jar:3.1.4]
+	at br.com.ether.EtherApplication.main(EtherApplication.java:10) [classes/:?]
+[ERROR] 2023-10-17 23:16:20.662 [main] ETHER - Tentando novamente em 1 minuto
+[ERROR] 2023-10-17 23:17:20.665 [main] ETHER - =============================================
+[INFO ] 2023-10-17 23:17:20.666 [main] ETHER - Iniciando a conexão com o banco de dados
+[INFO ] 2023-10-17 23:17:20.667 [main] ETHER - URL: jdbc:mysql://localhost:3306/anf
+[INFO ] 2023-10-17 23:17:20.668 [main] ETHER - USERNAME: root
+[INFO ] 2023-10-17 23:17:20.669 [main] ETHER - PASSWORD: ****
+[INFO ] 2023-10-17 23:17:22.197 [main] ETHER - Conexão com o banco de dados realizada com sucesso
+[INFO ] 2023-10-17 23:17:22.278 [main] ETHER - Iniciando a consulta no banco de dados
+[INFO ] 2023-10-17 23:17:22.279 [main] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 23:17:22.279 [main] ETHER - Realizando a consulta no banco de dados
+[INFO ] 2023-10-17 23:17:22.280 [main] ETHER - SELECT: SELECT * FROM acessos;
+[INFO ] 2023-10-17 23:17:22.286 [main] ETHER - Realizando Login no Site do Governo
+[INFO ] 2023-10-17 23:17:23.068 [main] WebDriverManager - Using chromedriver 118.0.5993.70 (resolved driver for Chrome 118)
+[INFO ] 2023-10-17 23:17:23.131 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mathe\.cache\selenium\chromedriver\win64\118.0.5993.70\chromedriver.exe
+[INFO ] 2023-10-17 23:17:28.799 [main] ETHER - Login realizado com sucesso
+[INFO ] 2023-10-17 23:17:28.997 [main] ETHER - Emitindo nota fiscal
