@@ -85,20 +85,20 @@ public class ANFService {
 
                 seleniumUtility.clickElementByXPath(driver, wait, "//label[contains(text(), 'Brasil')]");
 
-                seleniumUtility.sendKeysByID(driver, wait, "Tomador_Inscricao", datasDBModel.getCnpj_tomador());
+                seleniumUtility.sendKeysByID(driver, wait, "Tomador_Inscricao", datasDBModel.getCnpj_customer());
 
                 seleniumUtility.clickElementByID(driver, wait, "btn_Tomador_Inscricao_pesquisar");
 
-                if (!datasDBModel.getIm_prestador().equalsIgnoreCase("")) {
-                    seleniumUtility.sendKeysByID(driver, wait, "Tomador_InscricaoMunicipal", datasDBModel.getIm_prestador());
+                if (!datasDBModel.getIm_customer().equalsIgnoreCase("")) {
+                    seleniumUtility.sendKeysByID(driver, wait, "Tomador_InscricaoMunicipal", datasDBModel.getIm_customer());
                 }
 
-                if (!datasDBModel.getTelefone_prestador().equalsIgnoreCase("")) {
-                    seleniumUtility.sendKeysByID(driver, wait, "Tomador_Telefone", datasDBModel.getTelefone_prestador());
+                if (!datasDBModel.getPhone_customer().equalsIgnoreCase("")) {
+                    seleniumUtility.sendKeysByID(driver, wait, "Tomador_Telefone", datasDBModel.getPhone_customer());
                 }
 
-                if (!datasDBModel.getEmail_prestador().equalsIgnoreCase("")) {
-                    seleniumUtility.sendKeysByID(driver, wait, "Tomador_Email", datasDBModel.getEmail_prestador());
+                if (!datasDBModel.getMail_customer().equalsIgnoreCase("")) {
+                    seleniumUtility.sendKeysByID(driver, wait, "Tomador_Email", datasDBModel.getMail_customer());
                 }
 
                 //TODO ADICIONAR ENDEREÇO
@@ -107,7 +107,7 @@ public class ANFService {
 
                 seleniumUtility.clickElementByXPath(driver, wait, "//*[@id=\"pnlLocalPrestacao\"]/div/div/div[2]/div/span[1]/span[1]/span");
 
-                seleniumUtility.sendKeysByXPath(driver, wait, "/html/body/span/span/span[1]/input", datasDBModel.getMunicipio());
+                seleniumUtility.sendKeysByXPath(driver, wait, "/html/body/span/span/span[1]/input", datasDBModel.getCity());
 
                 seleniumUtility.clickElementByXPath(driver, wait, "//li[@class=\"select2-results__option select2-results__option--selectable select2-results__option--highlighted\" and @role=\"option\" and @aria-selected=\"true\"]");
 
@@ -125,13 +125,13 @@ public class ANFService {
 
                 seleniumUtility.clickElementByID(driver, wait, "ServicoPrestado_Descricao");
 
-                seleniumUtility.sendKeysByID(driver, wait, "ServicoPrestado_Descricao", datasDBModel.getDescricao_servico());
+                seleniumUtility.sendKeysByID(driver, wait, "ServicoPrestado_Descricao", datasDBModel.getDesc_customer());
 
                 seleniumUtility.clickElementByXPath(driver, wait, "/html/body/div[1]/form/div[7]/button");
 
                 seleniumUtility.clickElementByID(driver, wait, "Valores_ValorServico");
 
-                seleniumUtility.sendKeysByID(driver, wait, "Valores_ValorServico", datasDBModel.getValor_nf());
+                seleniumUtility.sendKeysByID(driver, wait, "Valores_ValorServico", datasDBModel.getValue());
 
                 seleniumUtility.clickElementByXPath(driver, wait, "//*[@id=\"pnlOpcaoParaMEI\"]/div/div/label");
 
@@ -222,7 +222,7 @@ public class ANFService {
         DadosHistoricoModel dadosHistoricoModel = DadosHistoricoModel.builder()
                 .cnpj(CNPJ)
                 .data_da_emissao(dateUtility.getToday("dd/MM/yyyy"))
-                .valor(datasDBModel.getValor_nf())
+                .valor(datasDBModel.getValue())
                 .chave(KEY)
 //                .base64(base64)
                 .build();
@@ -239,7 +239,7 @@ public class ANFService {
 
         CredentialsModel credentialsModel = CredentialsModel.builder()
                 .login(mailLogin)
-                .senha(passwdMail)
+                .passwd(passwdMail)
                 .build();
 
         String subject = "NF mês " + dateUtility.getToday("MM/yyyy") + " | Yank! Solutions";
