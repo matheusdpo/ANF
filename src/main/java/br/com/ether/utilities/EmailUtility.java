@@ -2,9 +2,8 @@ package br.com.ether.utilities;
 
 
 import br.com.ether.config.EmailConfig;
-import br.com.ether.model.CredenciaisModel;
+import br.com.ether.model.CredentialsModel;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
@@ -25,17 +24,17 @@ public class EmailUtility {
     private final LogUtility logger;
     private final EmailConfig emailConfig;
 
-    public void sendMail(String subject, String body, String to, String cc, String bcc, String attachment, CredenciaisModel credenciaisModel) {
+    public void sendMail(String subject, String body, String to, String cc, String bcc, String attachment, CredentialsModel credentialsModel) {
 
-        logger.registraLog("Preparando envio de e-mail");
+        logger.registerLog("Setting up email configuration");
 
         // Cria uma sessão
-        Session session = emailConfig.setMailConfig(credenciaisModel);
+        Session session = emailConfig.setMailConfig(credentialsModel);
 
         try {
             // Cria uma mensagem de email
             Message mensagem = new MimeMessage(session);
-            mensagem.setFrom(new InternetAddress(credenciaisModel.getLogin()));
+            mensagem.setFrom(new InternetAddress(credentialsModel.getLogin()));
 
             // Adiciona destinatários (TO, CC, BCC)
             mensagem.setRecipients(Message.RecipientType.TO,
@@ -67,9 +66,9 @@ public class EmailUtility {
             // Envia o email
             Transport.send(mensagem);
 
-            logger.registraLog("E-mail enviado com sucesso!");
+            logger.registerLog("E-mail has been sent successfully");
         } catch (MessagingException e) {
-            logger.registraException("Erro ao enviar e-mail", e);
+            logger.registraException("There was an error sending the email", e);
         }
     }
 
