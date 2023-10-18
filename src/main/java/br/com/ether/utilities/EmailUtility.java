@@ -68,7 +68,7 @@ public class EmailUtility {
 
             logger.registerLog("E-mail has been sent successfully");
         } catch (MessagingException e) {
-            logger.registraException("There was an error sending the email", e);
+            logger.registerException("There was an error sending the email", e);
         }
     }
 

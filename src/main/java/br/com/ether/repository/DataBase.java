@@ -55,10 +55,10 @@ public class DataBase {
                 logger.registerLog("Connection to the database successfully");
                 break;
             } catch (Exception e) {
-                logger.registraException("There was an error connecting to the database", e);
-                logger.registraErro("Trying again in 1 minute");
+                logger.registerException("There was an error connecting to the database", e);
+                logger.registerError("Trying again in 1 minute");
                 //aguardar.minutos(1);
-                logger.registraErro("=============================================");
+                logger.registerError("=============================================");
             }
         }
     }
@@ -96,10 +96,10 @@ public class DataBase {
                 }
                 break;
             } catch (Exception e) {
-                logger.registraException("There was an error capturing data from the database", e);
-                logger.registraErro("Trying again in 1 minute");
+                logger.registerException("There was an error capturing data from the database", e);
+                logger.registerError("Trying again in 1 minute");
                 waitMoment.minutes(1);
-                logger.registraErro("=============================================");
+                logger.registerError("=============================================");
                 connectDB();
             }
         }
@@ -133,10 +133,10 @@ public class DataBase {
                 }
                 break;
             } catch (Exception e) {
-                logger.registraException("There was an error capturing data from the database", e);
-                logger.registraErro("Trying again in 1 minute");
+                logger.registerException("There was an error capturing data from the database", e);
+                logger.registerError("Trying again in 1 minute");
                 waitMoment.minutes(1);
-                logger.registraErro("=============================================");
+                logger.registerError("=============================================");
                 connectDB();
             }
         }
@@ -156,10 +156,10 @@ public class DataBase {
                 resultSet = preparedStatement.executeQuery();
                 break;
             } catch (Exception e) {
-                logger.registraException("There was an error querying the database", e);
-                logger.registraErro("Trying again in 1 minute");
+                logger.registerException("There was an error querying the database", e);
+                logger.registerError("Trying again in 1 minute");
                 waitMoment.minutes(1);
-                logger.registraErro("=============================================");
+                logger.registerError("=============================================");
                 connectDB();
             }
         }
@@ -181,10 +181,10 @@ public class DataBase {
                 preparedStatement.execute();
                 break;
             } catch (Exception e) {
-                logger.registraException("There was an error inserting data into the database", e);
-                logger.registraErro("Trying again in 1 minute");
+                logger.registerException("There was an error inserting data into the database", e);
+                logger.registerError("Trying again in 1 minute");
                 waitMoment.minutes(1);
-                logger.registraErro("=============================================");
+                logger.registerError("=============================================");
                 connectDB();
             }
         }

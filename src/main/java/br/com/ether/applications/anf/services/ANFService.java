@@ -151,8 +151,8 @@ public class ANFService {
                 break;
             }
         } catch (Exception e) {
-            logger.registraException("There was an error issuing the invoice", e);
-            logger.registraErro("Trying again in 1 minute");
+            logger.registerException("There was an error issuing the invoice", e);
+            logger.registerError("Trying again in 1 minute");
             waitMoment.minutes(1);
             seleniumUtility.quit(driver);
         }
@@ -183,8 +183,8 @@ public class ANFService {
                 logger.registerLog("Logged in successfully!");
                 break;
             } catch (Exception e) {
-                logger.registraException("There was an error trying to Loggin", e);
-                logger.registraErro("Trying again in 1 minute");
+                logger.registerException("There was an error trying to Loggin", e);
+                logger.registerError("Trying again in 1 minute");
                 seleniumUtility.quit(driver);
                 waitMoment.minutes(1);
             }
@@ -209,11 +209,11 @@ public class ANFService {
         //Mover arquivo para pasta
         if (OS.equalsIgnoreCase("linux")) {
             BASE64 = converterUtility.encondeBase64(folderUtility.getFile(PATH_DOWNLOAD_LINUX));
-            KEY = folderUtility.getChave(PATH_DOWNLOAD_LINUX);
+            KEY = folderUtility.getKey(PATH_DOWNLOAD_LINUX);
             PATH = folderUtility.moveFile(PATH_DOWNLOAD_LINUX, PATH_SAVE_NF, OS);
         } else {
             BASE64 = converterUtility.encondeBase64(folderUtility.getFile(PATH_DOWNLOAD_WINDOWS));
-            KEY = folderUtility.getChave(PATH_DOWNLOAD_WINDOWS);
+            KEY = folderUtility.getKey(PATH_DOWNLOAD_WINDOWS);
             PATH = folderUtility.moveFile(PATH_DOWNLOAD_WINDOWS, PATH_SAVE_NF, OS);
         }
     }
