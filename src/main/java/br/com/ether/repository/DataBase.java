@@ -1,10 +1,10 @@
 package br.com.ether.repository;
 
-import br.com.ether.model.CredenciaisModel;
-import br.com.ether.model.DadosDBModel;
+import br.com.ether.model.CredentialsModel;
 import br.com.ether.model.DadosHistoricoModel;
-import br.com.ether.utilities.Aguardar;
+import br.com.ether.model.DatasDBModel;
 import br.com.ether.utilities.LogUtility;
+import br.com.ether.utilities.WaitMoment;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
@@ -38,45 +38,45 @@ public class DataBase {
     private static final String INSERT = "INSERT INTO historico_notas (cnpj, data_da_emissao, valor, chave) VALUES (?, ?, ?, ?);";
 
     private final LogUtility logger;
-    private final Aguardar aguardar;
+    private final WaitMoment waitMoment;
 
     private Connection connection;
 
     public void connectDB() {
-        logger.registraLog("Iniciando a conexão com o banco de dados");
-        logger.registraLog("URL: " + URL);
-        logger.registraLog("USERNAME: " + USERNAME);
-        logger.registraLog("PASSWORD: " + new StringBuilder(PASSWORD).replace(0, PASSWORD.length(), "*".repeat(PASSWORD.length())));
+        logger.registerLog("Starting the connection to the database");
+        logger.registerLog("URL: " + URL);
+        logger.registerLog("USERNAME: " + USERNAME);
+        logger.registerLog("PASSWORD: " + new StringBuilder(PASSWORD).replace(0, PASSWORD.length(), "*".repeat(PASSWORD.length())));
 
         while (true) {
             try {
                 Class.forName(DRIVER);
                 connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
-                logger.registraLog("Conexão com o banco de dados realizada com sucesso");
+                logger.registerLog("Connection to the database successfully");
                 break;
             } catch (Exception e) {
-                logger.registraException("Erro ao conectar com o banco de dados", e);
-                logger.registraErro("Tentando novamente em 1 minuto");
-                aguardar.minutos(1);
+                logger.registraException("There was an error connecting to the database", e);
+                logger.registraErro("Trying again in 1 minute");
+                //aguardar.minutos(1);
                 logger.registraErro("=============================================");
             }
         }
     }
 
-    public List<DadosDBModel> getCasos() {
-        logger.registraLog("Iniciando a captura de dados do banco de dados");
+    public List<DatasDBModel> getCases() {
+        logger.registerLog("Starting to capture data from the database");
 
-        List<DadosDBModel> dadosDBModelList = null;
+        List<DatasDBModel> datasDBModelList = null;
 
         while (true) {
             try {
                 ResultSet resultSet = select(SELECT_CASOS);
 
-                dadosDBModelList = new ArrayList<>();
+                datasDBModelList = new ArrayList<>();
 
                 while (resultSet.next()) {
 
-                    DadosDBModel dadosDBModel = DadosDBModel
+                    DatasDBModel datasDBModel = DatasDBModel
                             .builder()
                             .id(resultSet.getLong("id"))
                             .status(resultSet.getInt("status"))
@@ -92,25 +92,25 @@ public class DataBase {
                             .status(resultSet.getInt("status"))
                             .build();
 
-                    dadosDBModelList.add(dadosDBModel);
+                    datasDBModelList.add(datasDBModel);
                 }
                 break;
             } catch (Exception e) {
-                logger.registraException("Erro ao consultar o banco de dados", e);
-                logger.registraErro("Tentando novamente em 1 minuto");
-                aguardar.minutos(1);
+                logger.registraException("There was an error capturing data from the database", e);
+                logger.registraErro("Trying again in 1 minute");
+                waitMoment.minutes(1);
                 logger.registraErro("=============================================");
                 connectDB();
             }
         }
-        return dadosDBModelList;
+        return datasDBModelList;
     }
 
-    public List<CredenciaisModel> getAcessos() {
-        logger.registraLog("Iniciando a consulta no banco de dados");
-        logger.registraLog("SELECT: " + SELECT_ACESSOS);
+    public List<CredentialsModel> getCredentials() {
+        logger.registerLog("Starting to capture data from the database");
+        logger.registerLog("SELECT: " + SELECT_ACESSOS);
 
-        List<CredenciaisModel> acessosModelList = null;
+        List<CredentialsModel> acessosModelList = null;
 
         while (true) {
             try {
@@ -120,22 +120,22 @@ public class DataBase {
 
                 while (resultSet.next()) {
 
-                    CredenciaisModel credenciaisModel = CredenciaisModel
+                    CredentialsModel credentialsModel = CredentialsModel
                             .builder()
                             .id(resultSet.getLong("id"))
                             .login(resultSet.getString("login"))
-                            .senha(resultSet.getString("senha"))
-                            .plataforma(resultSet.getString("plataforma"))
+                            .passwd(resultSet.getString("senha"))
+                            .plataform(resultSet.getString("plataforma"))
                             .build();
 
 
-                    acessosModelList.add(credenciaisModel);
+                    acessosModelList.add(credentialsModel);
                 }
                 break;
             } catch (Exception e) {
-                logger.registraException("Erro ao consultar o banco de dados", e);
-                logger.registraErro("Tentando novamente em 1 minuto");
-                aguardar.minutos(1);
+                logger.registraException("There was an error capturing data from the database", e);
+                logger.registraErro("Trying again in 1 minute");
+                waitMoment.minutes(1);
                 logger.registraErro("=============================================");
                 connectDB();
             }
@@ -144,8 +144,8 @@ public class DataBase {
     }
 
     private ResultSet select(String select) {
-        logger.registraLog("Realizando a consulta no banco de dados");
-        logger.registraLog("SELECT: " + select);
+        logger.registerLog("Starting the query to the database");
+        logger.registerLog("SELECT: " + select);
 
         ResultSet resultSet = null;
 
@@ -156,9 +156,9 @@ public class DataBase {
                 resultSet = preparedStatement.executeQuery();
                 break;
             } catch (Exception e) {
-                logger.registraException("Erro ao consultar o banco de dados", e);
-                logger.registraErro("Tentando novamente em 1 minuto");
-                aguardar.minutos(1);
+                logger.registraException("There was an error querying the database", e);
+                logger.registraErro("Trying again in 1 minute");
+                waitMoment.minutes(1);
                 logger.registraErro("=============================================");
                 connectDB();
             }
@@ -167,8 +167,8 @@ public class DataBase {
     }
 
     public void insertHistorico(DadosHistoricoModel dadosHistoricoModel) {
-        logger.registraLog("Iniciando a inserção de dados no banco de dados");
-        logger.registraLog("INSERT: " + INSERT);
+        logger.registerLog("Starting to insert data into the database");
+        logger.registerLog("INSERT: " + INSERT);
 
         while (true) {
             try {
@@ -181,9 +181,9 @@ public class DataBase {
                 preparedStatement.execute();
                 break;
             } catch (Exception e) {
-                logger.registraException("Erro ao inserir dados no banco de dados", e);
-                logger.registraErro("Tentando novamente em 1 minuto");
-                aguardar.minutos(1);
+                logger.registraException("There was an error inserting data into the database", e);
+                logger.registraErro("Trying again in 1 minute");
+                waitMoment.minutes(1);
                 logger.registraErro("=============================================");
                 connectDB();
             }
