@@ -5,15 +5,15 @@ import org.springframework.stereotype.Component;
 
 @Component
 @RequiredArgsConstructor
-public class Aguardar {
-    public void miliSegundos(int tempo) {
+public class WaitMoment {
+    public void miliSeconds(int tempo) {
         try {
             Thread.sleep(tempo);
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
-    public void segundos(int tempo) {
+    public void seconds(int tempo) {
         try {
             Thread.sleep(tempo * 1000);
         } catch (Exception e) {
@@ -21,7 +21,7 @@ public class Aguardar {
         }
     }
 
-    public void minutos(int tempo) {
+    public void minutes(int tempo) {
         try {
             Thread.sleep(tempo * 1000 * 60);
         } catch (Exception e) {
@@ -29,7 +29,7 @@ public class Aguardar {
         }
     }
 
-    public void horas(int tempo) {
+    public void hours(int tempo) {
         try {
             Thread.sleep(tempo * 1000 * 60 * 60);
         } catch (Exception e) {
