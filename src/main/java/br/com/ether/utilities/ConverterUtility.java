@@ -1,25 +1,30 @@
 package br.com.ether.utilities;
 
 import lombok.RequiredArgsConstructor;
-import org.apache.commons.codec.binary.Base64;
 import org.springframework.stereotype.Component;
 
-import java.nio.file.Files;
-import java.nio.file.Path;
+import java.io.File;
+import java.io.FileInputStream;
+import java.util.Base64;
 
 @Component
 @RequiredArgsConstructor
 public class ConverterUtility {
 
-    public String encondeBase64(String value) {
-        byte[] pdfBytes = null;
+    public String encondeBase64(String inputfile) {
 
         try {
-            pdfBytes = Files.readAllBytes(Path.of(value));
+            // Lê o arquivo PDF
+            File pdfFile = new File(inputfile);
+            byte[] pdfBytes = null;
+            FileInputStream fileInputStream = new FileInputStream(pdfFile);
+            pdfBytes = new byte[(int) pdfFile.length()];
+            fileInputStream.read(pdfBytes);
+            return Base64.getEncoder().encodeToString(pdfBytes);
+
         } catch (Exception e) {
             e.printStackTrace();
+            return "Erro ao converter PDF para Base64";
         }
-
-        return Base64.encodeBase64String(pdfBytes);
     }
 }
