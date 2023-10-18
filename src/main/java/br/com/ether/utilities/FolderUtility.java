@@ -9,6 +9,7 @@ import java.io.File;
 @RequiredArgsConstructor
 public class FolderUtility {
     private final DateUtility dateUtility;
+
     public void isFolderExist(String path) {
         File file = new File(path);
         if (!file.exists())
@@ -46,7 +47,7 @@ public class FolderUtility {
         return caminho;
     }
 
-    public String getChave(String pathDownload) {
+    public String getKey(String pathDownload) {
         //mover arquivo de uma pasta a outra
         File file = new File(pathDownload);
         File[] files = file.listFiles();
@@ -72,5 +73,18 @@ public class FolderUtility {
             }
         }
         return "";
+    }
+
+    public boolean isPDFHere(String pathDownload) {
+        //mover arquivo de uma pasta a outra
+        File file = new File(pathDownload);
+        File[] files = file.listFiles();
+
+        for (File f : files) {
+            if (f.getName().endsWith(".pdf") || f.getName().endsWith(".PDF")) {
+                return true;
+            }
+        }
+        return false;
     }
 }
