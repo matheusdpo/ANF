@@ -1,4 +1,4 @@
-package br.com.ether.utilities;
+package br.com.ether.anf.utilities;
 
 public class MailUtility {
 

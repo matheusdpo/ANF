@@ -1,6 +1,6 @@
-package br.com.ether.config;
+package br.com.ether.anf.config;
 
-import br.com.ether.model.CredentialsModel;
+import br.com.ether.anf.model.CredentialsModel;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;

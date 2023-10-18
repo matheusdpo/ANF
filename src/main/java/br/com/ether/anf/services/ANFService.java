@@ -1,11 +1,11 @@
 package br.com.ether.anf.services;
 
 
-import br.com.ether.model.CredentialsModel;
-import br.com.ether.model.HistoryDatasModel;
-import br.com.ether.model.DatasDBModel;
-import br.com.ether.repository.DataBase;
-import br.com.ether.utilities.*;
+import br.com.ether.anf.model.CredentialsModel;
+import br.com.ether.anf.model.DatasDBModel;
+import br.com.ether.anf.model.HistoryDatasModel;
+import br.com.ether.anf.repository.DataBase;
+import br.com.ether.anf.utilities.*;
 import lombok.RequiredArgsConstructor;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

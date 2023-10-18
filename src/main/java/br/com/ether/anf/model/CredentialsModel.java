@@ -1,4 +1,4 @@
-package br.com.ether.model;
+package br.com.ether.anf.model;
 
 import lombok.Builder;
 import lombok.Getter;

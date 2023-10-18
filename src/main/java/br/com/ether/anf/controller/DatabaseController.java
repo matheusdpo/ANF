@@ -1,9 +1,8 @@
 package br.com.ether.anf.controller;
 
 
-import br.com.ether.repository.DataBase;
+import br.com.ether.anf.repository.DataBase;
 import jakarta.annotation.PostConstruct;
-import jakarta.annotation.Priority;
 import lombok.RequiredArgsConstructor;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;

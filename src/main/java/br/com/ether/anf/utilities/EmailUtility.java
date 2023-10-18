@@ -1,8 +1,8 @@
-package br.com.ether.utilities;
+package br.com.ether.anf.utilities;
 
 
-import br.com.ether.config.EmailConfig;
-import br.com.ether.model.CredentialsModel;
+import br.com.ether.anf.config.EmailConfig;
+import br.com.ether.anf.model.CredentialsModel;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;

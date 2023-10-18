@@ -1,4 +1,4 @@
-package br.com.ether.utilities;
+package br.com.ether.anf.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import lombok.RequiredArgsConstructor;
