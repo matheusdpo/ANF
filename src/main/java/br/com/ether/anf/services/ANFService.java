@@ -1,4 +1,4 @@
-package br.com.ether.applications.anf.services;
+package br.com.ether.anf.services;
 
 
 import br.com.ether.model.CredentialsModel;
